@@ -1,43 +1,48 @@
+<!-- Employee Interests Survey Form -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Employee Interests Survey</title>
 </head>
 <body>
-
-<p>Metadata:-</p>
-Example - <b>meta name="keywords" content="What is HTML, How to learn HTML"</b>
-
-<p>Sections and divisions:-</p>
-<div></div> new section; <b>nested div tags</b> are very common when multiple sub-sections are required
-
-<p>Horizontal line formate:-</p>
-<hr size = “” width = “”/width = “%” color = “” align = “left/center/right”>
-
-Tables
-<table>
-<tr>
-    <th>h1</th>
-    <td>1</td>
-    <td>2</td>
-    <td>3</td>
-</tr>
-<tr>
-    <th>h2</th>
-    <td>4</td>
-    <td>5</td>
-    <td>6</td>
-</tr>
-</table>
-
-<table> - creates a table,
-<tr> - creates a row,
-<td> - creates column,
-<th> - creates header columns
-
-Lorem ipsum dolor sit amet.
+    <form action="#">
+        <div align="center">
+            <h1>Employee Interests Survey Form</h1>
+            Enter your Name:
+            <input type="text" name="Username" size=35 maxlength=35 value="">
+            <br><br>
+            Enter your deparement: 
+            <input type="text" name="deparement" size=35 maxlength=35 value="">
+            <br><br>
+            Tell us a little about yourself: 
+            <textarea name="comment" cols="30" rows="4"></textarea>
+            <br><br>
+            Do you exercise at home?
+            <input type="radio" name="exe" value="1">Yes
+            <input type="radio" name="exe" value="2">No
+            <input type="radio" name="exe" value="3">Y/N
+        </p>
+            Dow do you like a read about your favorite topics?
+        <p>
+            <input type="checkbox" name="Books">Books
+            <input type="checkbox" name="Web">Online Research
+            <input type="checkbox" name="Phone">Phone App
+            <input type="checkbox" name="Mazains">Magazines
+        </p>
+        what genre of movie do you like?
+        <select name="moviePref" >
+            <option value="1" selected="true">comedy</option>
+            <option value="2" >romance</option>
+            <option value="3" >Thriller</option>
+            <option value="4" >horror</option>
+            <option value="5" >biopic</option>
+        </select>
+        <br><br>
+        <input type="submit"  value="Submit Form">
+        </div>
+    </form>
 </body>
 </html>

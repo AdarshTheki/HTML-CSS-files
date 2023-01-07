@@ -70,56 +70,24 @@ Span tag is used for styling inline elements.
 -->
 
 Sections and divisions
-<br> <div></div> new section; nested div tags are very common when multiple sub-sections are
-required
-<br> <hr> - horizontal line
-<hr> has the following attributes –
-<br> <hr size = “” width = “”/width = “%” color = “” align = “left/center/right”>
-<br> size – thickness of the line in pixels
-<br> width – in pixels or percentage (any one)
-<br> color – color in hex value
-<br> align – alignment; left, right or center
-Tables
-<table>
-<tr>
-<td></td>
-<td></td>
-<td></td>
-</tr>
-<tr>
-<td></td>
-<td></td>
-<td></td>
-</tr>
-</table>
-● <table> - creates a table,
-● <tr> - creates a row,
-● <td> - creates column,
-● <th> - creates header columns
-<table> attributes –
-● border="" - Thickness of outside border in pixels
-● bordercolor="" - Border Colour in hex value
-● cellspacing="" - Space between each cell in pixels
-● cellpadding="" - Space between cell border and content
-● align="" - Horizontal Alignment; left, right, center
-● bgcolor="" - Background Colour hex value
-● width="" - Table Width in pixels or %
-● height="" - Table Height in pixels or %
-<td> attributes
-● colspan="" - Number of columns the cell spans across
-● rowspan="" - Number of rows cell spans across
-● width="" - width of cell in pixels or %
-● height="" - height of cell in pixels or %
-● bgcolor="" – hex value of background colour for the cell (column)
-● align="" - Horizontal Align; left, center, right
-● valign="" - Vertical Align; top, middle, bottom
-● <colgroup> - is used to define attributes for particular columns of the table.
+<br> <div></div> new section; nested div tags are very common when multiple sub-sections are required <br> 
+
+<hr size = “” width = “”/width = “%” color = “” align = “left/center/right”>
+
+<table> - creates a table,
+<tr> - creates a row,
+<td> - creates column,
+<th> - creates header columns
+<b>table attributes -</b>
+
+<colgroup> - is used to define attributes for particular columns of the table.
 Example –
 <colgroup>
 <col span="1" style="background-color:green">
 <col style="background-color:blue">
 </colgroup>
 The first column will be highlighted as green, whereas other columns will be highlighted as blue.
+
 Forms
 Most of the dynamic content like user inputs, submitting a page, filling a form happen inside this tag. It
 is a group of related inputs.
@@ -169,12 +137,12 @@ Examples –
 Styles
 For styling, there are many attributes being used with various tags. The attributes are –
 <style>
-text-align= “” – align text; left, right, center
-background-color = “” – background color of the element
-color=”” – for color of texts
+/* text-align = “” – align text; left, right, center
+background-color = “” – background color of the element */
+/* color=”” – for color of texts
 font-family = “” – for various fonts
 font-size = “” size of the font
-border = “” – border thickness and color for a table
+border = “” – border thickness and color for a table */
 </style>
 These styling elements are put together in a CSS.
 Lists
