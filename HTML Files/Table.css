@@ -1,0 +1,23 @@
+table,
+tr,
+th,
+td {
+    border: 2px solid black;
+    border-collapse: collapse;
+    padding: 10px;
+    border-spacing: 5px;
+    text-align: center;
+}
+
+th,
+.a {
+    background-color: rgb(189, 105, 223);
+    font-weight: 700;
+}
+
+td {
+    background-color: rgb(23, 167, 192);
+}
+/* .a{
+    background-color: tomato;
+} */

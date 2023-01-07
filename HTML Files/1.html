@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My fist Document</title>
+</head>
+<body>
+<!-- 
+The main elements in HTML are the tags. Tags structure and present the data in different forms.
+Heading
+<h1>Heading 1</h1>
+<h2>Heading 2 </h2>
+<h3>Heading 3</h3>
+<h4>Heading 4</h4>
+<h5>Heading 5</h5>
+<h6>Heading 6 </h6>
+
+Paragraph:-
+<p>write a paragraph</p>
+Attribute 'style' can be used with to display the text inside in a specific manner. For example,
+<p style = "color:blue">I will appear blue</p>
+<p style = "background-color:blue">Highlighting as blue</p>
+line break <br> 
+
+Span:-
+Span tag is used for styling inline elements.
+<span style = "color:green"> Address </span>
+
+<p>Characters</p>
+&nbsp; &nbsp;   - space (non-breaking)
+<br> &quot;     - add quotation mark (“)
+<br> &lt;       - less than symbol (<)
+<br> &gt;       - greater than symbol (>)
+<br> &amp;      - the '&' or ampersand symbol
+<br> &copy;     - copyright symbol
+<br> &trade;    - trademark symbol
+
+<p>Formatting:-</p>
+<b>Bold text </b> - Bold text
+<br> <i>Italic text</i> - Italic text
+<br> <u>underlined text</u> - underlined text
+<br> <mark>I am highlighted in yellow</mark>
+<br> <span style="background-color: #FF00FF">I am highlighted in pink</span>
+<br> <strong>I am strong    </strong>- I am strong 
+<br> <font>Italic           </font> - chosen font for the text
+<br> <small>Big             </small> - smaller text, fine print size
+<br> <strike>Strike that out</strike> 
+<br> <sup>superscript       </sup> - superscript 
+<br> <sub>subscript         </sub> - subscript
+<br> <em>emphasis           </em> - emphasis
+<br> <pre>preformatted text </pre> - preformatted text
+<br> <tt>typewriter text    </tt> - typewriter text
+<br> <face> - the font family, for example 'Courier New'
+<br> <size> - size of the text
+<br> <color> - color of the text (eg. #FF000F) or text (eg.red)
+
+<p>Body:- (only used in email NewsLetter)</p>
+<body> - the main content lies in the body. Inside <body> there can be many sections. Attributes =
+<br> <body background="URL">            <a>- Background Image source; can be left empty if no image</a></body>
+<br> <body bgcolor="">                  <a>- Background Colour in hex value</a></body>
+<br> <body text="" >                    <a>- page text color</a></body>
+<br> <body link="">                     <a>- Link Colour</a></body>
+<br> <body alink="pink" >               <a href="#">- Active (current) Link Colour</a></body>
+<br> <body vlink="green">               <a href="#">- Visited Link Colour(not support html5)</a></body>
+<br> <body bgproperties="">  <a>- Background Properties. A value of "fixed" means non-scrolling watermark</a></body>
+<br> <body topmargin="50">    <a>- Top Margin Size in Pixels</a></body>
+<br> <body leftmargin="50">    <a>- Side Margin Size in Pixels</a></body> 
+-->
+
+Sections and divisions
+<br> <div></div> new section; nested div tags are very common when multiple sub-sections are
+required
+<br> <hr> - horizontal line
+<hr> has the following attributes –
+<br> <hr size = “” width = “”/width = “%” color = “” align = “left/center/right”>
+<br> size – thickness of the line in pixels
+<br> width – in pixels or percentage (any one)
+<br> color – color in hex value
+<br> align – alignment; left, right or center
+Tables
+<table>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</table>
+● <table> - creates a table,
+● <tr> - creates a row,
+● <td> - creates column,
+● <th> - creates header columns
+<table> attributes –
+● border="" - Thickness of outside border in pixels
+● bordercolor="" - Border Colour in hex value
+● cellspacing="" - Space between each cell in pixels
+● cellpadding="" - Space between cell border and content
+● align="" - Horizontal Alignment; left, right, center
+● bgcolor="" - Background Colour hex value
+● width="" - Table Width in pixels or %
+● height="" - Table Height in pixels or %
+<td> attributes
+● colspan="" - Number of columns the cell spans across
+● rowspan="" - Number of rows cell spans across
+● width="" - width of cell in pixels or %
+● height="" - height of cell in pixels or %
+● bgcolor="" – hex value of background colour for the cell (column)
+● align="" - Horizontal Align; left, center, right
+● valign="" - Vertical Align; top, middle, bottom
+● <colgroup> - is used to define attributes for particular columns of the table.
+Example –
+<colgroup>
+<col span="1" style="background-color:green">
+<col style="background-color:blue">
+</colgroup>
+The first column will be highlighted as green, whereas other columns will be highlighted as blue.
+Forms
+Most of the dynamic content like user inputs, submitting a page, filling a form happen inside this tag. It
+is a group of related inputs.
+<form>
+<input>
+<select><option></option></select>
+<textarea>
+</form>
+<form> tag attributes –
+● action="url" - destination url upon form submission
+● method="" - form method - get, post
+● enctype="" - type of encoding; for file upload it is "multipart/form-data"
+<input> tag attributes –
+● type="" - Mandatory input Field Type: text, password, checkbox, submit and so on.
+● name="" - Form Field Name (mandatory for form processing)
+● value="" - value (entered by user) or default value
+● size="" - field size
+● maxlength="" - Maximum acceptable length of Input Field data
+● checked - Mark selected field in checkbox (multi-select) or radio button (single-select)
+<select> </select> - Select options from drop-down list <select> tag Attributes:
+● name="" - Drop Down Combo-Box Name; mandatory for form processing
+● size="" - size of the drop-down list
+● multiple - Allow multiple selections
+<option></option> - individual items of the drop-down list <option> tag Attributes:
+● value="" - Option value selected or default value set
+● <textarea>lot of text like description </textarea> - Large area for text inputs
+<textarea> Tag Attributes:
+● name="" - Text area name for form processing
+● rows="" - Number of rows of text shown
+● cols="" - Number of columns (characters per row)
+● wrap="" - text wrapping
+iframe
+● <iframe src=””></iframe> - embed another document within the current document (page) in a
+frame.
+● Attribute “src” – location of the document to be embedded
+Links
+HTML links, also called as hyperlinks are defined by ‘a’ tag – <a></a> Attributes –
+● href = “” – the url to be visited when the link is clicked
+● target = “” – specifies where to open the link - _blank (new tab/window), _self (same
+window/tab), _parent (in the parent frame), framename – open in a particular frame.
+● title = “” – gives information about the element
+● id = “” – to create bookmarks in the page that can be used as value in href attribute.
+Examples –
+● <a href = "https://hackr.io/">Go to hackr.io</a>
+● <a href = "C:\Users\Public">Open a resource from the given location</a>
+● <a href = "#divprop">Reach a div element specified by the name</a>
+Styles
+For styling, there are many attributes being used with various tags. The attributes are –
+<style>
+text-align= “” – align text; left, right, center
+background-color = “” – background color of the element
+color=”” – for color of texts
+font-family = “” – for various fonts
+font-size = “” size of the font
+border = “” – border thickness and color for a table
+</style>
+These styling elements are put together in a CSS.
+Lists
+There are two types of lists – ordered and unordered. <ol></ol> - ordered list Attributes –
+● type=”” – the numbering of the list – A, a, I, 1, i
+● start = “” – starting value
+● <ul></ul> - unordered list
+Attributes –
+● type = “” – type of bullet – square, circle, disc
+● <li></li> - individual value in the list
+Attributes –
+● <value> = “” – value of list item
+● <type>=”” – type of the list item
+Images
+<img> - shows the image when page loads Attributes –
+● src =”sourceofimage” – source of the image; url or file location; mandatory
+● alt = “alternate text” – alternate text; mandatory
+● align = “left/right/center” – alignment with respect to surrounding items (text)
+● width = “” – in pixels or percentage
+● height = “” - in pixels or percentage
+● border = “” – thickness of the border in pixels
+● hspace = “” – space in pixels on the sides of the image
+● vspace = “” – space in pixels on top and bottom of the image
+HTML5 Tags
+● <aside> - content that is not part of any element, but has to be put alongside the main content
+● <figure> - any illustration like photos, diagrams, code listing and so on.
+● <figcaption> - caption for the <figure> element
+● <header> - A section's heading (similar to that in MS word), header can have other content like
+navigation links, forms etc...
+● <footer> - the content at the bottom of the page/section eg. copyright information, terms and
+conditions etc...
+● <main> - the tag is an indicator of where the main content of the page starts
+● <details> - box with expand/collapse functionality to allow for more text space
+● <summary> - summary of content of the particular element. Can be description, caption etc...
+● <mark> - highlight part of a text to give prominence
+● <nav> - section with navigation links to sections on a page or to other pages
+● <section> - a particular part (group) on the page, for example, about us or testimonials section
+of a web page
+● <time> - the mentioned time in machine-readable format. It can have date, time, time-zone
+offset, durations etc...
+● <datalist> - similar to autocomplete; defined preset options for input controls
+● <keygen> - key pair (public and private) generator for forms. Public key is sent to server when
+form is submitted, while the private key is stored in the local keystore
+● <output> - result of any calculations
+● <progress> - indicates task progress through a progress bar
+● <embed> - embed media from external source
+● <source> - source for audio or video
+● <audio> - for music content or sound
+</body>
+</html>
