@@ -1,0 +1,68 @@
+<!-- Two types of Class.
+one is .class{...}
+second is #id{...}
+
+.class = class can be colled multiple times.
+<div class="myclass">myclass is called here</div>
+<h3 class="myclass">myclass is called here</h3>
+
+#id = id is called only once,as unique.
+<div class="myid">myid is called here</div>
+
+class properties:
+width: px or %
+height: px or %
+background-color:
+float: -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .main{
+            width: 500px;
+            height: 500px;
+            background-color: aqua;
+        }
+        #parent-row-1{
+            width: 500px;
+            height: 250px;
+            background-color:red;
+        }
+        #parent-row-2{
+            width: 500px;
+            height: 250px;
+            background-color: yellowgreen;
+        }
+        .col1{
+            width: 250px;
+            height: 250px;
+            background-color: beige;
+            float: left;
+        }
+        .col2{
+            width: 250px;
+            height: 250px;
+            background-color: gold;
+            float: left;
+        }
+    </style>
+</head>
+<body>
+    <div class="main"><!--main-->
+        <div id="parent-row-1"><!--parent_1-->
+            <div class="col1">Home</div> <!--col1-->
+            <div class="col2">About</div><!--col2-->
+        </div>
+        <hr>
+        <div id="parent-row-2"><!--parent_2-->
+            <div class="col1">Gallery</div><!--col1-->
+            <div class="col2">Contact</div><!--col2-->
+        </div>
+    </div>
+</body>
+</html>
