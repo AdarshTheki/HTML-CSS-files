@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="Web Developer" content="Complete Web developer Basic to Adcanced Tags all ">
+    <title>HTML-5 Forms</title>
+</head>
+<body>
+    <form>
+    <fieldset>
+        <legend>Inquiry</legend>
+        Name: 
+        <input type="text" name="name" value="" placeholder="Enter your full name here..."/>
+        <br><br>
+        Address:
+        <textarea name="address" rows="2" cols="20"></textarea>
+        <br><br>
+        Gender:
+        <input type="radio" value="m" name="gender"/>Male
+        <input type="radio" value="f" name="gender"/>Female
+        <input type="radio" value="o" name="gender"/>Other
+        <br><br>
+        Country:
+        <select>
+            <option>choose your country</option>
+            <optgroup label="ASIA"></optgroup>
+            <option value="india">India</option>
+            <option value="russia">Russia</option>
+            <optgroup label="East"></optgroup>
+            <option value="usa">USA</option>
+            <option value="chine">Chine</option>
+            <optgroup label="North"></optgroup>
+            <option value="pakistan">Pakistan</option>
+            <option value="turkey">Turkey</option>
+        </select>
+        <br><br>
+        Hoobies:-
+        <input type="checkbox" name="hobbies[]">Dancing
+        <input type="checkbox" name="hobbies[]">Singing
+        <input type="checkbox" name="hobbies[]">Cricket
+        <input type="checkbox" name="hobbies[]">Football
+        <br><br>
+        Image:-
+        <input type="file" name="image"/>
+        <br><br>
+        <input type="submit" value="Edit"/>
+        <input type="submit" value="Submit Form"/>
+        <input type="reset" value="Reset"/>
+    </fieldset>    
+    </form>
+</body>
+</html>
