@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+        name="Web Developer"
+        content="Complete Web developer Basic to Adcanced Tags all "/>
+    <title>HTML-5 Forms</title>
+</head>
+    <body>
+    <form>
+    <fieldset>
+        <legend>Inquiry</legend>
+        Name*:
+        <input
+          type="text"
+          name="yname"
+          value=""
+          placeholder="Enter Your Name"
+          required
+          autofocus  />
+        <br /> <br />
+        Email:
+        <input
+          type="email"
+          name="email"
+          value=""
+          placeholder="Example:123@gmail.com"/>
+        <br /> <br />
+        Password*:
+        <input
+          type="password"
+          name="ypasswors"
+          value=""
+          placeholder="Enter Your Password"
+          required />
+        <br /><br />
+        Gender:
+        <input type="radio" name="gender" value="m" />Male
+        <input type="radio" name="gender" value="f" />Female
+        <input type="radio" name="gender" value="o" />Other
+        <br /> <br />
+        Address:
+        <textarea name="address" rows="3" cols="25">Enter Your Perament Address</textarea>
+        <br /><br />
+        Hobbies:
+        <input type="checkbox" name="hobbies[]" checked />cricket
+        <input type="checkbox" name="hobbies[]" checked />bootball
+        <input type="checkbox" name="hobbies[]" />kubuddy
+        <input type="checkbox" name="hobbies[]" />khoo-ko
+        <br />  <br />
+        Country:
+        <select name="country" id="1">
+            <option label="choose your country"></option>
+            <optgroup label="ASIA"></optgroup>
+            <option value="india">India</option>
+            <option value="russia">Russia</option>
+            <optgroup label="East"></optgroup>
+            <option value="usa">USA</option>
+            <option value="chine">Chine</option>
+            <optgroup label="North"></optgroup>
+            <option value="pakistan">Pakistan</option>
+            <option value="turkey">Turkey</option>
+        </select>
+        <br /> <br />
+        Upload Document:
+        <input type="file" name="imag" />
+        <br /> <br />
+        Age:
+        <input type="number" name="number" min="10" max="45" />
+        <br /><br />
+        Date:
+        <input type="date" name="date" />
+        <br /><br />
+        Color:
+        <input type="color" name="cols" value="#D83D2C" />
+        <br /><br />
+        <input type="submit" name="Submit form" />&nbsp;&nbsp;&nbsp;
+        <input type="reset" name="reset form" />
+      </fieldset>
+
+      <fieldset>
+        <legend>Calendar</legend>
+        Date:
+        <input type="date" name="date" /><br /><br />
+        Date Time:
+        <input type="datetime-local" name="datetime" /><br /><br />
+        Time:
+        <input type="time" name="time" /><br /><br />
+        Month:
+        <input type="month" name="month" /><br /><br />
+        weeks:
+        <input type="week" name="weeks" /><br /><br />
+        Range:
+        <input type="range" name="range" /><br /><br />
+        Secret code:
+        <input type="hidden" name="secret" /><br /><br />
+    
+      </fieldset>
+    </form>
+  </body>
+</html>
