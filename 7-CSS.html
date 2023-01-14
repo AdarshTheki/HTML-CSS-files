@@ -1,0 +1,58 @@
+<!-- 
+Two types of Class.
+.class_name{...}  class can be called multiple times.
+<div class="class_name">myclass is called here</div>
+
+#id_name{...}  id can be called only once Time and Unique.
+<div class="id_name">myid is called here</div>
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Formate Properties</title>
+    <style>
+        .main{
+            width: 500px;
+            height: 500px;
+            background-color: aqua;
+        }
+        #parent-row-1,
+        #parent-row-2{
+            width: 500px;
+            height: 250px;
+        }
+
+        #parent-row-1{ background-color: blue; }
+        #parent-row-2{ background-color: red;  }
+
+        .col1,.col2,.col3,.col4{
+            width: 250px;
+            height: 250px;
+            float: left;
+            text-align: center;
+            font-size: 30px;
+        }
+        .col1{ background-color: rgb(199, 63, 86);}
+        .col2{ background-color: rgb(74, 110, 228);}
+        .col3{ background-color: rgb(49, 211, 170);}
+        .col4{ background-color: rgb(74, 25, 119);}
+
+    </style>
+</head>
+<body>
+    <div class="main"><!--main-->
+        <div id="parent-row-1"><!--parent_1-->
+            <div class="col1">Home-1</div> <!--col1-->
+            <div class="col2">About-1</div><!--col2-->
+        </div>
+        <div id="parent-row-2"><!--parent_2-->
+            <div class="col3">Gallery-2</div><!--col1-->
+            <div class="col4">Contact-2</div><!--col2-->
+        </div>
+    </div>
+</body>
+</html>
