@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CSS_3-Animation = @keyframe</title>
+  <style>
+    .box-container{
+      width: 600px;
+      height: 600px;
+      border: 2px solid black;
+      margin: auto;
+      position: relative;
+      
+    }
+    .box{
+      width: 200px;
+      height: 200px;
+      background-color: red;
+      position: absolute;
+      top: 0px;
+      left: 0px;
+      /* animation-delay: 1s; */
+      /*  
+      animation-name: box;
+      animation-duration: 5s;
+      animation-iteration-count: infinite; (N0.)
+      animation-fill-mode: forwards;  (color change-forward / backword/ both)
+      animation-direction: reverse/ alternetive ; (animation reverse and alternative)
+      shorthand properties  */
+      animation: box 5s infinite;
+      animation-direction: alternate-reverse;
+    }
+    @keyframes box {
+      0%{
+        top: 0px;
+        left: 0px;
+        background-color: red;
+      }
+      25%{
+        top: 0px;
+        left: 400px;
+        background-color: yellow;
+      }
+      50%{
+        top: 400px;
+        left: 400px;
+        background-color: blue;
+      }
+      75%{
+        top: 400px;
+        left: 0px;
+        background-color: green;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="box-container">
+    <div class="box"></div>
+  </div>
+</body>
+</html>

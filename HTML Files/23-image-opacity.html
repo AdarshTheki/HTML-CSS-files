@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box{
+            width: 450px;
+            height: 300px;
+            border: 4px green solid;
+            margin: auto;
+            margin-top: 100px;
+            position: relative;
+        }
+        .add{
+            width: 100%;
+            font-size: 30px;
+            background-color: rgba(0,0,0,0.6);
+            color: white;
+            position: absolute;
+            left: 0px;
+            bottom: -30px;
+            opacity: 0;
+            transition: 1s;
+        }
+        .box:hover .add{
+            bottom: 0px;
+            opacity: 1;
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <img src="/image/2.jpg" width="100%" height="100%"/>
+        <input type="button" name="" value="Add to Cart" class="add"/>
+    </div>
+</body>
+</html>
