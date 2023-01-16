@@ -6,6 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Transform: Translate, Skew, Rotate, Scale, </title>
     <style>
+        /* transform: only one time used
+        transform: translate(100px);
+        transform: scale(0.5);
+        transform: rotate(45deg);
+        transform: skew(30deg);
+        transform: matrix(1.5,0,0,1.5,50,5);
+        
+        */
         .translate{
             width: 200px;
             height: 140px;
@@ -13,7 +21,6 @@
             margin: auto;
             margin-top: 100px;
             background-color: brown;
-        /* translate(x,y); only one time used */
             transform: translate(50px,50px);    
         }
         .skew{
@@ -22,9 +29,6 @@
             border: 2px solid black;
             margin: auto;
             margin-top: 100px;
-        /* skew( , ): deg, red, turn 
-            skewX():
-            skewY():    */
             transform: skew(20deg);
         }
         .rotate{
@@ -33,10 +37,6 @@
             border: 2px solid black;
             margin: auto;
             margin-top: 100px;
-            /* rotate();  both*/
-            /* rotateX();  */
-            /* rotateY();  */
-            /* rotateZ();  */
             transform: rotateZ(60deg);
         }
         .scale{
@@ -45,9 +45,6 @@
             border: 2px solid black;
             margin: auto;
             margin-top: 100px;
-            /* scale(1.5);  multiply 1.5 box */
-            /* scaleX(1.5);  */
-            /* scaleY(1.5);  */
             transform: scale(2);
         }
     </style>

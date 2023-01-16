@@ -1,8 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>css3-Animation = @keyframe</title>
+  <title>css3-Animation @keyframe</title>
   <style>
+    /* animation shorthand property
+    animation: <aniamtion-name> <duration> <timing-funtion> <dealy> <interaton-count> <direction>;
+    animation: name 2s ease-in 2s 3 normal;
+
+    animation-name: name;
+    animation-duration: 2s;
+    animation-timing-function: linear/ ease-in / ease-out / ease-in-out;
+    animation-delay: 2s;
+    animation-iteration-count: 3 / infinite;
+    animation-direction: normal / reverse / alternate / alternate-reverse;
+    animation-fill-mode: forwards / backwards / both;
+    */
     .box-container{
       width: 600px;
       height: 600px;
@@ -18,14 +30,14 @@
       position: absolute;
       top: 0px;
       left: 0px;
-      /* animation-delay: 1s; */
       /*  
       animation-name: box;
+      animation-delay: 1s; 
       animation-duration: 5s;
-      animation-iteration-count: infinite; (N0.)
-      animation-fill-mode: forwards;  (color change-forward / backword/ both)
-      animation-direction: reverse/ alternetive ; (animation reverse and alternative)
-      shorthand properties  */
+      animation-iteration-count: infinite; 
+      animation-fill-mode: forwards;  
+      animation-direction: reverse; 
+      */
       animation: box 5s infinite;
       animation-direction: alternate-reverse;
     }

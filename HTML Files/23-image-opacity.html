@@ -4,26 +4,28 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>image add to cart opacity</title>
     <style>
         .box{
             width: 450px;
             height: 300px;
-            border: 4px green solid;
+            border: 4px solid rgba(0, 0, 0, 0.74);
             margin: auto;
             margin-top: 100px;
             position: relative;
+            border-radius: 6px;
         }
         .add{
             width: 100%;
             font-size: 30px;
-            background-color: rgba(0,0,0,0.6);
+            background-color: rgba(0, 0, 0, 0.486);
             color: white;
             position: absolute;
-            left: 0px;
+            /* left: 10px; */
             bottom: -30px;
             opacity: 0;
             transition: 1s;
+            border-radius: 6px;
         }
         .box:hover .add{
             bottom: 0px;
@@ -33,8 +35,8 @@
 </head>
 <body>
     <div class="box">
-        <img src="/image/2.jpg" width="100%" height="100%"/>
         <input type="button" name="" value="Add to Cart" class="add"/>
+        <img src="/image/2.jpg" width="100%" height="100%"/>
     </div>
 </body>
 </html>
