@@ -1,34 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Animation-Time-Functon</title>
+  <title>Animation-Timing-Functon</title>
   <style>
     .main{
-      width: 400px;
-      height: 200px;
-      margin: 60px auto;
+      width: 700px;
+      height: 150px;
       border: 2px solid black;
+      margin: 50px auto;
       position: relative;
     }
     .box{
-      width: 100px;
-      height: 70px;
+      width: 200px;
+      height: 100px;
       margin-top: 20px;
-      background-color: red;
+      background: red;
       position: absolute;
       animation: box 4s;
+      animation-timing-function: ease-in-out;
     }
-    @keyframes.box{
-      /* time: 08:00:00 */
+    /* time: 08:00:00 */
+    @keyframes box{
+      from{
+        left: 0px;
+      }
+      to{
+        left: 500px;
+      }
     }  
   </style>
 </head>
 <body>
-  <!-- Animation-Time-Functon:
-  linear, ease, ease-in, ease-out, ease-in-out -->
+  <!-- animation-timing-functon: linear / ease / ease-in / ease-out / ease-in-out -->
   <div class="main">
     <div class="box"></div>
   </div>
