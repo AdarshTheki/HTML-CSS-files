@@ -12,9 +12,7 @@
 4.  Create a issue report templete so. that people can report issue if your project have any mistakes so, they can tell you.
 
 5.  Write one normal simple feuture roademap that in feature i am working on there features.
+
 </h3>
 
-<h4 align="center">This five things you do them to you and contribution both get help through GitHub README.md file.
-</h4>
-
-....
+<h4 align="center">This five things you do them to you and contribution both get help through GitHub README.md file.</h4>
