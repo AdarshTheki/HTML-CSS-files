@@ -1,18 +1,63 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>Document</title>
+  <title>gird-column-start, grid-column-end, grid-row-start, grid-row-end</title>
+  <style>
+  .container {
+    display: grid;                          /* establishes a grid context for children */
+    grid-template-columns: repeat(3, 1fr);  /* sets the number and size of columns */
+    grid-template-rows: repeat(2, 100px);   /* sets the number and size of rows */
+    grid-gap: 10px;                         /* sets the gap between grid cells */
+    grid-template-areas: "header header header" 
+    "menu main main" "footer footer footer"; /* assigns names to areas for layout */
+    grid-auto-flow: row;                    /* controls how and where auto-placed items are inserted */
+    grid-auto-columns: 50px;                /* sets the size of auto-generated columns */
+    grid-auto-rows: 100px;                  /* sets the size of auto-generated rows */
+    grid-column-start: 2;                   /* sets the starting column position of an item */
+    grid-column-end: 4;                     /* sets the ending column position of an item */
+    grid-row-start: 1;                      /* sets the starting row position of an item */
+    grid-row-end: 3;                        /* sets the ending row position of an item */
+    grid-column: 2 / 4;                     /* shorthand for grid-column-start and grid-column-end */
+    grid-row: 1 / 3;                        /* shorthand for grid-row-start and grid-row-end */
+    justify-items: center;                  /* aligns items along the row axis */
+    align-items: center;                    /* aligns items along the column axis */
+    justify-content: center;                /* aligns the grid along the row axis */
+    align-content: center;                  /* aligns the grid along the column axis */
+  }
+
+  .main{
+      width: 900px;
+      height: 600px;
+      border: 2px solid black;
+      margin: auto;
+      display: grid;
+      padding: 10px;
+      grid-template-columns: auto auto auto auto;
+      grid-gap: 40px 10px;  /* shorthand property*/
+    }
+    .main div{
+      padding: 50px;
+      font-size: 50px;
+      background-color: aqua;
+      border: 1px solid black;
+    }
+    #div1{
+      grid-column-start: 1;
+      grid-column-end: 3;
+      /* grid-row-start: 1;
+      grid-row-end: 3; */
+    }
+  </style>
 </head>
 <body>
   <div class="main">
-    <div>1</div>
+    <div id="div1">1</div>
     <div>2</div>
     <div>3</div>
     <div>4</div>
     <div>5</div>
     <div>6</div>
     <div>7</div>
-    <div>8</div>
   </div>
 </body>
 </html>
