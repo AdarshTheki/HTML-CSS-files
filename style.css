@@ -1,8 +1,45 @@
-/* My first CSS file */
+/* My CSS Property files */
 
-.main{
-  width: 100px;
-  height: 100px;
-  border: 2px solid black;
-  background-color: red;
+.container{
+  /* box model */
+  width: 200px;  height: 100px;  padding: 10px;  margin: 10px;  border: 5px;
+  
+  /* border  */
+  border-color: black;  border-width: 10px;  border-style: dotted; border-radius: 10px;
+  
+  /* display */
+  display: flex;  visibility: visible;  overflow:hidden;
+  
+  /* positioning */
+  position:absolute;  top: 10px;  bottom: 10px;  left:10px;  right: 10px;  z-index: 10px;
+  
+  /* text */
+  font-size: 10px; font-family:Arial;  color: red;  text-align: center;  text-transform:lowercase; text-decoration:none;
+  
+  /* background */
+  background-color:blue; background-image:url();  background-repeat:repeat-x; background-position:bottom; background-attachment:fixed; background-size: auto; background-clip: content-box;
+  
+  /* flexbox and grid layout "display: flex / grid"  */
+  flex-wrap:nowrap; flex-direction:row; justify-content:center; align-items:center;
+
+  grid-template:max-content; grid-template-columns:max-content; grid-template-areas:"header header header" "nav main main"; grid-gap: 10px; justify-content: center; align-content: center;
+  
+  /* Transition and animation */
+  transition: ;
+  animation: ;
+  @keyframes example {
+    from{ background-color: red;}
+    to {background-color:yelo}
+  }
+  /* responsive design */
+  media queries
+  @media
+  min-width: ;
+  max-width: ;
+  @viewport
+  /* Misc */
+  cursor
+  pointer-event
+  overflow-x
+  overflow-y
 }
