@@ -30,7 +30,7 @@
   @keyframes example {
     from{ background-color: red;}
     to {background-color:yelo}
-  }
+  } 
   /* responsive design */
   media queries
   @media

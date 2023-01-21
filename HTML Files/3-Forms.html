@@ -13,29 +13,17 @@
     <fieldset>
         <legend>Inquiry</legend>
         Name*:
-        <input
-          type="text"
-          name="yname"
-          value=""
-          placeholder="Enter Your Name"
-          required
-          autofocus  />
+        <input type="text" name="" value="" placeholder="Enter Your Name" required autofocus/>
         <br /> <br />
-        Email:
-        <input
-          type="email"
-          name="email"
-          value=""
-          placeholder="Example:123@gmail.com"/>
+
+        <label for="email">Email:</label>
+        <input id="email" type="email" name="email" value="" placeholder="Example:123@gmail.com"/>
         <br /> <br />
-        Password*:
-        <input
-          type="password"
-          name="ypasswors"
-          value=""
-          placeholder="Enter Your Password"
-          required />
+
+        <label for="pass">Password*:</label>
+        <input id="pass" type="password" name="" value="" placeholder="Enter Your Password" required />
         <br /><br />
+
         Gender:
         <input type="radio" name="gender" value="m" />Male
         <input type="radio" name="gender" value="f" />Female
@@ -52,7 +40,7 @@
         <br />  <br />
         Country:
         <select name="country" id="1">
-            <option label="choose your country"></option>
+            <option label="choose Country"></option>
             <optgroup label="ASIA"></optgroup>
             <option value="india">India</option>
             <option value="russia">Russia</option>
@@ -64,17 +52,17 @@
             <option value="turkey">Turkey</option>
         </select>
         <br /> <br />
-        Upload Document:
+        Upload:
         <input type="file" name="imag" />
         <br /> <br />
         Age:
-        <input type="number" name="number" min="10" max="45" />
+        <input type="number" name="number" min="10" max="45" size="3" />
         <br /><br />
         Date:
         <input type="date" name="date" />
         <br /><br />
         Color:
-        <input type="color" name="cols" value="#D83D2C" />
+        <input type="color" name="" value="" />
         <br /><br />
         <input type="submit" name="Submit form" />&nbsp;&nbsp;&nbsp;
         <input type="reset" name="reset form" />
@@ -82,8 +70,8 @@
 
       <fieldset>
         <legend>Calendar</legend>
-        Date:
-        <input type="date" name="date" /><br /><br />
+        <label for="date">Date:</label>
+        <input id="date" type="date" name="date" /><br /><br />
         Date Time:
         <input type="datetime-local" name="datetime" /><br /><br />
         Time:
