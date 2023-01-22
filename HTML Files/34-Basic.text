@@ -1,0 +1,71 @@
+Javascript:
+
+What is Javascript?
+-   Is an interpreted, clint-side, event-base, object-oriented scripting language.
+-   It is invented in 1995 at Netscape Corporation (liveScript)
+-   Javascript programs run by an interpriter build into the user web browser
+-   It is a case-sensitive language.
+-   Javascript in not java.
+
+What can Javascript do?
+-   It can dynamtically modify an HTML page.
+-   It can validate user input.
+-   It can be used to create cookies. 
+-   It is a full-featured programming language.
+-   Javascript user iteraction does not requre any communication at the user.
+
+What make JavaScript unique?
+-   Support by all major browsers and enable by deafult.
+-   Complex things are done simply.
+-   Full integration with HTML/CSS.
+
+JavaScript framerworks and libraries?
+-   Angular
+-   React
+-   jQuery
+-   Vue.js
+-   Node.js
+etc....
+
+Variables:-
+var = most widely used(reassigned) avoid this.
+let = can be decleard block of code{} reassigned otherwise can't  be ressinged 
+const = cannot be reassigned
+
+Seven-type of Primitive Datatype:- (nn bb ss u)
+number,     let id = 20
+null,       let id = null
+boolean,    let id = true
+bigint,     let id = BigInt("549") + BigInt("4")    // 553n
+symbol,     let id = Symbol("Adarsh verma")         // Symbol(Adarsh verma)
+string,     let id = "two"
+any,        let id = undefined
+
+This is Object in JavaScript. (not Dictionary)
+const item = {
+    'name':'Adarsh',
+    'adarsh':false,
+    'lovish':67,
+    'rohan':undefined }
+
+Outputting the Data:  (Use console)
+alert()             = a small pop up window (alert box)
+prompt()            = Prompt for user input
+confirm()           = yes/no and return true/false based on user click   
+console.log()       = Mainly used for debugging
+document.write()    = Write output
+
+Funtion:
+-   A group of tasks can be performed in a single function
+    function add(a, b){
+        // code
+    }
+    const add = (a, b) => {
+        // code
+    }
+
+DOM Function:
+document.getElementById()
+document.getElementByClassName()
+innerHTML()
+

@@ -1,24 +1,7 @@
-/* tables CSS */
-table,
-tr,
-th,
-td {
-    border: 2px solid black;
-    border-collapse: collapse;
-    padding: 10px;
-    border-spacing: 5px;
-    text-align: center;
-}
+# Production
+https://cdn.jsdelivr.net/npm/ress@4.0.0/dist/ress.min.css
 
-th,
-.a {
-    background-color: rgb(189, 105, 223);
-    font-weight: 700;
-}
+# Development
+https://cdn.jsdelivr.net/gh/filipelinhares/ress@latest/dist/ress.min.css
 
-td {
-    background-color: rgb(23, 167, 192);
-}
-/* .a{
-    background-color: tomato;
-} */
+https://unpkg.com/ress/dist/ress.min.css

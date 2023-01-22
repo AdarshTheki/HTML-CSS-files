@@ -8,9 +8,9 @@
     <style>
         /* transform: only one time used
         transform: translate(100px);
-        transform: scale(0.5);
-        transform: rotate(45deg);
         transform: skew(30deg);
+        transform: rotate(45deg);
+        transform: scale(0.5);
         transform: matrix(1.5,0,0,1.5,50,5);
         
         */
@@ -20,13 +20,14 @@
             border: 2px solid black;
             margin: auto;
             margin-top: 100px;
-            background-color: brown;
+            text-align: center;
             transform: translate(50px,50px);    
         }
         .skew{
             width: 200px;
             height: 140px;
             border: 2px solid black;
+            text-align: center;
             margin: auto;
             margin-top: 100px;
             transform: skew(20deg);
@@ -35,19 +36,30 @@
             width: 200px;
             height: 140px;
             border: 2px solid black;
+            text-align: center;
             margin: auto;
             margin-top: 100px;
-            transform: rotateZ(60deg);
+            transform: rotateZ(30deg);
         }
         .scale{
             width: 200px;
             height: 140px;
             border: 2px solid black;
+            text-align: center;
             margin: auto;
             margin-top: 100px;
             transform: scale(2);
         }
-    </style>
+        .matrix{
+            width: 200px;
+            height: 140px;
+            border: 2px solid black;
+            text-align: center;
+            margin: auto;
+            margin-top: 100px;
+            transform: matrix(1.5,0,0,1.5,50,5);
+        }
+        </style>
 </head>
 <body>
     <div class="translate"><h1>translate</h1></div>
@@ -57,5 +69,7 @@
     <div class="rotate"><h1>rotate verma</h1></div>
     <br>
     <div class="scale"><h1>scale verma</h1></div>
+    <br>
+    <div class="matrix"><h1>Matrix verma</h1></div>
 </body>
 </html>

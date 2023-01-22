@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <h1 id="res">
+  </h1>
+  <button onclick="tofullData()">Date</button>
+  <button onclick="toyear()">FullYear</button>
+  <button onclick="tomonth()">Month</button>
+  <button onclick="toDate()">Date</button>
+  <button onclick="tohour()">Hours</button>
+  <button onclick="tomin()">Mintus</button>
+  <button onclick="totime()">Time</button>
+</body>
+<script>
+  var date = new Date();
+  function tofullData() {
+    document.getElementById('res').innerText = date;
+  }
+  function toyear() {
+    document.getElementById('res').innerText = date.getFullYear();
+  }
+  function tomonth() {
+    document.getElementById('res').innerText = date.getMonth();
+  }
+  function toDate() {
+    document.getElementById('res').innerText = date.getDate();
+  }
+  function tohour() {
+    document.getElementById('res').innerText = date.getHours();
+  }
+  function tomin() {
+    document.getElementById('res').innerText = date.getMinutes();
+  }
+  function totime() {
+    document.getElementById('res').innerText = date.getTime();
+  }
+</script>
+</html>
