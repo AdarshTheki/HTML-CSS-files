@@ -15,15 +15,15 @@ I am using the following resources to learn CSS:
 -   <a href="https://www.freecodecamp.org/learn/css"> FreeCodeCamp </a>
 
 #### Progress
--   Basic CSS Syntax
--   CSS Selectors
--   CSS Box Model
--   CSS Flexbox
--   CSS Grid
--   CSS Transitions and Animations
+- :heavy_check_mark: Basic CSS Syntax
+- :heavy_check_mark: CSS Selectors
+- :heavy_check_mark: CSS Box Model
+- :heavy_check_mark: CSS Flexbox
+- :heavy_check_mark: CSS Grid
+- :heavy_check_mark: CSS Transitions and Animations
 
 #### Completed Projects
--   **My Portfolio Website -** A simple portfolio website that showcases my projects and skills, built using HTML, CSS, and JavaScript.
+-   **[My Portfolio Website](https://github.com/username/personal-website)** - A simple portfolio website that showcases my projects and skills, built using HTML, CSS, and JavaScript.
 
 #### Conclusion
 CSS is a powerful tool for web development, and I am excited to continue learning and experimenting with it. Thank you for following along on my journey!
