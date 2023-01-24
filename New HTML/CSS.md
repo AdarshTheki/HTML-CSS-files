@@ -10,9 +10,9 @@ CSS is an essential part of web development, and without it, your website would 
 #### Resources
 I am using the following resources to learn CSS:
 
--   <a href="https://www.w3schools.com/css/">W3Schools </a>
--   <a href="https://css-tricks.com/"> CSS Tricks </a>
--   <a href="https://www.freecodecamp.org/learn/css"> FreeCodeCamp </a>
+-   [W3Schools](https://www.w3schools.com/css/)
+-   [CSS Tricks](https://css-tricks.com/)
+-   [FreeCodeCamp](https://www.freecodecamp.org/learn/css)
 
 #### Progress
 - :heavy_check_mark: Basic CSS Syntax
