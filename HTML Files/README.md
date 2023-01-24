@@ -1,29 +1,31 @@
-## CSS Learning Process
-Welcome to my CSS learning journey!
+# HTML Learning Process:
 
-#### What is CSS?
-CSS stands for Cascading Style Sheets, and it is a language used to describe the presentation of a web page written in HTML or XML. It allows you to control the colors, fonts, spacing, and overall design of a website.
+This repository is dedicated to tracking my progress and sharing resources as I learn HTML (Hypertext Markup Language), the backbone of any website.
 
-#### Why learn CSS?
-CSS is an essential part of web development, and without it, your website would only be a plain HTML page. By learning CSS, you can create visually appealing and user-friendly websites that stand out from the crowd.
+## Resources
 
-#### Resources
-I am using the following resources to learn CSS:
+-   [W3Schools HTML reference](https://www.w3schools.com/html/) - A comprehensive reference for all HTML tags and elements.
+-   [MDN Web Docs](https://developer.mozilla.org/en-US/docs/Web/HTML) - Detailed information on HTML, including tutorials and guides
+-   [FreeCodeCamp](https://www.freecodecamp.org/learn/html/)
+-   [HTML Dog](https://htmldog.com/guides/html/) - A beginner's guide to HTML with examples and exercises
 
--   [W3Schools](https://www.w3schools.com/css/)
--   [CSS Tricks](https://css-tricks.com/)
--   [FreeCodeCamp](https://www.freecodecamp.org/learn/css)
+## Progress
+-   :ballot_box_with_check: Basic HTML Syntax
+-   :ballot_box_with_check: HTML Elements and Attributes
+-   :ballot_box_with_check: HTML Headings and Paragraphs
+-   :ballot_box_with_check: HTML Lists
+-   :ballot_box_with_check: HTML Images and Links
+-   :ballot_box_with_check: HTML Forms and Inputs
 
-#### Progress
-- :heavy_check_mark: Basic CSS Syntax
-- :heavy_check_mark: CSS Selectors
-- :heavy_check_mark: CSS Box Model
-- :heavy_check_mark: CSS Flexbox
-- :heavy_check_mark: CSS Grid
-- :heavy_check_mark: CSS Transitions and Animations
+## Tips and Tricks
 
-#### Completed Projects
--   **[My Portfolio Website](https://github.com/username/personal-website)** - A simple portfolio website that showcases my projects and skills, built using HTML, CSS, and JavaScript.
+-   **Practice:** The more you work with different tags and elements, the more comfortable you'll become with the language.
+-   **Keep a reference handy:** There are many resources available online that can help explain different tags and elements.
+-   **Read and study other people's code:** This can help you understand how different tags and elements are used in real-world scenarios and to get inspiration for your own projects.
+-   **Debugging:** Even the most experienced developers make mistakes, so it's essential to know how to troubleshoot and fix errors in your code.
 
-#### Conclusion
-CSS is a powerful tool for web development, and I am excited to continue learning and experimenting with it. Thank you for following along on my journey!
+## Disclaimer
+Please note that this repository is for educational purposes and the examples and projects provided may not be suitable for production use.
+
+## Conclusion
+Learning HTML may seem daunting at first, but with practice, patience and the right resources, it's an achievable task. I hope that this repository will help you on your own journey to learning HTML and web development in general. Remember to take it one step at a time, practice, keep a reference handy, study other people's code, and don't be afraid to debug. Happy coding!
