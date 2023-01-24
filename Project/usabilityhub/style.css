@@ -51,4 +51,8 @@ a{
   max-width: 1180px;
   margin-inline:auto;
   padding-inline:var(--padding-inline-section);
+  background-image:url(./assets/asset\ 32.png);
+  background-repeat: repeat-x;
+  background-size: 50%;
+  background-color: #e74694;
 }
