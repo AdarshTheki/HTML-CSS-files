@@ -10,12 +10,12 @@ This repository is dedicated to tracking my progress and sharing resources as I 
 -   [HTML Dog](https://htmldog.com/guides/html/) - A beginner's guide to HTML with examples and exercises
 
 ## Progress
--   [x] Basic HTML Syntax
--   [x] HTML Elements and Attributes
--   [x] HTML Headings and Paragraphs
--   [x] HTML Lists
--   [x] HTML Images and Links
--   [x] HTML Forms and Inputs
+-   :ballot_box_with_check: Basic HTML Syntax
+-   :ballot_box_with_check: HTML Elements and Attributes
+-   :ballot_box_with_check: HTML Headings and Paragraphs
+-   :ballot_box_with_check: HTML Lists
+-   :ballot_box_with_check: HTML Images and Links
+-   :ballot_box_with_check: HTML Forms and Inputs
 
 ## Tips and Tricks
 
