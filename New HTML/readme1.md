@@ -4,4 +4,4 @@ This repository is dedicated to tracking my progress and sharing resources as I 
 
 ### Resources
 
--   <a href="https://www.w3schools.com/"  >W3Schools HTML reference</a>- A comprehensive reference for all HTML tags and elements
+-   <a href="https://www.w3schools.com/"> W3Schools HTML reference </a>- A comprehensive reference for all HTML tags and elements
