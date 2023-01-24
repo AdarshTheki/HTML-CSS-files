@@ -17,6 +17,11 @@ This repository is dedicated to tracking my progress and sharing resources as I 
 -   :ballot_box_with_check: HTML Images and Links
 -   :ballot_box_with_check: HTML Forms and Inputs
 
+#### Completed Projects
+-   **[My Portfolio Website](https://github.com/username/personal-website)** - A simple portfolio website that showcases my projects and skills, built using HTML, CSS, and JavaScript.
+-   **[Small Bussiness Landing Page](https://github.com/username/small-business)** - A landing page for a small business using HTML, CSS, and JavaScript.
+-   **[Blog](https://github.com/username/blog)** - A simple blog using HTML, CSS, and JavaScript.
+
 ## Tips and Tricks
 
 -   **Practice:** The more you work with different tags and elements, the more comfortable you'll become with the language.
