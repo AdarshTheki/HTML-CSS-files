@@ -4,15 +4,18 @@ This repository is dedicated to tracking my progress and sharing resources as I 
 
 ## Resources
 
--   <a href="https://www.w3schools.com/"> W3Schools HTML reference </a>- A comprehensive reference for all HTML tags and elements.
--   <a href="https://htmldog.com/guides/html/"> HTML Dog </a> - A beginner's guide to HTML with examples and exercises
--   <a href="https://developer.mozilla.org/en-US/docs/Web/HTML"> Mozilla Developer Network (MDN) Web Docs </a> - Detailed information on HTML, including tutorials and guides.
+-   [W3Schools HTML reference](https://www.w3schools.com/html/) - A comprehensive reference for all HTML tags and elements.
+-   [MDN Web Docs](https://developer.mozilla.org/en-US/docs/Web/HTML) - Detailed information on HTML, including tutorials and guides
+-   [FreeCodeCamp](https://www.freecodecamp.org/learn/html/)
+-   [HTML Dog](https://htmldog.com/guides/html/) - A beginner's guide to HTML with examples and exercises
 
-## Projects
-
--   <a href="https://github.com/username/portfolio"> Personal Portfolio </a> - A simple webpage showcasing my skills and experience
--   <a href="https://github.com/username/small-business"> Small Business Landing Page </a>- A landing page for a small business using HTML and CSS
--   <a href="https://github.com/username/blog"> Blog </a> - A simple blog using HTML, CSS, and JavaScript
+## Progress
+-   [x] Basic HTML Syntax
+-   [x] HTML Elements and Attributes
+-   [x] HTML Headings and Paragraphs
+-   [x] HTML Lists
+-   [x] HTML Images and Links
+-   [x] HTML Forms and Inputs
 
 ## Tips and Tricks
 
