@@ -7,14 +7,8 @@
   <title>Document</title>
   <style>
   .ami {
-    /* -webkit-box-shadow: -45px 50px 7px -5px #2A9CB0;  */
-    /* ('inset' used inside the box) */
-    /*  box-shadow: left-right | top-bottom | Spread | Blur | Opacity | color;   */
-    box-shadow: -45px 50px 7px -5px #2A9CB0;
     
-    /*  text-shadow: left-right | top-bottom | Blur | color(Opacity in color); */
-    text-shadow: 17px 36px 2px rgba(206,89,55,0.91);
-    
+    /* text-formate */
     letter-spacing: 2.2px;
     word-spacing: 1.8px;
     color: #000000;
@@ -26,31 +20,36 @@
     font-style: normal;
     font-variant: normal;
 
-    border: 8px dashed #1C6EA4;
-    border-radius: 40px;
+    /* ('inset' used inside the box) */
+    /*  box-shadow: left-right | top-bottom | Spread | Blur | Opacity | color;   */
+    /*  text-shadow: left-right | top-bottom | Blur | color(Opacity in color); */
+    box-shadow: -45px 50px 7px -5px #2A9CB0;
+    text-shadow: 17px 36px 2px rgba(206,89,55,0.91);
+    
+    
+    /* borderbox Shorthand properties */
+    margin: 10px 20px 30px 40px; /* top right bottom left */
+    padding: 5px 10px 15px 20px; /* top right bottom left */
+    border: 1px solid black;
+    border-radius: 10px; /* create rounded border */
     outline: 7px dashed #1C6EA4;
     outline-offset: 5px;
-
+    
     background: #5F99F5 url("/images/smiley.png") no-repeat scroll 50% 50%;
 
-  }
-  .main{
-    width: 100px;
-    height: 100px;
-    font-size: 2rem;
-    color: #FFFFFF;
-    background: #333333;
-    text-shadow: #FFF 0px 0px 5px,
-                 #FFF 0px 0px 10px,
-                 #FFF 0px 0px 15px,
-                 #FF2D95 0px 0px 20px,
-                 #FF2D95 0px 0px 30px,
-                 #FF2D95 0px 0px 40px,
-                 #FF2D95 0px 0px 50px,
-                 #FF2D95 0px 0px 75px;
-    color: #FFFFFF;
-    background: #333333;
+    /*style links:  */
+    color: blue;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+    background-color: yellow;
+    padding: 10px;
+    margin: 5px;
+    border: 1px solid black;
+    cursor: pointer;
+
     
+
   }
   </style>
 </head>
