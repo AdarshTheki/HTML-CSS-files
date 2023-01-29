@@ -7,25 +7,24 @@ What is Javascript?
 -   It is a case-sensitive language.
 -   Javascript in not java.
 
-What can Javascript do?
+What can Javascript do ?
 -   It can dynamtically modify an HTML page.
 -   It can validate user input.
 -   It can be used to create cookies. 
 -   It is a full-featured programming language.
 -   Javascript user iteraction does not requre any communication at the user.
 
-What make JavaScript unique?
+What make JavaScript Unique ?
 -   Support by all major browsers and enable by deafult.
 -   Complex things are done simply.
 -   Full integration with HTML/CSS.
 
-JavaScript framerworks and libraries?
+JavaScript FrameWorks and Libraries ?
 -   Angular
 -   React
 -   jQuery
 -   Vue.js
--   Node.js
-etc....
+-   Node.js  etc....
 
 Variables:-
 var = most widely used(reassigned) avoid this.
@@ -33,13 +32,13 @@ let = can be decleard block of code{} reassigned otherwise can't  be ressinged
 const = cannot be reassigned
 
 Seven-type of Primitive Datatype:- (nn bb ss u)
-number,     let id = 20
-null,       let id = null
-boolean,    let id = true
-bigint,     let id = BigInt("549") + BigInt("4")    // 553n
-symbol,     let id = Symbol("Adarsh verma")         // Symbol(Adarsh verma)
-string,     let id = "two"
-any,        let id = undefined
+let id = 20                           // number
+let id = null                         // null
+let id = true                         // boolean
+let id = BigInt("549") + BigInt("4")  // bigint,  // 553n
+let id = Symbol("Adarsh verma")       // symbol,  // Symbol(Adarsh verma)
+let id = "two"                        // string,
+let id = undefined                    // any,
 
 This is Object in JavaScript. (not Dictionary)
 const item = {
@@ -58,10 +57,10 @@ document.write()    = Write output
 Funtion:
 –   A group of tasks can be performed in a single function
     function add(a, b){
-        // code
+        // code             // normal function to create
     }
     const add = (a, b) => {
-        // code
+        // code             // good practies to function create
     }
 
 DOM Function:
