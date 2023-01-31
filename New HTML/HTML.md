@@ -19,7 +19,7 @@ This repository is dedicated to tracking my progress and sharing resources as I 
 
 ## Tips and Tricks
 
--   **Practice:** The more you work with different tags and elements, the more comfortable you'll become with the language.
+*   **Practice:** The more you work with different tags and elements, the more comfortable you'll become with the language.
 -   **Keep a reference handy:** There are many resources available online that can help explain different tags and elements.
 -   **Read and study other people's code:** This can help you understand how different tags and elements are used in real-world scenarios and to get inspiration for your own projects.
 -   **Debugging:** Even the most experienced developers make mistakes, so it's essential to know how to troubleshoot and fix errors in your code.
