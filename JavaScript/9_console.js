@@ -1,39 +1,43 @@
+// Advantages of saperate script file
+// 1. Seperation of concerns
+// 2. Browser cashing.
+
 alert("Hello world")
 console.time("a")
-console.log(console)
+console.log(console)    // list of all function
 console.log("console")
 console.info("info")
 console.warn("warn")
 console.error("error")
-console.assert("assert"!=false)
-console.assert("assert" ==false)
+console.assert("assert"!=false)     // used of condition true then run function
+console.assert("assert" ==false)    // otherwise error display of assert function 
 console.timeEnd("a")
-
+console.clear()                     // console clear all
+obj = {a:1,B:2,C:3}
+console.table(obj)                    // create table in index and value
+console.warn("plz don't drink shoda") // warnning massage                 
+console.info()
+console.log()
 
 // Outputting the Data:-(Not used)
 // (used modaals)
-alert("Enter the value of a !")
-let a = prompt("Enter a here","567")
-a = Number.parseInt(a)
-alert("you Enterd a of type "+(typeof a))
-let write  = confirm("Do you want to write if to the m")
-document.write(a)
+// Interaction: alert, prompt and confirm
+/* 
+alert: used to invoke a mini windows with a massage alert("hello")
+prompt: used to used to take user input as string
+   a = prompt("Hi", "no")     Hi = massage show, no = value(default)
+confirm:
+*/
+alert("Hello your script is run here...!")
+let a = prompt("enter your number: ")
+a = Number.parseInt(a);
+alert("You entered 'a' of type "+(typeof a))
 
-
-
-// window: DOM BOM
-window.console.log(window)
-console.log(document.body)
-
-/*Document Object Model (DOM): 
-DOM represent the page contect HTML (document.body.style.background="") */
-
-document.body.style.background="red" // change page background to red
-
-/* Brouser Object Model(BOM):
-It is represent addtional object provideed by the browser(host envirement) for working with everthing except the document.
-the function alert/confirm/prompt are also a part of BOM  */
-
-location.href = "https://myworlds.com"  // redirect to another URL.
-
+let write = confirm("do you wnat to write in to the page")
+if(write){
+   document.write(a)
+}
+else{
+   document.write("please allow me to write.")
+}
 
