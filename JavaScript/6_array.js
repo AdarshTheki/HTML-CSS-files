@@ -1,5 +1,5 @@
-// define array:
-let marks = [91,21,45,false,'not present']
+// Array: Array are variables which can hold more than one value with different DataType. In JavaScript array are an Object.
+let marks = [91,21,45,false,'not present']        
 
 let a = marks.toString()
 let b = marks.join(" - ")

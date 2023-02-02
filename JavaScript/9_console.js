@@ -1,32 +1,31 @@
 // Advantages of saperate script file
 // 1. Seperation of concerns
 // 2. Browser cashing.
+// Developer tools: Element, Console, Network
 
-alert("Hello world")
-console.time("a")
-console.log(console)    // list of all function
-console.log("console")
-console.info("info")
-console.warn("warn")
-console.error("error")
+//Console Object Methods (Comprehensive list lookup MDN):-
+console.log(console)                // list of all function
 console.assert("assert"!=false)     // used of condition true then run function
 console.assert("assert" ==false)    // otherwise error display of assert function 
+console.log("console log")          // Output message to the console
+console.info("info")                // used for special massage
+console.warn("don't drink ")        // warnning massage                 
+console.error("error")              // used for error
+console.time("a")
+obj = {a:1,B:2,C:3}
+console.table(obj)                  // create table in index and value
 console.timeEnd("a")
 console.clear()                     // console clear all
-obj = {a:1,B:2,C:3}
-console.table(obj)                    // create table in index and value
-console.warn("plz don't drink shoda") // warnning massage                 
-console.info()
-console.log()
 
-// Outputting the Data:-(Not used)
-// (used modaals)
-// Interaction: alert, prompt and confirm
+
+// Outputting the Data:-
+//(Not used) Only used for Modaals(Good Parcties)
 /* 
+Interaction: alert, prompt and confirm
 alert: used to invoke a mini windows with a massage alert("hello")
 prompt: used to used to take user input as string
    a = prompt("Hi", "no")     Hi = massage show, no = value(default)
-confirm:
+confirm: return only Yes or No option.
 */
 alert("Hello your script is run here...!")
 let a = prompt("enter your number: ")
