@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <title>columns and formate</title>
+   <style>
+      body{
+         font-family: Verdana, Geneva, Tahoma, sans-serif;
+      }
+      .columns{
+         /* column-count: 4;
+         column-width: 150px; */
+         columns: 4 150px;
+         column-rule: 2px solid black;
+         column-gap: 0.7rem;
+      }
+      .columns p {
+         margin-top: 0;
+      }
+      .columns h2 {
+         margin-top: 0;
+         background-color: antiquewhite;
+         color: brown;
+         padding: 1rem;
+         break-inside: avoid;
+      }
+      .columns .quote {
+         font-size: 2rem;
+         text-align: center;
+         color: #333;
+         column-span: all;
+         margin-top: 1rem;
+      }
+      .nowrap{
+         white-space: nowrap;
+      }
+
+   </style>
+</head>
+<body>
+   <section class="columns">
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores, obcaecati?</p>
+      <p>Magnam consequuntur ducimus ut cumque officiis ullam, dolor soluta! Aliquam!</p>
+      <!-- <h2>next topic</h2> -->
+      <p class="quote"> &#8220; Eius repellendus eos &#8221; <span class="norawp">&#8212; xvelit</span></p>
+      <p>Eius repellendus eos velit et at maxime nulla eaque fuga.</p>
+   </section>
+   <p>Ipsam placeat a minima laborum explicabo, labore tempora reprehenderit molestias!</p>
+</body>
+</html>

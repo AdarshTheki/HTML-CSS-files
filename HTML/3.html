@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Typography</title>
+  <style>
+    body{
+      padding: 10%;
+      font-size: 1.5rem;
+    }
+    input, button{
+      font: inherit;
+    }
+    p {
+      text-transform:capitalize;
+    }
+    .span-1 {
+      text-decoration:line-through;
+      text-indent: 2rem;
+      letter-spacing: 6px;
+      line-height: 2.2;
+      font-weight: bold;
+    }
+    .span-2{
+      line-height: 0.4;
+      word-spacing: 1px;
+      font-family:'Times New Roman', Times, serif;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>CSS Typgraphy</h1>
+  </header>
+  <main>
+    <p> <span class="span-1">Lorem ipsum dolor sit amet consectetur adipisicing elit.</span>
+      <span class="span-2"> enim beatae maxime hic nemo eaque ex ducimus excepturi consequuntur accusantium architecto facilis nobis perspiciatis error distinctio nostrum.</span>
+    </p>
+    
+    <form style="text-align: center;">
+      <label for="name">Name:</label>
+      <input id="name" type="text" placeholder="Your Name..."/>
+      <br>
+      <br>
+      <button type="submit">Submit</button>
+    </form>
+  </main>
+</body>
+</html>

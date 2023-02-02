@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<head>
+  <title>Small-Project</title>
+  <style>
+    *{
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body{
+      margin: 0.5rem;
+      font-family: sans-serif;
+      text-align: center;
+    }
+    nav{
+      border: 2px solid black;
+      border-radius: 2rem;
+      margin: 0 auto 1rem;
+      max-width: 600px;
+      font-size: 1.5rem;
+      line-height: 3rem;
+    }
+    h2{
+      padding: 1rem;
+      background-color: gold;
+      border-radius: 2rem 2rem 0 0;
+    }
+    ul{
+      list-style-type: none;
+    }
+    li{
+      border-top: 1px solid #333;
+    }
+    li a{
+      display: block;
+    }
+    li a, li a:visited{
+      text-decoration: none;
+      color: #333;
+    }
+    li a:hover, li:focus{
+      background: #333;
+      color: whitesmoke;
+      cursor: pointer;
+    }
+    li:last-child a {
+      border-radius: 0 0 1.8rem 1.8rem;
+    }
+    p a, p a:visited{
+      text-decoration: none;
+      color: rgba(228, 21, 107, 0.89);
+      font-weight: bold;
+    }
+    p a:active, p a:hover{
+      background-color: rgba(206, 24, 145, 0.336);
+      color: rgb(224, 13, 13);
+      text-decoration: underline;
+    }
+    p a:last-child{
+      cursor:not-allowed;
+
+    }
+    </style>
+</head>
+<body>
+  <nav>
+      <h2>CSS Menu</h2>
+      <ul>
+        <li><a href="one.html">apple</a></li>
+        <li><a href="two.html">second</a></li>
+        <li><a href="#">Our</a></li>
+        <li><a href="#">Apple or batto</a></li>
+        <li><a href="#">How are you</a></li>
+      </ul>
+  </nav>
+  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis, qui! <a href="#" title="not allowed">Lorem, ipsum dolor.</a>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illo at consequuntur soluta natus quos, quaerat blanditiis saepe architecto? <a href="one.html">Lorem, ipsum dolor.</a>Fugit, fugiat? Odit explicabo saepe officiis commodi distinctio veniam illum doloribus placeat.</p>
+</body>
+</html>
