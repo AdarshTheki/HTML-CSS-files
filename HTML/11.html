@@ -3,13 +3,15 @@
 <head>
    <title>Positions</title>
    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
       * {
          margin: 0;
          padding: 0;
          box-sizing: border-box;
       }
-      body{
-         font-family: Verdana, Geneva, Tahoma, sans-serif;
+      body {
+         font-family: "Roboto";
          font-size: 1.5rem;
          min-height: 200vh;
       }
@@ -58,50 +60,12 @@
          position: sticky;
          top: 0;
       }
-      /* Remenber , how to make things diasappear! */
-      /* /////////////// */
 
-      html {  scroll-behavior: smooth;   }
-
-      section { height:100vh;  }
-      
-      .blue {  background-color: #00f;}
-      .red {  background-color: #f00;}
-      .green {  background-color: green;}
-      header, footer {
-         color: aliceblue;
-         text-align:center;
-         height:100px;
-      }
-      header {
-         position:sticky;
-         font-size:5rem;
-         top:0;
-      }
-      footer {
-         background-color:#000;
-         position:sticky;
-         bottom:0;
-         font-size: 3rem;
-      }
-      a:visited {
-         color: aliceblue;
-      }
-      .social {
-         background-color: royalblue;
-         color: aliceblue;
-         font-size: inherit;
-         padding: 1rem;
-         position:fixed;
-         top:30%;
-         left:0;
-         z-index: 1;
-      }
    </style>
 </head>
 <body>
 
-   <!-- <div class="outer-container">
+   <div class="outer-container">
       <div class="innear-container">
          <div class="box absolute">
             <p>Absolute</p>
@@ -116,24 +80,7 @@
             <p>Sticky</p>
          </div>
       </div>
-   </div> -->
-   <button class="social">🚀</button>
-   <section id="one">
-      <header class="blue">Header One</header> 
-      <h1>One</h1> 
-   </section>
-   <section id="two">
-      <header class="red">Header Two</header> 
-      <h1>Two</h1>
-   </section>
-   <section id="three">
-      <header class="green">Header Three</header>
-      <h1>Three</h1>
-   </section>
-   <footer>
-      <a href="#one">ONE</a>
-      <a href="#two">TWO</a>
-      <a href="#three">THREE</a>
-   </footer>
+   </div>
+
 </body>
 </html>
