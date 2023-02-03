@@ -4,31 +4,43 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>List-Style</title>
+  <title>List with Style</title>
   <style>
+    
+    /* @import url("Roboto font link"); */
+    
     body{
       padding: 5% 10%;
       font-size: 1.5rem;
-      font-family: sans-serif;
+      font-family: "Roboto";
     }
     ol {
       font-size: 1.5rem;
-      list-style-type: upper-alpha;
+      list-style-type: lower-latin;
       list-style-position:inside;
       color: blue;
+      /* padding: 0; */
+      /* list-style: none; */
       /* line-height: 1.4rem; */
       /* list-style-image: none; */
       /* list-style: square url(); */
       /* counter-increment: none; */
       /* counter-reset: none; */
     }
-    ul {
-      list-style-position:inside;
+    ol li:nth-child(even) {
+      color: red;
     }
-    ul::marker {
+    ul {
+      list-style-type: circle;
+      list-style-position: inside;
+      /* list-style-image: url(""); */
+      /* shorthand property */
+      /* list-style: circle inside url("/box-model.png"); */
+    }
+    ul ::marker {
       color: blue;
       font-family: fantasy;
-      font-size: 1.3em;
+      font-size: 1em;
       content: "Only $5 >> ";
     }
   </style>
