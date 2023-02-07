@@ -30,7 +30,7 @@
 ```js
 variable define: let, var, const
 var = 'most widely used(reassigned) avoid this.'
-let = 'can be decaled block of code{} reassigned otherwise cannot  be reassigned.' 
+let = 'can be declared block of code{} reassigned otherwise cannot  be reassigned.' 
 const = 'cannot be reassigned.'
 ```
 
@@ -104,8 +104,8 @@ switch (new Date().getDay()) {   // input is current date
         text = "Tuesday";
         break;
     
-    deafult:    // else... all false condition 
-        text = "Whatere";
+    default:    // else... all false condition 
+        text = "whate'er";
 }
 ```
 3. **Tenary Operator:**
@@ -225,7 +225,7 @@ let a = arr.map( (value, index, arr) =>{
 });
 console.log("second:", a)   // second: [ 46, 37, 81 ]
 ```
-### filter mathod:- 
+### filter method:-  
 ***Create a new array by operation true then filter the value, & original array not change.***  
 ```js
 let arr2 = [45,36,80,0,3,5]

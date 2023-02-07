@@ -7,11 +7,11 @@
 
 2.  Record, one video and converted in into 'GIF' and upload it there so, that people understand what is the Project.
 
-3.  If someone want to run your project locally so, how to clone it? How to reun that? & starting from NPM start . Put in every commands.
+3.  If someone want to run your project locally so, how to clone it? How to run that? & starting from NPM start . Put in every commands.
 
-4.  Create a issue report templete so. that people can report issue if your project have any mistakes so, they can tell you.
+4.  Create a issue report template so. that people can report issue if your project have any mistakes so, they can tell you.
 
-5.  Write one normal simple feuture roademap that in feature i am working on there features.
+5.  Write one normal simple feature roademap that in feature i am working on there features.
 
 </h3>
 

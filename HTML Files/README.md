@@ -16,13 +16,13 @@ This repository is dedicated to tracking my progress and sharing resources as I 
 -   :ballot_box_with_check: Images and Links
 -   :ballot_box_with_check: Forms and Inputs
 -   :ballot_box_with_check: Multimedia Audio, Video and Animation.
--   :ballot_box_with_check: Resposive design and mobile optimization. 
+-   :ballot_box_with_check: Responsive design and mobile optimization. 
 -   :ballot_box_with_check: SEO and meta Tags. 
 -   :ballot_box_with_check: Accessibility and Web standards, Browser compatibility and also Debugging.  
 
 #### Completed Projects
 -   **[My Portfolio Website](https://github.com/username/personal-website)** - A simple portfolio website that showcases my projects and skills, built using HTML, CSS, and JavaScript.
--   **[Small Bussiness Landing Page](https://github.com/username/small-business)** - A landing page for a small business using HTML, CSS, and JavaScript.
+-   **[Small Bushiness Landing Page](https://github.com/username/small-business)** - A landing page for a small business using HTML, CSS, and JavaScript.
 -   **[Blog](https://github.com/username/blog)** - A simple blog using HTML, CSS, and JavaScript.
 
 ## Tips and Tricks:-
