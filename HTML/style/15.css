@@ -1,0 +1,31 @@
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+/* img { display: block; } */
+
+body {
+   font-family: fantasy;
+   min-height: 100vh;
+}
+.profile-pic-figure {
+   width: 35%;
+} 
+.profile-pic-figure img {
+   width: 100%;
+   height: auto;
+   min-width: 100px;
+   border: 5px double gray;
+} 
+.example {
+   margin-top: 1rem;
+   padding-left: 20px;
+   border:1px solid red;
+
+}
+.example img{
+   width: 25%;
+   height: auto;
+}
+/* incompletated */
