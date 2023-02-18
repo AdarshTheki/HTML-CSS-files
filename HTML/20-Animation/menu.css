@@ -12,9 +12,12 @@ html {
 body {
    min-height: 100vh;
    display: flex;
-   flex-flow: column nowrap;
+   /* flex-flow: column nowrap; */
 }
+/* //////////////// */
+/* Header Section  */
 header {
+   min-width: 30vw;
    background-color: var(--HEADER-BGCOLOR);
    color: var(--HEADER-COLOR);
 }
@@ -114,4 +117,24 @@ nav a:focus {
    transform: scale(1.2);
    transition: all 0.3s;
 
+}
+/* ////////////// */
+/* main section */
+
+main {
+   padding: 10px;
+   background-color: pink;
+}
+.main-div{
+   margin-bottom: 20px;
+   border-bottom: 2px solid #333;
+   display: flex;
+   
+}
+section{
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: center;
+   font-size: 0.8rem;
+   gap: 10px;
 }
