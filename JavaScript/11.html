@@ -1,10 +1,19 @@
-<html>
-<body>
-
-</body>
+<!DOCTYPE html>
+<head>
+   <style>body{font-size: 2rem;}</style>
+</head>
+<!-- first child of body is div -->
+<body><div><div class="first">First</div><div class="second">Second</div></div></body>
 <script>
 console.log(document.body.firstChild)
+a = document.body.firstChild
 console.log(document.body.lastChild)
 console.log(document.body.childNodes)
+
+
+// Element only navigation;
+let b = document.body
+console.log("first child of b is:", b.firstChild);
+console.log("first Element child of b is:", b.firstElementChild);
 </script>
 </html>
