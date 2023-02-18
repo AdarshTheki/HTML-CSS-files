@@ -1,0 +1,91 @@
+/* Begin Reset */
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+img { display: block; }
+/* End Reset */
+
+/* Utility Classes */
+.nowrap {
+   white-space: nowrap;
+}
+.offscreen {
+   position: absolute;
+   left: -10000px;
+}
+
+/* End Utility Classes */
+
+body {
+   font-family: fantasy;
+   min-height: 100vh;
+   background-color: rgb(69, 122, 168);
+   /* background-image: url("/image/cloud.jpg"), linear-gradient(to left, rgb(9, 107, 187),#fff);
+   background-repeat: repeat-y no-repeat;
+   background-position: right center;
+   background-size: 20%, auto; */
+}
+
+.container {
+   background-color: rgb(251, 210, 156);
+   background-image: url('/image/chef.jpg');
+   background-repeat: no-repeat;
+   background-size: cover;
+   background-position: center;
+}
+
+.hero {
+   border-bottom: 2px solid black;
+   padding: 20px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   gap: 30px;
+
+   background-color: rgba(0, 0%, 0%, 0.43);
+}
+
+.h1 {
+   font-size: 500%;
+   color: #fff;
+   text-shadow: 2px 2px 5px black;
+   /* background-color: rgba(0, 0, 0, 0.40);
+   border-radius: 10px;
+   padding: 0.25rem; */
+}
+
+.profile-pic-figure {
+   width: 35%;
+} 
+.profile-pic-figure img {
+   width: 100%;
+   height: auto;
+   min-width: 100px;
+   border: 5px double gray;
+   border-radius: 50%;
+} 
+.example {
+   margin-top: 1rem;
+   padding-left: 20px;
+   border:1px solid red;
+
+}
+.example img{
+   width: 25%;
+   height: auto;
+}
+
+.clip{
+   font-weight: 800;
+   font-size: 18rem;
+   text-align: center;
+   background-image:url("/image/cloud.jpg") ;
+   background-size: 100%;
+   text-transform: uppercase;
+   -webkit-background-clip: text;
+   /* color: hsla(0, 0%, 0%, 0.2%); */
+   color: transparent;
+   background-clip: text;
+}

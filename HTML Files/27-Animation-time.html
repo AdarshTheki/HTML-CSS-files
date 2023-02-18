@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Animation-Timing-Functon</title>
+  <style>
+    .main{
+      width: 700px;
+      height: 150px;
+      border: 2px solid black;
+      margin: 50px auto;
+      position: relative;
+    }
+    .box{
+      width: 200px;
+      height: 100px;
+      margin-top: 20px;
+      background: red;
+      position: absolute;
+      animation: box 4s;
+      animation-timing-function: ease-in-out;
+    }
+    /* time: 08:00:00 */
+    @keyframes box{
+      from{
+        left: 0px;
+      }
+      to{
+        left: 500px;
+      }
+    }  
+  </style>
+</head>
+<body>
+  <!-- animation-timing-functon: linear / ease / ease-in / ease-out / ease-in-out -->
+  <div class="main">
+    <div class="box"></div>
+  </div>
+</body>
+</html>

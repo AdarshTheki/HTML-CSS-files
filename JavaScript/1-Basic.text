@@ -1,0 +1,258 @@
+Javascript:
+
+What is Javascript?
+-   Is an interpreted, clint-side, event-base, object-oriented scripting language.
+-   It is invented in 1995 at Netscape Corporation (liveScript)
+-   Javascript programs run by an interpriter build into the user web browser
+-   It is a case-sensitive language.
+-   Javascript in not java.
+
+What can Javascript do ?
+-   It can dynamtically modify an HTML page.
+-   It can validate user input.
+-   It can be used to create cookies. 
+-   It is a full-featured programming language.
+-   Javascript user iteraction does not requre any communication at the user.
+
+What make JavaScript Unique ?
+-   Support by all major browsers and enable by deafult.
+-   Complex things are done simply.
+-   Full integration with HTML/CSS.
+
+JavaScript FrameWorks and Libraries ?
+-   Angular
+-   React
+-   jQuery
+-   Vue.js
+-   Node.js  etc....
+
+Variables:-
+var = most widely used(reassigned) avoid this.
+let = can be decleard block of code{} reassigned otherwise can't  be ressinged 
+const = cannot be reassigned
+
+7-type of Primitive Datatype:- (nn bb ss u)
+You can decleare many types of variable and decleare your own object in JavaScript.
+let id = 20                           // number
+let id = null                         // null
+let id = true                         // boolean
+let id = BigInt("549") + BigInt("4")  // bigint,  // 553n
+let id = Symbol("Adarsh verma")       // symbol,  // Symbol(Adarsh verma)
+let id = "two"                        // string,
+let id = undefined                    // undefined
+
+This is Object in JavaScript. (not Dictionary)
+let array = ['html', 34, 'css', 'js'];  // object
+const item = {                          
+    'name':'Adarsh',
+    'adarsh':false,
+    'lovish':67,
+    'rohan':undefined }
+
+Outputting the Data:  (Use console)
+alert()             = a small pop up window (alert box)
+prompt()            = Prompt for user input
+confirm()           = yes/no and return true/false based on user click   
+console.log()       = Mainly used for debugging, used in console massage
+document.write()    = Write output on html page
+
+Funtion in JavaScript:
+-   A group of tasks can be performed in a single function
+    function add(a, b){
+        // code             // normal function to create
+    }
+    const add = (a, b) => {
+        // code             // good practies to function create
+    }
+
+Condition Statement in JavaScript:
+Condition Statement are used to perform different action based on different condition.
+1. if..else statement
+2. Switch statement
+3. Tenary Operator
+
+1. if..else statement
+-   In JavaScript we have three form of if...else condition
+1.  if statement
+2.  if...else statement
+3.  if...else if...else statement
+if ((age>=14) && (age<19)){    // logic
+    staus = "Eligible";        // condition True
+} else{
+    staus = "Not Eligible";    // condition False 
+}
+
+2. Switch statement:
+
+switch (new Date().getDay()) {   // input is current date
+    case 6:     // if(day==6)
+        text = "Saturday";
+        break;  // condition true to exit loop. 
+    
+    case 0:     // if(day==0)
+        text = "Sunday";
+        continue;  // condition true then check next iteration
+    
+    case 2:     // if(day==2)
+        text = "Tuesday";
+        break;
+    
+    deafult:    // else... all false condition 
+        text = "Whatere";
+}
+
+3. Tenary Operator:
+syntax: (condition) ? exp1-True : exp2-False;
+Ex: let a = 15;
+    console.log('You can', a<18? "not drive": "Drive")  // You can not drive 
+
+Loops In JavaScript:
+We use loops to perform repetated action.
+
+Type of loops in JavaScript:
+1. for loop     -> loop a block of code number of times.
+2. for-in loop  -> loops through the `key` of an object.
+3. for-of loop  -> loops through the `value` of an object.
+4. while loop   -> loop a block based on a special condition.
+5. do..while loop -> similar while loop variant which run atleast once.
+
+for loop:
+for( int i=0; i<num.length; i++){
+    // code
+}
+
+// forEach loop:    
+num.forEach((element) => {
+    // code
+});
+
+// for-in loop: This loops also work with arrays. 
+for(let key in object) {
+    // code to be execute
+}
+
+// for-of loop: 
+for(let key of iterable) {      // iterable data structure like arra, string etc..  
+    // code to be execute
+}
+
+// while loop: 
+// Note: If the condition never become false, the loop will never end and its might crash the runtime.
+while(condition){
+    // code to be executed
+    update;
+}
+
+// do..while loop: Execute at least onces.
+do{
+    // code to be executed
+    update;
+} while (condition);
+
+String n JavaScript:
+var abc = "abcdefghijklmnopqrstuvwxyz";
+var esc = 'I don\'t \n know';   // \n new line
+var len = abc.length;           // string length
+abc.split(",");                 // splitting a string on commas gives an array
+abc.split("");                  // splitting on characters
+abc.slice(3, 6);                // cuts out "def", negative values count from behind
+128.toString(16);               // number to hex(16), octal (8) or binary (2)
+abc.substring(0,5);             // gives 'abcde' s=0 e=5 extracts a part of a string 
+abc.substr(0,5);                // gives 'abcde' s=0 e=5 extracts a part of a string 
+abc.trim();                     // removes whitespace from both sides of a string 
+abc.replace("abc","123");       // find and replace, takes regular expressions
+abc.concat(" ", str2);          // abc + " " + str2
+abc.toUpperCase();              // convert to upper case
+abc.toLowerCase();              // convert to lower case
+abc.indexOf("lmno");            // find substring, -1 if doesn't contain 
+abc.lastIndexOf("lmno");        // last occurance
+abc.charAt(2);                  // character at index: "c"
+abc[2];                         // unsafe, abc[2] = "C" doesn't work
+abc.charCodeAt(2);              // character code at index: "c" -> 99
+
+String Interpolation:
+let firstName = "John";
+let lastName = "Doe";
+let name = $"My full name is: {firstName} {lastName}";  // My full name is: John Doe
+
+Array:
+Array are variables which can hold more than one value with different DataType.
+dogs.toString();                        // convert to string: results "Bulldog,Beagle,Labrador"
+dogs.join(" * ");                       // join: "Bulldog * Beagle * Labrador"
+dogs.pop();                             // remove last element
+dogs.push("Chihuahua");                 // add new element to the end
+dogs[dogs.length] = "Chihuahua";        // the same as push
+dogs.shift();                           // remove first element
+dogs.unshift("Chihuahua");              // add new element to the beginning
+delete dogs[0];                         // change element to undefined (not recommended)
+dogs.splice(2, 0, "Pug", "Boxer");      // add elements (where, how many to remove, element list)
+var animals = dogs.concat(cats,birds);  // join two arrays (dogs followed by cats and birds)
+dogs.slice(1,4);                        // elements from [1] to [4-1]
+dogs.sort();                            // sort string alphabetically
+dogs.reverse();                         // sort string in descending order
+x.sort(function(a, b){return a - b});   // numeric sort
+x.sort(function(a, b){return b - a});   // numeric descending sort
+highest = x[0];                         // first item in sorted array is the lowest (or highest) value
+x.sort(function(a, b){return 0.5 - Math.random()});     // random order sort
+
+// forEach loop(operation):- calls a function once for each array element.
+const array = [1,2,3]
+array.forEach((value, index, array) => {
+    // function logic
+});
+
+// Map method:- Create a new array by performing some operation on each array element.
+let a = arr.map( (value, index, arr) =>{
+    console.log("first :", value, index, arr)
+    return value + 1 
+});
+console.log("second:", a)   // second: [ 46, 37, 81 ]
+
+// filter mathod:- Create a new array by operation true then filter the value, & original array not change.  
+let arr2 = [45,36,80,0,3,5]
+let b = arr2.filter( (a) => {
+    return a < 10
+});
+console.log(b)  // [ 0, 3, 5 ]
+
+// Reduce mathod:- Reduce an array to a single value return.
+let arr3 = [1,2,3,4,5]              // a=1 b=2 return 3, a=3 b=3 return 6, a=6 b=4 return 10.... 15
+let c = arr3.reduce( (a, b) => {
+    return a+b 
+})
+console.log(c)  // 15
+
+Practies Question:
+1. Add number in given array ?
+2. Add number n to zero in given array ?
+3. Filter for number divisible by 10 from a given array ?
+4. Create an array of square of given number ? 
+5. Use reduce to calculate factorial of a given number from from an array of first n natural number.[n bring number whose factorial needs to be calculated]
+6. Write a program Enter your guss number 1 to 100 ?
+
+Advantages of saperate script file
+1. Seperation of concerns
+2. Browser cashing.
+Developer tools: Element, Console, Network
+
+Console Object Methods (Comprehensive list lookup MDN):-
+console.log(console)                // list of all function
+console.assert("assert"!=false)     // used of condition true then run function
+console.assert("assert" ==false)    // otherwise error display of assert function 
+console.log("console log")          // Output message to the console
+console.info("info")                // used for special massage
+console.warn("don't drink ")        // warnning massage                 
+console.error("error")              // used for error
+console.time("a")
+obj = {a:1,B:2,C:3}
+console.table(obj)                  // create table in index and value
+console.timeEnd("a")
+console.clear()                     // console clear all
+
+
+
+# ### DOM Function:
+# document.getElementById()
+# document.getElementByClassName()
+# innerHTML()
+
