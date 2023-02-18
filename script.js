@@ -1,3 +1,12 @@
 //  My First javaScript files
 
-console.log("Hello World!")
+import "./Styles";
+
+export default function script(){
+   return (
+      <div className="script">
+         <h1>Center me! 😎</h1>
+         <h2>Hello</h2>
+      </div>
+   );
+}
