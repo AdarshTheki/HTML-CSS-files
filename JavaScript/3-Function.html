@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<body>
+   <p>Click the following button to call the function</p>
+   <form>
+      <input type="button" onclick="sayHello()" value="call function">
+      <input type="button" onclick="funcPara('Adarsh',22)" value="Function Parameters">
+      <input type="button" onclick="returnStat()" value="Return Statement">
+      <input type="button" onclick="FunConstr()" value="Function Constructor">
+      <input type="button" onclick="funcLit()" value="Function Literals">
+   </form>
+   <p>Use different text in document.write() method and then try...</p>
+</body>
+<script>
+// Calling a Function
+function sayHello(){
+   alert("Hello there");
+}
+
+// Function Parameters
+function funcPara(name, age){
+   alert (name + " is " + age + " years old.");
+}
+
+// The returnStatement
+function concatenate(first, last){
+   var full;
+   full = first + last;
+   return full;
+}
+function returnStat(){
+   var result;
+   result = concatenate('Adarsh', 'Verma');
+   alert(result );
+}
+
+// Function() Constructor:-
+// let variable_name = new Function(Arg1, Arg2..., "Function Body");
+var func = new Function("x", "y", "return x*y;");
+function FunConstr(){
+   var result;
+   result = func(10,20);
+   alert( result );
+}
+
+// Function Literals:-
+// var variable_name = function(Argument List){
+//    Function Body
+// };
+var funcN = function(x,y){ return x*y };
+function funcLit(){
+   var result;
+   result = funcN(10,20);
+   alert( result );
+}
+</script>
+</html>
