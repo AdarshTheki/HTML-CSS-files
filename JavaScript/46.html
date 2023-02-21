@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<body>
+   Hello World!
+</body>
+<script>
+// SetInterval and SetTimeOut in js.
+
+document.write('Hello')
+const sum = (a,b,c)=> {
+   console.log("yes I am Running", (a+b+c));
+   a+b
+}
+setTimeout(sum, 1000, 1, 2, 7);
+// clearTimeout(sum)
+
+let b = setInterval(function(){
+   alert("Interval")
+}, 3000)                // infinite loop in time 3s
+// clearInterval(b)
+
+</script>
+</html>
