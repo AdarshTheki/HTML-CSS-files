@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<body>
+   <div id="first" class="hey">
+      Hey my name is Adarsh!
+   </div>
+   Hello World?
+</body>
+<script>
+
+// Attributes Method :- 
+
+let first = document.getElementById("first")
+let a = first.getAttribute("class")
+console.log(a);   //hey
+
+console.log(first.hasAttribute("class"));  // true
+console.log(first.hasAttribute("style"));  // false
+console.log(first.attributes);
+
+// Set Attribute
+// first.setAttribute("hidden", 'true');   // hidden 
+// first.setAttribute("class", 'Adarsh');  // change class_name
+
+// Remove Attribute
+// first.removeAttribute("class")      // remove class
+// console.log(first.attributes);      // collection of all attributes
+
+</script>
+</html>
