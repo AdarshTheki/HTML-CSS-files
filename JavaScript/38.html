@@ -1,0 +1,82 @@
+<!-- Practices Question -->
+<!DOCTYPE html>
+<head><style>
+   * {margin: 0; padding: 0; box-sizing: border-box;   }
+   html, body{
+      height: 100%;
+      width: 100%;
+      font-size: 2rem;
+   }
+   nav {
+      display: flex;
+      justify-content: space-around;
+      background-color: cyan;
+   }
+   li {
+      list-style: none;
+      padding: 0 23px;
+   }
+</style></head>
+<body>
+   <nav>
+         <li>Menu</li>
+         <li>About</li>
+         <li>Contact</li>
+         <li>LogIn</li>
+   </nav>
+   <table>
+      <li>Heading-0</li>
+      <li>Heading-1</li>
+      <li>Heading-2</li>
+      <li>Heading-3</li>
+      <li>Heading-4</li>
+   </table>
+   <nav>second navbar</nav>
+</body>
+<script>
+// chapter:38
+// Practices - 1:
+   document.getElementsByTagName("nav")[0].firstElementChild.style.color = "red" 
+   
+   document.getElementsByTagName("nav")[0].firstElementChild.style.color = "green" 
+   document.getElementsByTagName("nav")[0].lastElementChild.style.color = "red" 
+
+   Array.from(document.getElementsByTagName("li")).forEach((element) => {
+      element.style.background = "pink";
+   });
+
+// chapter:39
+// Practices - 2:
+var conform = confirm("Do You Play game?")
+while(conform==true){
+   console.log("Snake, Water and Gun Game:");
+   let user = prompt("Enter S,W or G")
+   let cpuI = Math.floor(Math.random() * 3);
+   let cpu = ["S","W","G"][cpuI]
+   const match = (cpu, user) => {
+      if(cpu == user)
+      return "NoBody return tie match."
+      else if(cpu == "S" && user == "W")
+      return "cpu"
+      else if(cpu == "S" && user == "G")
+      return "user"
+      else if(cpu == "G" && user == "W")
+      return "user"
+      else if(cpu == "W" && user == "S")
+      return "user"
+      else if(cpu == "G" && user == "S")
+      return "cpu"
+      else if(cpu == "W" && user == "G")
+      return "cpu"
+   }
+   let result = match(cpu,user)
+   console.log(`CPU:${cpu} <br> User:${user} <br> The winner is: ${result}`); 
+   document.write(`CPU:${cpu} <br> User:${user} <br> The winner is: ${result}<br>`); 
+   var conform = confirm("Do You Play Again ?")
+}
+
+// chapter:40
+// Practice - 3:
+// 200 jokes
+</script>
+</html>     
