@@ -1,5 +1,5 @@
 /* JavaScript :- 
-Funtion – A group of tasks can be performed in a single function
+Function – A group of tasks can be performed in a single function
 
 function add(a, b){
     // code
@@ -10,14 +10,14 @@ const add = (a, b) => {
 }
 */
 // Normal Function Use:-
-function oneplus(x,y){
+function onePlus(x,y){
     console.log("Done")
     return 1 + (x+y)/2
 }
 let a=1, b=2, c=3;
-console.log("One Plus",a,"and",b,"is", oneplus(a,b))
-console.log("One Plus",b,"and",c,"is", oneplus(b,c))
-console.log("One Plus",a,"and",c,"is", oneplus(a,c))
+console.log("One Plus",a,"and",b,"is", onePlus(a,b))
+console.log("One Plus",b,"and",c,"is", onePlus(b,c))
+console.log("One Plus",a,"and",c,"is", onePlus(a,c))
 
 // Arrow Function Use:- (important)
 const hello=()=>{
