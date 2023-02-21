@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<body>
+   <p> Click the following button and see result</p>
+   <input type="button" onclick="sayHello()" value="Say Hello" />
+
+   <!-- <form method="POST" action="" onsubmit="validate()">
+      <input type="submit" value="Submit" />
+   </form> -->
+
+   <p>Bring your mouse inside the division to see the result:</p>
+   <div onmouseover="over()">
+      <h2> This is inside the division </h2>
+   </div>
+   <div onmouseout="out()">
+      <h2> This is inside the division </h2>
+   </div>
+
+   <button id="btn">click me</button>
+   <button id="ntb">click Out</button>
+</body>
+<script>
+// Handling Browser Event :-
+
+// onclick
+function sayHello() {
+document.write ("Hello World")
+}
+
+// onsubmit
+function validate() {
+   console.log('all validation goes here');
+   return true
+}
+
+// onmouseover and onmouseout
+function over() {
+console.log("Mouse Over");
+}
+function out() {
+console.log("Mouse Out");
+}
+
+
+</script>
+</html>
