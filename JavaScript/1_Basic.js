@@ -1,6 +1,6 @@
 /*  JavaScript :- Basic */
 
-console.log("the world is my first programmig Language")
+console.log("the world is my first programming Language")
 
 let x = 22
 x = 24              // let x = 24 not redefined but value change 
@@ -10,7 +10,7 @@ const z = 'Adarsh'  // not change any
 console.log(x, y, z)
 
 let a = null;
-let b = 345;
+let b = 3.45;
 let c = true;
 let d = BigInt("549") + BigInt("4")
 let e = 'Harry'
@@ -22,17 +22,17 @@ console.log(typeof a, typeof b,  typeof c,  typeof d,  typeof e, typeof f,  type
 // This is Object in JavaScript. (not Dictionary)
 const item = {
     'harry':'verma',
-    'adarsh':false,
-    'lovish':67,
-    'rohan':undefined
+    'Adarsh':false,
+    'Lovish':67,
+    'Rohan':undefined
 }
 item['harry'] = 45          
-item['friends'] = 'ayush'
+item['friends'] = 'Ayush'
 
 console.log(item['harry'])  // 45
 console.log(item.harry)     // 45
-console.log(item.friends)   // ayush
-console.log(item.ravi)      // undefined
+console.log(item.friends)   // Ayush
+console.log(item.Ravi)      // undefined
 
 
 
