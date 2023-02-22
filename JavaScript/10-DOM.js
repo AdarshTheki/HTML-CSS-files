@@ -3,7 +3,7 @@
 window.console.log(window)
 console.log(document.body)
 
-/* DOM (Document Object Model): DOM represent the page contact HTML
+/* DOM (Document Object Model): DOM represent the page content HTML
 document.body -> page body as Js. object  */ 
 document.body.style.background="red" // change page background to red
 
