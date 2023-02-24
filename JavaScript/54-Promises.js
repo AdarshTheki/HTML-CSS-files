@@ -1,9 +1,9 @@
-<!DOCTYPE html>
-<script>
-// create Promise
+/**
+ * ! Create Promise
+**/
 let p = new Promise(function(resolve, reject){
-   alert('Hello')
-   resolve(56)
+   console.log('Hello')
+   resolve(5)
 })
 console.log('Hello One');
 // Do some Async task 
@@ -14,5 +14,3 @@ setTimeout(function(){
 console.log(p);
 console.log('Hello Three');
 
-</script>
-</html>
