@@ -1,6 +1,5 @@
-/**
- * ! Create Promise
-**/
+// ! Create Promise
+
 let p = new Promise(function(resolve, reject){
    console.log('Hello')
    resolve(5)
