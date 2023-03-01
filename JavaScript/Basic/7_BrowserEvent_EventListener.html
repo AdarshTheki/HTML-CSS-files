@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<body>
+  <p> Click the following button and see result</p>
+  <input type="button" onclick="sayHello()" value="Say Hello" />
+
+  <button id="btn">Here That</button>
+</body>
+<script>
+// Handling Browser Event, addEventListener and removeEventListener, 
+
+// Handling Browser Event :-
+function sayHello() {           // onclick
+document.write ("Hello World")
+}
+
+// addEventListener and removeEventListener
+// Syntax: document.addEventListener(event, function)
+function myFunction(){
+  alert('Add Event Listener')
+}
+const a = document.getElementById('btn');
+a.addEventListener('click', myFunction)
+a.removeEventListener('click', myFunction)
+
+</script>
+</html>

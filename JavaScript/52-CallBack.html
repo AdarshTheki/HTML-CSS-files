@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<script>
+// CallBack Promises and Async/Await
+
+// Synchronous Program 
+// let a = prompt("what is your name?");
+// let b = prompt("what is your age?");
+// let c = prompt("what is your favorite color?");
+// console.log(a,'is',b,'year old and has',c,'is a favorite color.');
+
+//Asynchronous Program:-
+// console.log('Start');
+// setTimeout(function(){
+//    console.log('Hey, I am good!');
+// }, 3000)
+// console.log("End");
+
+// Callback:-
+function loadScript(scr, callback){
+   var script = document.createElement('script');
+   script.src = src;
+   // load script
+   script.onload = function(){
+      console.log('Loaded script with src;'+ src);
+      // callback();
+      callback(null, scr); // argument pass
+   }
+   // error handle
+   script.onerror = function(){
+      console.log("Error loading script with src:" + src);
+      callback(new Error("Scr got some error"))
+   }
+   document.body.appendChild(script);
+}
+
+// Callback-based style of async programming. 
+function hello(error, src){          // argument pass          
+   if(error){
+      console.log(error);
+      return;
+   }
+   alert("Hello how!" + src)
+}
+
+function goodMorning(error, src){          // argument pass          
+   if(error){
+      console.log(error);
+      return;
+   }
+   alert("Good Morning" + src)
+}
+
+loadScript("http://127.0.0.1:5500/JavaScript/9.js", hello)
+// loadScript("http://127.0.0.1:5500/JavaScript/9.js", goodMorning)
+
+// callback bom pyramid explain # 53
+
+</script>
+</html>
