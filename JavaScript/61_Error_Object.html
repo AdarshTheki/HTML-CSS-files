@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+<script>
+
+// Error Object :-
+try {
+  let age  = prompt("Enter your age.")
+  age = Number.parseInt(age)
+  // console.log(harry)
+  if(age<150){
+    throw new ReferenceError("Harry is not good.") 
+  }
+} catch (error) {
+  console.log(error.name)
+  console.log(error.massage)
+  console.log(error.stack)
+}
+
+console.log("the script is still running")
+</script>
+</body>
+</html>
