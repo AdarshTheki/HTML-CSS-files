@@ -5,17 +5,44 @@
     <meta name="owner" content="content">
     <meta name="description" content="Information about the content">
     <title>Document</title>
-    <script src="https://kit.fontawesome.com/5638bd2fff.js" crossorigin="anonymous"></script>
+    <!-- font-awesome CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+    <link rel="stylesheet" href="./style.css">
+    <!-- <link rel="stylesheet" href="https://kit.fontawesome.com/5638bd2fff.css" crossorigin="anonymous"> -->
+    <!-- <script src="https://kit.fontawesome.com/5638bd2fff.js" crossorigin="anonymous"></script> -->
 </head>
 <body>
-    <picture>
-        <img src="/image/web-icons-freebie/png400/image@4x.png" alt="image" title="image" width="200" 
-        srcset="image\web-icons-freebie\png100\desktop.png 500w,
-                image\web-icons-freebie\png200\file@2x.png 1000w,
-                image\web-icons-freebie\png400\bulb@4x.png 1500w"
-        
-                />
-    </picture> 
-    sizes="(min-width: 100px) 50vw, 100vw"
-</body>
-</html>
+    <input type="checkbox" id="check">
+    
+    <!-- Section Header -->
+    <header>
+        <label for="check" title="Side Bar">
+            <i class="fas fa-bars" id="sidebar_btn"></i>
+        </label>
+        <div class="left_area">
+            <h3 title="Company logo">Coding<span>Snow</span></h3>
+        </div>
+        <div class="right_area">
+            <a href="#" class="logout_btn">Log-In/Out</a>
+        </div>
+    </header>
+    <!-- Header area end -->
+    
+    <!-- sidebar Start-->
+    <div class="sidebar">
+        <center>
+            <h4>Adarsh Verma</h4>
+        </center>
+        <a href="./HTML/" title="HTML"><i class="fa-brands fa-html5"></i><span>HTML5</span></a>
+        <a href="./Styles/" title="CSS"><i class="fa-brands fa-css3"></i><span>CSS3</span></a>
+        <a href="./JavaScript/" title="Javascript"><i class="fa-brands fa-square-js"></i><span>JavaScript</span></a>
+        <a href="./image/" title="Javascript"><i class="fa-brands fa-file-image"></i><span>ReadMe</span></a>
+        <a href="./README.md" title="Javascript"><i class="fa-brands fa-readme"></i><span>ReadMe</span></a>
+    </div>
+    
+    <div class="content">
+    
+    </div>
+    
+    </body>
+    </html>
