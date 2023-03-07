@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<body>
+  <table border="2">
+    <thead>
+      <tr>
+          <th scope="col">Sr.No.</th>
+          <th scope="col">header One</th>
+          <th scope="col">header Two</th>
+          <th scope="col">header Three</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+          <th>Row-1</th>
+          <td>cell-1</td>
+          <td>cell-2</td>
+          <td>cell-3</td>
+      </tr>
+      <tr>
+          <th>Row-2</th>
+          <td>cell-1</td>
+          <td>cell-2</td>
+          <td>cell-3</td>
+      </tr>
+    </tbody>
+    <tfoot>
+      <tr>
+          <th>Row-3</th>
+          <td>Footer-1</td>
+          <td>Footer-2</td>
+          <td>Footer-3</td>
+      </tr>
+    </tfoot>
+    <caption>This is a caption Here</caption>
+</table>
+
+<div class="first">First</div>
+<div id="second">Second</div>
+
+<div class="box" id="id1">This is element 1 <span id="sp1">span1</span></div>
+<div class="box" id="id2">This is element 2</div>
+
+</body>
+<script>
+
+// Element only Navigation:
+let a = document.body
+console.log('firstChild:', a.firstChild);
+console.log('lastChild:', a.lastChild);
+console.log('childNodes:', a.childNodes);
+
+// Table navigation:
+let n = document.body.firstElementChild
+console.log(n);  
+console.log(n.rows);  
+console.log(n.caption);  
+console.log(n.tHead);  
+console.log(n.tBodies);  
+console.log(n.tFoot);  
+console.log(n.rows[0]);
+
+/**
+** Searching the DOM navigation:
+*- document.getElementsByClassName ('first')
+*- document.getElementById ('second')
+*- document.getElementsByTagName ('p')
+*- document.querySelectorAll ('#second')
+*- document.querySelector('.first').style.color = 'red'
+
+** Searching for DOM:
+*- let x = document.querySelector('').matches('')  
+*  check element if match the given css selector 
+*- let y = document.querySelector('').contains('') 
+*  to look nearest ancestor that matches the given css-selector and also element itself check 
+*- let z = document.querySelector('').closest('')  
+*  element_B is inside element_A OR element_A==element_B" is true return.
+**/
+
+</script>
+</html>

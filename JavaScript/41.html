@@ -1,0 +1,40 @@
+<!-- Inner/Outer HTML and TextContact or hidden Properties -->
+<!DOCTYPE html>
+<body>
+   Hello My name is Adarsh
+   <span id="first" hidden><b>Hey, What are you Doing!-1</b> </span>   
+   <span id="first"><b>Hey, What are you Doing!-2</b> </span>   
+</body>
+<script>
+   let x = document.getElementsByTagName("span")
+   console.log(x);   // <span id="first">
+   let y = document.getElementsByTagName("span")[1]
+   // console.dir(y);
+   
+   console.log(document.body.firstChild.nodeName)        // #text 
+   console.log(document.body.lastChild.nodeName)        // #text 
+   console.log(document.body.firstElementChild.nodeName) // SPAN
+
+// Inner html
+let a = first.innerHTML
+console.log(a);   // "<b>Hey, What are you Doing!-1</b>"
+a = "<i> Hey is italic </i>"
+console.log(a);   // "<i> Hey is italic </i>"
+
+
+// Outer html:-
+
+let b = first.outerHTML
+console.log(b);   // <span id="first">.....</span>
+first.outerHTML = "<div> Hey, Div <div>"
+console.log(b);   // <span id="first">.....</span> 
+
+// textContent :-
+// console.log(document.body.textContent);
+
+// hidden properties:-
+first.hidden = false 
+// $0.hidden = false
+// false 
+</script>
+</html>

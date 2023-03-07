@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<body>
+   <nav>
+      <li>Menu</li>
+      <li>About</li>
+      <li>Contact</li>
+      <li>LogIn</li>
+   </nav>
+   <p>Hello World
+   <h1>Hello <span>Span</span> World-1</h1>
+   </p>
+</body>   
+<script>
+// Insertion Method HTML :-
+document.getElementsByTagName("h1")[0].innerHTML = '<h1>innerHTML</h1>'
+let a = document.getElementsByTagName("h1")[0]
+a.innerHTML = a.innerHTML + "<h1>a.innerHTML + ' '</h1>"
+
+let div = document.createElement("div");
+div.innerHTML = "<p>Hello create element by dav </p>"
+// a.appendChild(div)   
+// a.append(div)        // put h1 child in footer
+// a.prepend(div)       // put h1 child in head
+// a.before(div)        // put h1 sibling in head 
+// a.after(div)         // put h1 sibling in footer
+a.replaceWith(div)      // replace with h1 to div
+</script>
+</html>

@@ -1,45 +1,37 @@
-/* My CSS Property files */
+// explain media query?
+@media (min-width:320px)  { /* smartphones, portrait iPhone, portrait 480x320 phones (Android) */ }
+@media (min-width:480px)  { /* smartphones, Android phones, landscape iPhone */ }
+@media (min-width:600px)  { /* portrait tablets, portrait iPad, e-readers (Nook/Kindle), landscape 800x480 phones (Android) */ }
+@media (min-width:801px)  { /* tablet, landscape iPad, lo-res laptops ands desktops */ }
+@media (min-width:1025px) { /* big landscape tablets, laptops, and desktops */ }
+@media (min-width:1281px) { /* hi-res laptops and desktops */ }
 
-.container{
-  /* box model */
-  width: 200px;  height: 100px;  padding: 10px;  margin: 10px;  border: 5px;
-  
-  /* border  */
-  border-color: black;  border-width: 10px;  border-style: dotted; border-radius: 10px;
-  
-  /* display */
-  display: flex;  visibility: visible;  overflow:hidden;
-  
-  /* positioning */
-  position:absolute;  top: 10px;  bottom: 10px;  left:10px;  right: 10px;  z-index: 10px;
-  
-  /* text */
-  font-size: 10px; font-family:Arial;  color: red;  text-align: center;  text-transform:lowercase; text-decoration:none;
-  
-  /* background */
-  background-color:blue; background-image:url();  background-repeat:repeat-x; background-position:bottom; background-attachment:fixed; background-size: auto; background-clip: content-box;
-  
-  /* flexbox and grid layout "display: flex / grid"  */
-  flex-wrap:nowrap; flex-direction:row; justify-content:center; align-items:center;
 
-  grid-template:max-content; grid-template-columns:max-content; grid-template-areas:"header header header" "nav main main"; grid-gap: 10px; justify-content: center; align-content: center;
-  
-  /* Transition and animation */
-  transition: ;
-  animation: ;
-  @keyframes example {
-    from{ background-color: red;}
-    to {background-color:yelo}
-  } 
-  /* responsive design */
-  media queries
-  @media
-  min-width: ;
-  max-width: ;
-  @viewport
-  /* Misc */
-  cursor
-  pointer-event
-  overflow-x
-  overflow-y
-}
+@media (min-width:320px)  { /* smartphones, iPhone, portrait 480x320 phones */ }
+@media (min-width:481px)  { /* portrait e-readers (Nook/Kindle), smaller tablets @ 600 or @ 640 wide. */ }
+@media (min-width:641px)  { /* portrait tablets, portrait iPad, landscape e-readers, landscape 800x480 or 854x480 phones */ }
+@media (min-width:961px)  { /* tablet, landscape iPad, lo-res laptops ands desktops */ }
+@media (min-width:1025px) { /* big landscape tablets, laptops, and desktops */ }
+@media (min-width:1281px) { /* hi-res laptops and desktops */ }
+
+// explain srcset?
+Srcset
+
+<img src="image.jpg" alt="image" srcset="<img> <descriptor>, ..., <img_n> <descriptor_n>">
+
+srcset="image.jpg 160w, image2.jpg 320w, image3.jpg 2x"
+
+picture
+
+srcset="image.jpg, image-2X.jpg 2x"
+
+srcset="image-240.jpg 240w, image-640.jpg 640w"
+
+srcset="image-160.jpg 160w, image-320.jpg 320w, image-640.jpg 640w, image-1280.jpg 1280w" sizes="(max-width: 480px) 100vw, (max-width: 900px) 33vw, 254px">
+
+(max-width: 480px) 100vw
+
+(max-width: 900px) 33vw
+
+sizes
+

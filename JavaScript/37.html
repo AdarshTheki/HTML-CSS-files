@@ -1,0 +1,28 @@
+<!-- Searching for DOM:- Matches, Closest and Contains Methods (important) -->
+<!DOCTYPE html>
+<body>
+   <div class="box" id="id1">This is element 1 <span id="sp1">span1</span></div>
+   <div class="box" id="id2">This is element 2</div>
+</body>
+<script>
+   // not define 
+   // console.log(box);
+   // console.log(id2);
+   let id1 = document.getElementById("id1")
+   let sp1 = document.getElementById("sp1")
+   console.log(id1);    
+
+   // check element if match the given css selector
+   console.log(id1.matches(".class"))  // false
+   console.log(id1.matches(".box"))    // true
+
+   // to look nearest ancestor that matches the given css-selector and also element itself check    
+   console.log(sp1.closest(".box"))
+   console.log(sp1.closest("#sp1"))    
+
+   // "element_B is inside element_A OR element_A==element_B" is true return.
+   console.log(sp1.contains(sp1))   // true
+   console.log(id1.contains(sp1))   // true
+   console.log(sp1.contains(id1))   // false
+</script>
+</html>

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<body>
+   <table border="2">
+      <thead>
+         <tr>
+            <th scope="col">Sr.No.</th>
+            <th scope="col">header One</th>
+            <th scope="col">header Two</th>
+            <th scope="col">header Three</th>
+         </tr>
+      </thead>
+      <tbody>
+         <tr>
+            <th>Row-1</th>
+            <td>cell-1</td>
+            <td>cell-2</td>
+            <td>cell-3</td>
+         </tr>
+         <tr>
+            <th>Row-2</th>
+            <td>cell-1</td>
+            <td>cell-2</td>
+            <td>cell-3</td>
+         </tr>
+      </tbody>
+      <tfoot>
+         <tr>
+            <th>Row-3</th>
+            <td>Footer-1</td>
+            <td>Footer-2</td>
+            <td>Footer-3</td>
+         </tr>
+      </tfoot>
+      <caption>This is a caption Here</caption>
+   </table>
+</body>
+<script>
+// Table Navigation:-
+
+let t = document.body.firstElementChild
+let tt = document.body.firstElementChild.firstElementChild
+console.log("t:",t);
+console.log("tt:",tt);
+console.log("t.rows:",t.rows);
+console.log("t.rows[0]:",t.rows[0]);
+console.log("t.caption:",t.caption);
+console.log("t.tHead.FEC:",t.tHead.firstElementChild);
+console.log("t.tFoot.FEC:",t.tFoot.firstElementChild);
+console.log("t.tFoot:",t.tFoot);
+console.log("t.tBodies:",t.tBodies);
+console.log("t.rows[0].rowIndex:",t.rows[0].rowIndex);
+</script>
+</html>

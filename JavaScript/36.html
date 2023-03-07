@@ -1,0 +1,55 @@
+<!-- Searchings for DOM:- Get/Query Element -->
+<!DOCTYPE html>
+<body>
+   <div class="card">This is element 1
+      <h1 class="card-title">Header file-0</h1>
+      <h1 class="card-title">Header file-1</h1>
+      <h1 class="card-title">Header file-2</h1>
+      <h1 class="card-title">Header file-3</h1>
+      <h1 class="card-title">Header file-4</h1>
+      <p>Lorem ipsum dolor sit met.</p>
+   </div>
+
+   <div class="btn">
+      <h1 class="adarsh ayush ankita">New file class</h1>
+      <p>Lorem ipsum dolor sit met.</p>
+   </div>
+   <h1 id="title0">This is a Id</h1>
+   <p name="search"> Lorem ipsum dolor sit met.</p>
+
+</body>
+<script>
+// Old ways, and still work:- (Finding HTML element)
+
+   // document.getElementById("id")
+   let title0 = document.getElementById("title0")
+   title0.style.color = "Purple"
+
+   // document.getElementsByClassName("class")
+   let title = document.getElementsByClassName("card-title")[1]
+   title.style.color = "red"
+   let title1 = document.getElementsByClassName("card-title")[0]
+   title1.style.color = "green"
+   
+   // document.getElementsByName("name or id")
+   console.log(document.getElementsByName("search"));
+   
+   // document.getElementsByTagName("element-name")
+   console.log(document.getElementsByTagName("p"))       // html collection p length:5
+   console.log(document.body.getElementsByTagName("p"))  // html collection p length:5
+   console.log(document.querySelector(".btn").getElementsByTagName("p"))  // html collection p length:1
+   
+// Preferred way:- (finding HTML Element by CSS-selector)
+
+   // document.querySelectorAll("css-selector")
+   // let title3 = document.querySelectorAll("#card-title") // id
+   let title3 = document.querySelectorAll(".card-title") // class
+   title3[2].style.color = "orange" 
+   title3[3].style.color = "pink" 
+   title3[4].style.color = "yellow" 
+   console.log(title3);    // NodeList(5)
+
+   document.querySelector(".adarsh").style.color = "blue"
+   document.querySelector(".adarsh").style.background = "cyan"
+</script>
+</html>

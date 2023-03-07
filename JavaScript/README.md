@@ -27,17 +27,17 @@
 -   Node.js  etc....
 
 ## Variables:-
+**Variable define:** A named reference to a value is a variable.
 ```js
-variable define: let, var, const
-var = 'most widely used(reassigned) avoid this.'
-let = 'can be declared block of code{} reassigned otherwise cannot  be reassigned.' 
-const = 'cannot be reassigned.'
+var a = "some value"; // functional or global scoped
+let b = "some value"; // block scoped
+const c = "some value"; // block scoped + cannot get new value
 ```
 
-## 7-type of Primitive Datatype:- *[nn bb ss u]*
-You can declarer many types of variable and declarer your own object in JavaScript.
+## Seven (7) types of Primitive Datatype:- 
+**[nn bb ss u]**: 
 ```js
-let id = 20                           // number
+let id = 123.45                       // number
 let id = null                         // null
 let id = true                         // boolean
 let id = BigInt("549") + BigInt("4")  // bigint,  // 553n
@@ -45,14 +45,25 @@ let id = Symbol("Adarsh verma")       // symbol,  // Symbol(Adarsh verma)
 let id = "two"                        // string,
 let id = undefined                    // undefined(any)
 ```
-**Object in JavaScript.** - [*not Dictionary]*
+## Object in JavaScript. 
+An object is a data type in JavaScript that is used to store
+a combination of data in a simple key-value pair. Thats it.
+-   `Key`: These are the keys in user object.
+-   `Value`: These are the values of the respective keys in user object.
+-   `Method`: If a key has a function as a value, its called
+a method.
+-   **Example:** 'name' is `key`, 'Adarsh' is `value` and 'function' is `method`.
+
 ```js
-let array = ['html', 34, 'css', 'js'];  // object
+var array = ['html', 34, 'css', 'js'];  // object
 const item = {
     'name':'Adarsh',
     'adarsh':false,
     'lovish':67,
-    'rohan':undefined }
+    calculateAge: function(){
+        // some code here..
+    }
+};
 ```
 
 ### Outputting the Data:  *(Use console)*
@@ -126,6 +137,7 @@ console.log('You can', a<18? "not drive": "Drive")  // You can not drive
 
 ### for loop:
 ```js
+// normal loop:
 for( int i=0; i<num.length; i++){
     // code
 }
@@ -208,14 +220,6 @@ highest = x[0];                         // first item in sorted array is the low
 x.sort(function(a, b){return 0.5 - Math.random()});     // random order sort
 ```
 
-### forEach loop(operation):- 
-***calls a function once for each array element.***
-```js
-const array = [1,2,3]
-array.forEach((value, index, array) => {
-    // function logic
-});
-```
 ### Map method:- 
 ***Create a new array by performing some operation on each array element.***
 ```js
@@ -289,6 +293,7 @@ location.href = "https://google.com"  // redirect to another URL.
 ```
 # javaScript Importance Notes:
 
+<<<<<<< HEAD
 ## Parents and siblings of an Element:
 ```js
 console.log(document.body.firstChild);
@@ -298,5 +303,76 @@ console.log(document.body.childNodes);
 ## Element Navigation:
 ```js
 let a = document.body
+=======
+**DOM - Document Object Model:**
+```javascript
+// Query/Get Elements
 
+    // Preferred way:
+    document.querySelector('css-selectors')
+    document.querySelectorAll('css-selectors', ...)
 
+    // Old ways, and still work:
+    document.getElementsByTagName('element-name')
+    document.getElementsByClassName('class-name')
+    document.getElementById('id')
+
+// Create / clone Element
+document.createElement('div')
+document.createTextNode('some text here')
+node.cloneNode()
+node.textContent = 'some text here'
+
+// Modify Element
+node.style.color = 'red'
+node.style.padding = '10px',
+node.style.fontSize = '200%'
+node.setAttribute('attr-name', 'attr-value')
+node.removeAttribute('attr-name')
+
+//Get and Modify Element Class
+node.classList
+node.classList.add('class-name', ...)
+node.classList.remove('class-name', ...)
+node.classList.toggle('class-name')
+node.classList.contains('class-name')
+node.classList.replace('old', 'new')
+
+// Add node to document
+parentNode.appendChild(nodeToAdd)
+parentNode.insertBefore(nodeToAdd, childNode)
+
+//Remove Node
+parentNode.removeChild(nodeToRemove)
+// Hack to remove self
+nodeToRemove.parentNode.removeChild(nodeToRemove)
+
+// Get Element Details
+node.nextSibling
+node.firstChild
+node.lastChild
+node.parentNode
+node.childNodes
+node.children
+
+// Events
+node.addEventListener('event-name', callback-function)
+node.removeEventListener('event-name', callback-function)
+```
+
+## What is a "Node"? (in the context of DOM)
+
+**Node:** Every item in the DOM tree is called a node. There are two types of node - A text node, and an element node:
+
+-   **Text Node:** Node that has text.
+
+-   **Element Node:** Node that has an element.
+
+-   **Child Node:** A node which is a child of another node.
+
+-   **Parent Node:** A node which has one or more child.
+>>>>>>> f0b72cd3da4c87bdf2260231874c96d6a0b7b233
+
+-   **Descendent Node:** A node which is nested deep in the tree.
+
+-   **Sibling Node:** A node that share the same parent node.

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      async function harry() {
+        let DelhiWeather = new Promise((resolve, reject) => {
+          setTimeout(() => {
+            resolve("27 Degree.");
+          }, 1000);
+        });
+        let bangladeshWed = new Promise((resolve, reject) => {
+          setTimeout(() => {
+            resolve("21 Degree.");
+          }, 5000);
+        });
+
+        // DelhiWeather.then(alert);
+        // bangladeshWed.then(alert);
+        let Delhi = await DelhiWeather
+        let bang = await bangladeshWed
+        return [Delhi, bang];
+      }
+      console.log("Welcome to weather control room")
+      let a = harry()
+      // console.log(a);
+      a.then((value)=>{
+        console.log(value)
+      })
+    </script>
+  </body>
+</html>

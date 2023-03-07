@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<body>
+   <button id="btn">Here That</button>   
+</body>
+<script>
+// addEventListener and removeEventListener
+
+// syntax:
+// element.addEventListener(event, function, capture)    // HTML DOM element
+// element.removeEventListener(event, function, capture) // HTML DOM element
+// document.addEventListener(event, function)            // HTML DOM document
+function myFunction(){
+   alert('Add Event Listener')
+}
+const a = document.getElementById('btn');
+a.addEventListener('click', myFunction)
+a.removeEventListener('click', myFunction)
+
+</script>
+</html>

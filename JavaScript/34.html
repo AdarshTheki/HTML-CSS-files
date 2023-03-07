@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<body>
+   <!-- first child of body is div -->
+   <div>
+      first element child
+      <div class="first">First</div>
+      <div class="second">Second</div>
+   </div>
+</body>
+<script>
+
+// Element only navigation;
+let b = document.body
+console.log("first 'Child' of b is:", b.firstChild);
+console.log("first 'Element Child' of b is:", b.firstElementChild);
+
+const changeBgRed = () => {
+   document.body.firstElementChild.style.background = "cyan"
+}
+changeBgRed();
+</script>
+</html>

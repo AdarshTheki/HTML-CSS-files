@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<body>
+<h1>Console Object Modal:</h1>
+<h1>Time</h1>
+</body>
+<script>
+
+//Console Object Methods (Comprehensive list lookup MDN):-
+console.clear()   
+console.log(console)                // list of all function
+console.assert("assert"!=false)     // used of condition true then run function
+console.assert("assert" ==false)    // otherwise error display of assert function 
+console.log("console log massage")  // Output message to the console
+console.info("info massage")        // used for special massage
+console.warn("warning massage")     // warning massage                 
+console.error("error massage")      // used for error
+console.time("a")                   // start time
+obj = {a:1,B:2,C:3}                 // create obj
+console.table(obj)                  // create table in index and value
+console.timeEnd("a")                // End time
+
+console.log('');
+
+
+// Time:
+let a1 = new Date()
+let h1 = a1.getHours()
+let m1 = a1.getMinutes()
+let s1 = a1.getSeconds()
+let d1 = a1.getDate()
+let D1 = a1.getDay()
+let y1 = a1.getFullYear()
+console.log('FullDate =>',a1);
+console.log('Hours',h1);
+console.log('Minute',m1);
+console.log('Second',s1);
+console.log('Date',d1);
+console.log('Day',D1);
+console.log('Year',y1);
+
+</script>
+</html>

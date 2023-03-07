@@ -1,0 +1,45 @@
+/**
+*! InsertAdjacentHTML(), changes classList() and SetTimeout(). 
+**/ 
+<!DOCTYPE html>
+<head>
+  <style>
+     *{ margin: 0; padding: 0; font-size: 1.5rem; }
+    .yellow     { background-color: yellow; color: blue;  }
+    .red        { background-color: red; color: white;  }
+    .text-dark  { background-color: black; color: whitesmoke; }
+    </style>
+</head>
+<body>
+    <div id="first" class="yellow red text-dark">I am Adarsh Verma</div>
+</body>
+<script>
+
+// InsertAdjacentHTML / text / Element:-
+first.insertAdjacentHTML('beforebegin','<div class="test">before-begin</div>');
+first.insertAdjacentHTML('beforeend','<div class="test">before-end</div>');
+first.insertAdjacentHTML('afterbegin','<div class="test">after-begin</div>');
+first.insertAdjacentHTML('afterend','<div class="test">after-end</div>');
+
+// Change HTML className: 
+let a = document.getElementById('first')  // initialize node
+console.log(a.classList.remove('red'))    // remove class  
+console.log(a.classList.add('red'))       // add class
+console.log(a.classList.toggle('red'))    // add and remove
+console.log(a.classList.contains('red'))  // check true or false
+
+// SetInterval and SetTimeOut in js.
+document.write('Hello')
+const sum = (a,b,c)=> {
+  console.log("yes I am Running", (a+b+c));
+  a+b
+}
+setTimeout(sum, 1000, 1, 2, 7);
+// clearTimeout(sum)
+
+let b = setInterval(function(){
+  alert("Interval")
+}, 3000)                // infinite loop in time 3s
+// clearInterval(b)
+</script>
+</html>

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<script>
+
+   // !  Create Promise:-
+
+// let p = new Promise(function(resolve, reject){
+   //    console.log('Hello')
+//    resolve(5)
+// })
+// console.log('Hello One');
+// // Do some Async task 
+// setTimeout(function(){
+//    console.log("Hello Two in 2 second");
+// }, 2000)
+
+// console.log(p);
+// console.log('Hello Three');
+
+let p1 = new Promise((resolve, reject) => {
+   console.log("Promise is pending-1")
+   setTimeout( () => {
+      resolve(true)
+   }, 5000)
+})
+let p2 = new Promise((resolve, reject) => {
+   console.log("Promise is pending-2")
+   setTimeout( () => {
+      reject(new Error("I am an error"))
+   }, 5000)
+})
+
+
+// to get the value
+p1.then((value) => {
+   console.log(value,"Some value occurred in p1")
+})
+
+// to catch the error
+p2.catch((error) => {
+   console.log(error,"Some error occurred in p2")
+})
+
+
+p2.then((value)=>{
+   console.log(value,"Is here value")
+}, (error)=>{
+   console.log(error, "Is here error")
+})
+
+</script>
+</html>
