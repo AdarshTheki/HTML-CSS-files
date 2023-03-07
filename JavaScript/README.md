@@ -287,8 +287,16 @@ document.body.style.background="red" // change page background to red
 ```js
 location.href = "https://google.com"  // redirect to another URL.
 ```
+# javaScript Importance Notes:
 
-
-
+## Parents and siblings of an Element:
+```js
+console.log(document.body.firstChild);
+console.log(document.body.lastChild);
+console.log(document.body.childNodes);
+```
+## Element Navigation:
+```js
+let a = document.body
 
 
