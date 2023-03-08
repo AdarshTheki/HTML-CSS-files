@@ -1,4 +1,4 @@
-<h1 style="align:center;colo:red;"> Advance JavaScript </h1> 
+<h1 align="center"> Advance JavaScript </h1> 
 
 ### What is JavaScript ?
 -   Is an interpreted, client-side, event-base, object-oriented scripting language.
