@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>span Grid row</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          // screens: {  
+          //   // default screens
+          // },
+          // colors: {
+          //   // default color only this color used
+          // },
+          extend: {
+            screens: {
+              'ss': {'min':'320px', 'max':'640px'},
+            },
+            colors: {
+              clifford: "#da373d",
+            },
+          },
+        },
+      };
+    </script>
+  </head>
+  <body>
+    <div class="max-w-[1300px] grid sm:grid-cols-2 grid-cols-1 sm:grid-row-2 md:grid-cols-3 lg:grid-row-4
+    p-2 mx-auto gap-5
+    ">
+    <div class="bg-[green] py-5 p-2 text-center row-span-2 ">
+      <p class="font-bold">Adarsh-1</p>
+      Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quis quidem facere dolore. Corrupti ipsum deleniti iste nihil obcaecati. Consectetur, sapiente.
+    </div>
+    <div class="bg-[green] py-5 p-2 text-center col-span-2">
+      <p class="font-bold">Adarsh-1</p>
+      Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quis quidem facere dolore. Corrupti ipsum deleniti iste nihil obcaecati. Consectetur, sapiente.
+    </div>
+    <div class="bg-[green] py-5 p-2 text-center">
+      <p>Adarsh-1</p>
+      Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quis quidem facere dolore. Corrupti ipsum deleniti iste nihil obcaecati. Consectetur, sapiente.
+    </div>
+    <div class="bg-[green] py-5 p-2 text-center">
+      <p>Adarsh-2</p>
+      Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quis quidem facere dolore. Corrupti ipsum deleniti iste nihil obcaecati. Consectetur, sapiente.
+    </div>
+    <div class="bg-[green] py-5 p-2 text-center">
+      <p>Adarsh-3</p>
+      Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quis quidem facere dolore. Corrupti ipsum deleniti iste nihil obcaecati. Consectetur, sapiente.
+    </div>
+    <div class="bg-[green] py-5 p-2 text-center">
+      <p>Adarsh-4</p>
+      Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quis quidem facere dolore. Corrupti ipsum deleniti iste nihil obcaecati. Consectetur, sapiente.
+    </div>
+    <div class="bg-[green] py-5 p-2 text-center">
+      <p>Adarsh-5</p>
+      Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quis quidem facere dolore. Corrupti ipsum deleniti iste nihil obcaecati. Consectetur, sapiente.
+    </div>
+    <div class="bg-[green] py-5 p-2 text-center col-start-1 col-end-3">
+      <p>Adarsh-6</p>
+      Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quis quidem facere dolore. Corrupti ipsum deleniti iste nihil obcaecati. Consectetur, sapiente.
+    </div>
+  </div>
+  </body>
+</html>
