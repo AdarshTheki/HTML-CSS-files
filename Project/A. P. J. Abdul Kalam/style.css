@@ -1,0 +1,57 @@
+/* Styling the body element
+like body color and margin */
+body {
+  background-color: #00FA9A;
+  margin: 0% 20%;
+}
+/* Styling the Title and giving
+shadow to the title */
+#title {
+  text-align: center;
+  text-shadow: 5px 5px 10px rgb(150, 116, 241);
+  font-size: 7vh;
+}
+figure {
+border: thin #510ebd solid;
+display: flex;
+flex-flow: column;
+padding: 1px;
+max-width: 220px;
+margin: auto;
+}
+
+img {
+max-width: 240px;
+max-height: 190px;
+}
+
+figcaption {
+background-color: #222;
+color: #fff;
+font: italic smaller sans-serif;
+padding: 3px;
+text-align: center;
+}
+/* Styling the content of the page like-
+padding, font-size, font color etc.*/
+div#tribute-data {
+  background-color: rgb(46, 139, 87, 0.25);
+  box-shadow: 20px 20px 20px #98FB98;
+  font-family: Georgia;
+  padding: 25px 25px;
+  margin: 11px;
+  margin-top: 50px;
+}
+/* Styling the title of the content */
+h1.title-APJ {
+  font-size: 35px;
+  color: white;
+  text-align: center;
+  text-shadow: 5px 5px 10px black;
+}
+/* Styling the link provided at the end */
+#tribute-link {
+  text-decoration: none;
+  color: rgb(9, 105, 214);
+  font-weight: 500;
+}
