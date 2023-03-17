@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <title>Semantic Tags</title>
+   <style>
+      *{ padding: 0; margin: 0; box-sizing: border-box;}
+      body {
+         min-height: 100vh;
+         font-size: 1rem;
+         background-color: aliceblue;
+      }
+      header {
+         border: 1px solid black;
+      }
+      nav {
+         display: flex;
+         justify-content: center;
+         align-items: center;
+         flex-direction: column;
+         font-size: 2rem;
+         border: 1px solid red;
+      }
+      main {
+         height: 70vh;
+         display: flex;
+         /* flex-direction: column; */
+         font-size: 1.5rem;
+      }
+
+      section, article {
+         display: flex;
+         width: 60vw;
+         height: 70vh;
+         flex-direction: row;
+         justify-content: center;
+         align-items: center;
+         border: 1px solid blue;
+      }
+      aside {
+         display: flex;
+         
+      }
+   </style>
+</head>
+<body>
+   <!-- Heading Section -->
+   <header>
+      <!-- Heading and Navigation Section -->
+      <nav>Header</nav>
+      <nav>Menu</nav>
+   </header>
+   <!-- main section -->
+   <main>
+      <section>Section</section>
+      <article>Article</article>
+      <aside>
+         <!-- Figure with caption -->
+         <figure>
+            <img src="#" alt="image">
+            <figcaption>Figure Caption!</figcaption>
+         </figure>
+      </aside>
+   </main>
+   <!-- footer section -->
+   <footer>
+      <details>
+         <summary>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium, deserunt.</summary>
+      </details>
+   </footer>
+</body>
+</html>

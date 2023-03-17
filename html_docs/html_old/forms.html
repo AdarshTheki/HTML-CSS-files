@@ -1,0 +1,106 @@
+<!-- Survey Forms -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="form" content="Employee Intersets Survey Form">
+    <title>Survey Form</title>
+</head>
+<body>
+    <!-- <form action="#">
+        <div align="center">
+            <h1>Employee Intersets Survey Form</h1>
+            Enter your name: 
+            <input type="text"  name="username" size=35 maxlength=35 value="">
+            <br><br>
+            Enter your department:
+            <input type="text"  name="deparement" size=35 maxlength="35" value="">
+            <br><br>
+            Tell us a little about yourself:
+            <textarea name="comments" cols="30" rows="4"></textarea>
+            <br><br>
+            Do you exercise at home?
+            <input type="radio" name="exe" value="1">Yes
+            <input type="radio" name="exe" value="2">No
+            <br><br>
+            How do you like to read about your favorite topics?
+            <br>
+            <input type="checkbox" name="book">Books
+            <input type="checkbox" name="web">Onlne Resurce
+            <input type="checkbox" name="phone">Phone App
+            <input type="checkbox" name="papper">Magazines
+            <br><br>
+            What genreof movies do you like?
+            <select name="MoviePref">
+                <option value="0" selected="true">choose option</option>
+                <option value="1">Comedy</option>
+                <option value="2">Romance</option>
+                <option value="3">Thriller</option>
+                <option value="4">Horror</option>
+                <option value="5">Biopic</option>
+            </select>
+            <br><br>
+            <input type="submit" value="Submit Form">
+            <br><br>
+ -->
+            1. Use "fieldset" to Encapculation Similar Fields.
+            <fieldset align="center">
+                <span>Billing Address: </span> <input type="text" id="billAdd" name="address"/><br>
+                <span>City: </span>            <input type="text" id="billAdd" name="address"/><br>
+                <span>Province: </span>        <input type="text" id="billAdd" name="address"/><br>
+                <span>Postal Code: </span>     <input type="text" id="billAdd" name="address"/>
+            </fieldset>
+            
+            2. label "fieldset" with Legends.
+            <fieldset align="center">
+                <legend>Billing Address: </legend>
+                <span>Address:     </span><input type="text" name="billAddress"/><br>
+                <span>City:        </span><input type="text" name="billcity"/><br>
+                <span>Province:    </span><input type="text" name="Province" /><br>
+                <span>Postal Code: </span><input type="text" name="postalcode"/>
+            </fieldset>
+            
+            3. Use the "Label" Element:
+            <fieldset align="center">
+                <legend>Billing Address: </legend>
+                <label>Address:</label>     <input type="text" id="billAdd" name="address"/><br>
+                <label>City:</label>        <input type="text" id="billAdd" name="city"/><br>
+                <label>Province:</label>    <input type="text" id="billAdd" name="Province"/><br>
+                <label>Postal Code:</label> <input type="text" id="billAdd" name="postalcode"/>
+            </fieldset>
+
+            4. Give Labels the "for" Attribute:
+            <fieldset align="center">
+                <legend>Billing Address: </legend>
+                <label for="billadd">Address:   </label><input type="text" id="billAdd" name="address"/><br>
+                <label for="billadd">City:      </label><input type="text" id="billAdd" name="city"/><br>
+                <label for="billadd">Province:  </label><input type="text" id="billAdd" name="Province"/><br>
+                <label for="billadd">Postal Code:</label><input type="text" id="billAdd" name="postalcode"/>
+            </fieldset>
+
+            5. Use "optgroup" to Categorize Options:<br>
+            <select>
+                <option value="0" selected="true">choose country</option>
+                <optgroup label="USA">
+                    <option value="1">1all</option>
+                    <option value="2">2all</option>
+                    <option value="3">3all</option>
+                </optgroup>
+                <optgroup label="Canada">
+                    <option value="4">4all</option>
+                    <option value="5">5all</option>
+                    <option value="6">6all</option>
+                </optgroup>
+            </select><br>
+
+            6. Put Tab indices on your inputs
+            <input type="text" tabindex="2"/>
+            <input type="text" tabindex="1"/>
+            <input type="text" tabindex="3"/>
+
+            
+        </div>
+    </form>
+</body>
+</html>

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Position : Absolute and Relative</title>
+    <style>
+        /* absolute means near by parent
+        relative means near by children */
+        .col1{
+            width: 200px;
+            height: 200px;
+            border: 2px solid black;
+            float: left;
+            font-size: 50px;
+            text-align: center;
+            background-color: aqua;
+        }
+        .col2{
+            width: 200px;
+            height: 200px;
+            border: 2px solid black;
+            float: left;
+            font-size: 50px;
+            text-align: center;
+            position: absolute;
+            top: 130px;
+            left: 120px;
+            background-color: blueviolet;
+        }
+        .col3{
+            width: 200px;
+            height: 200px;
+            border: 2px solid black;
+            float: left;
+            font-size: 50px;
+            text-align: center;
+            position: relative;
+            top: 250px; 
+            left: 30px; 
+            background-color: brown;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <div class="col1"><h1>1</h1></div>
+        <div class="col2"><h1>2</h1></div>
+        <div class="col3"><h1>3</h1></div>
+    </div>
+</body>
+</html>

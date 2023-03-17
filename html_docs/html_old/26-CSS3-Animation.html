@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>css3-Animation @keyframe</title>
+  <style>
+    /* animation shorthand property
+    animation: <aniamtion-name> <duration> <timing-funtion> <dealy> <interaton-count> <direction>;
+    animation: name 2s ease-in 2s 3 normal;
+
+    animation-name: name;
+    animation-duration: 2s;
+    animation-timing-function: linear/ ease-in / ease-out / ease-in-out;
+    animation-delay: 2s;
+    animation-iteration-count: 3 / infinite;
+    animation-direction: normal / reverse / alternate / alternate-reverse;
+    animation-fill-mode: forwards / backwards / both;
+    */
+    .box-container{
+      width: 600px;
+      height: 600px;
+      border: 2px solid black;
+      margin: auto;
+      position: relative;
+      
+    }
+    .box{
+      width: 200px;
+      height: 200px;
+      background-color: red;
+      position: absolute;
+      top: 0px;
+      left: 0px;
+      /*  
+      animation-name: box;
+      animation-delay: 1s; 
+      animation-duration: 5s;
+      animation-iteration-count: infinite; 
+      animation-fill-mode: forwards;  
+      animation-direction: reverse; 
+      */
+      animation: box 5s infinite;
+      animation-direction: alternate-reverse;
+    }
+    @keyframes box {
+      0%{
+        top: 0px;
+        left: 0px;
+        background-color: red;
+      }
+      25%{
+        top: 0px;
+        left: 400px;
+        background-color: yellow;
+      }
+      50%{
+        top: 400px;
+        left: 400px;
+        background-color: blue;
+      }
+      75%{
+        top: 400px;
+        left: 0px;
+        background-color: green;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="box-container">
+    <div class="box"></div>
+  </div>
+</body>
+</html>
