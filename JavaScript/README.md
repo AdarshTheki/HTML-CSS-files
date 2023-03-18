@@ -291,7 +291,19 @@ document.body.style.background="red" // change page background to red
 ```js
 location.href = "https://google.com"  // redirect to another URL.
 ```
+# javaScript Importance Notes:
 
+<<<<<<< HEAD
+## Parents and siblings of an Element:
+```js
+console.log(document.body.firstChild);
+console.log(document.body.lastChild);
+console.log(document.body.childNodes);
+```
+## Element Navigation:
+```js
+let a = document.body
+=======
 **DOM - Document Object Model:**
 ```javascript
 // Query/Get Elements
@@ -359,6 +371,7 @@ node.removeEventListener('event-name', callback-function)
 -   **Child Node:** A node which is a child of another node.
 
 -   **Parent Node:** A node which has one or more child.
+>>>>>>> f0b72cd3da4c87bdf2260231874c96d6a0b7b233
 
 -   **Descendent Node:** A node which is nested deep in the tree.
 
