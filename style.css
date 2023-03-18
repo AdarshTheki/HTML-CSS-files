@@ -103,7 +103,6 @@ header {
 }
 .sidebar a {
   color: var(--COLOR);
-  display: block;
   width: 100%;
   display: flex;
   justify-content: center;

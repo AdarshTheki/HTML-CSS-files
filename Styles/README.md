@@ -15,15 +15,15 @@ I am using the following resources to learn CSS:
 -   **[FreeCodeCamp](https://www.freecodecamp.org/learn/css)**
 
 ## Progress
--   :ballot_box_with_check: Basic CSS Syntax
--   :ballot_box_with_check: CSS Selectors
--   :ballot_box_with_check: CSS Box Model
--   :ballot_box_with_check: CSS Flexbox
--   :ballot_box_with_check: CSS Grid
--   :ballot_box_with_check: CSS Transitions and Animations
+-   ✔ Basic CSS Syntax
+-   ✔ CSS Selectors
+-   ✔ CSS Box Model
+-   ✔ CSS Flexbox
+-   ✔ CSS Grid
+-   ✔ CSS Transitions and Animations
 
 ## Completed Projects
--   **[My Portfolio Website](https://github.com/username/personal-website)** - A simple portfolio website that showcases my projects and skills, built using HTML, CSS, and JavaScript.
+-   **[My Portfolio Website](https://github.com/adarshtheki/)** - A simple portfolio website that showcases my projects and skills, built using HTML, CSS, and JavaScript.
 -   **[Small Business Landing Page](https://github.com/username/small-business)** - A landing page for a small business using HTML, CSS, and JavaScript.
 -   **[Blog](https://github.com/username/blog)** - A simple blog using HTML, CSS, and JavaScript.
 

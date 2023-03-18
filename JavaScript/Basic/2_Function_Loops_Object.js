@@ -1,6 +1,6 @@
 //! Topics: Function, Loops, foreach, filter, map and reduce.
 
-//! Function:
+// Function:
 
 //* Function with unlimited parameter:-
 function sumOfAllParameter() {
@@ -83,6 +83,7 @@ function Employee(i, n, s) {
 const e = new Employee(101, "Ayush", 20000);
 console.log(e);
 
+// =================================================================================
 //* Manipulating Object;
 const emp2 = {
   id: 102,
@@ -134,6 +135,7 @@ console.log(emp);
 const p = Object.assign({}, emp);
 console.log(p);
 
+// =================================================================================
 //! Loop: forEach, map, filter, reduce
 
 let array = [34, 24, 36, 22];
