@@ -165,7 +165,7 @@ label #sidebar_btn:focus {
   background-position: center;
   background-size: cover;
   background-attachment: fixed;
-  height: 100vh;
+  /* height: 100vh; */
 }
 
 #check:checked ~ .content {
@@ -187,4 +187,54 @@ label #sidebar_btn:focus {
   #check:checked ~ .sidebar {
     display: none;
   }
+}
+
+
+/* =============== Main container Used ==================== */
+
+
+.attribution {
+  font-size: 15px;
+  text-align: center;
+  font-weight: 700;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+.main {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: hsl(212, 45%, 89%);
+}
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 10px;
+  width: 300px;
+  box-shadow: 1px 0.5px 10px hsl(228, 45%, 44%);
+  padding: 15px 0px;
+  margin-bottom: 15px;
+  text-align: center;
+  border-radius: 10px;
+  background-color: hsl(0, 0%, 100%);
+}
+h1 {
+  color: hsl(218, 44%, 22%);
+  font-weight: 600;
+  font-size: 22px;
+}
+p {
+  font-size: 15px;
+  color: hsl(220, 15%, 55%);
+  font-size: 15px;
+  font-weight: 400;
+}
+img {
+  height: 250px;
+  border-radius: 10px;
 }
