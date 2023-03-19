@@ -93,5 +93,44 @@ The main elements in HTML are the tags. Tags structure and present the data in d
     Your browser does not support audio.....
 </audio>
 
+<picture>
+    <source media="(min-width:650px)" srcset="img_pink_flowers.jpg">
+    <source media="(min-width:465px)" srcset="img_white_flower.jpg">
+    <img src="img_orange_flowers.jpg" alt="Flowers" style="width:auto;">
+</picture>
+
+
+Specifying Image Density
+<img srcset=" 
+/image/pixcel/flamingo4x.jpg 4x,
+/image/pixcel/flamingo3x.jpg 3x,
+/image/pixcel/flamingo2x.jpg 2x,
+/image/pixcel/flamingo1x.jpg 1x " 
+src="/image/pixcel/flamingo-fallback.jpg" >
+
+
+Specifying Image Width
+<img srcset=" 
+/image/pixcel/flamingo4x.jpg 4025w,
+/image/pixcel/flamingo3x.jpg 3019w,
+/image/pixcel/flamingo2x.jpg 2013w,
+/image/pixcel/flamingo1x.jpg 1006w " 
+src="/wp-content/uploads/flamingo-fallback.jpg" >
+
+Image Density vs. Width. Which one to choose?
+Based on non-scientific surveys (i.e. looking around), it seems that image density (2x, 3x, 4x) is more common. However, there are some good reasons for preferring to specify pixel width:
+
+In the live examples below, we'll use the following images:
+
+flamingo4x.jpg — 4025 x 2672 — 3.8 MB
+flamingo3x.jpg — 3019 x 2005 — 3.7 MB
+flamingo2x.jpg — 2013 x 1337 — 1.9 MB
+flamingo1x.jpg — 1006 x 668 — 338 KB
+flamingo-fallback.jpg — 1006 x 668 — 108 KB
+Notice the file size difference between 1x and 4x. The 4x version is over 11 times larger. This is why you should not serve the high-quality images to low-resolution screens.
+
+
+
+
 </body>
 </html>

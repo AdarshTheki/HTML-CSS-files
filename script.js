@@ -1,12 +1,1 @@
-//  My First javaScript files
-
-import "./Styles";
-
-export default function script(){
-   return (
-      <div className="script">
-         <h1>Center me! 😎</h1>
-         <h2>Hello</h2>
-      </div>
-   );
-}
+ChatGPT:'Key':" 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 "
