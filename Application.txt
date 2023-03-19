@@ -1,0 +1,26 @@
+Application:
+-  Git base
+-  FigmaSetup
+-  Node.js
+-  ResponsivelyApp
+
+Extensions : 
+-  Auto Close Tag
+-  Auto Rename Tag
+-  Ayu (Theme)
+-  Better Comments
+-  Code Runner
+-  Code Spell Checker
+-  CodeGPT: Tim Kmecl
+-  Community Material Theme
+-  HTML CSS Support
+-  indent-rainbow
+-  JavaScript (ES6) code snippets
+-  Live Server
+-  Prettier - Code formatter
+-  Quokka.js
+-  Tailwind CSS IntelliSense
+-  Thunder Client
+-  ESLint
+-  GitLens 
+-  Simple React Snippets
