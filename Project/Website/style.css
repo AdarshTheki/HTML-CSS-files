@@ -2,25 +2,350 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+html{
+  scroll-behavior: smooth;
 }
 
-header {
+:root {
+  --FONT: 3rem;
+  --fontMedian: 2.5rem;
+  --fontSmall: 2rem;
+}
+
+body {
+  background: #00000021;
+  color: #FFF;
+}
+.header{
   width: 100%;
-  color: white;
-  background: #00000057;
+  height: 100vh;
+  background-image: url(./assets/main.jpg),linear-gradient(rgba(0, 0, 0, 0.836), rgba(0, 0, 0, 0.836));
+  background-size: cover;
+  background-position: center;
+  padding: 10px 8%;
+  position: relative;
+}
+nav{
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 10px 40px;
+  padding: 10px 0px;
 }
 
-.img {
-  height: 100vh;
-  background-image: url(./assets/main.jpg);
+.logo{
+  width: 150px;
+  cursor: pointer;
 }
-header nav {
-  /* display: flex; */
+
+nav button {
+  border: 0;
+  outline: 0;
+  background: #db0001;
+  color: #FFF;
+  padding: 7px 20px;
+  font-size: 12px;
+  font-weight: 600;
+  border-radius: 4px;
+  margin-left: 10px;
+  cursor: pointer;
+}
+
+.language-btn{
+  display: inline-flex;
+  background: transparent;
+  align-items: center;
+  border: 1px solid #FFF;
+  padding: 7px 10px;
+}
+
+.language-btn i {
+  margin-left: 10px;
+}
+
+.header-container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  text-align: center;
+  margin-top: 40px;
+  width: 75%;
+}
+.header-container h1 {
+  margin-top: 10px;
+  font-size: var(--FONT);
+  font-weight: 900;
+}
+.header-container h3 {
+  margin-top: 10px;
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+.header-container p {
+  margin-top: 10px;
+  font-size: 1rem;
+  font-weight: 400;
+}
+.email-signup {
+  display: flex;
   justify-content: center;
-  gap: 30px;
-  font-size: 1.2rem;
+  gap: 10px;
+  margin-top: 10px;
 }
+
+.email-signup input{
+  border: 0;
+  outline: 0;
+  border-radius: 4px;
+  padding-left: 20px;
+  width:50%;
+  font: inherit;
+}
+.email-signup button {
+  border-radius: 4px;
+  background: #db0001;
+  border: 0;
+  outline: 0;
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: 500;
+  cursor: pointer;
+  padding: 15px 13px;
+}
+/* Hover and Focus for Button */
+button:hover, 
+button:focus {
+  background-color: #b40101;
+  transition: 0.3s;
+}
+.language-btn:hover{ 
+  background-color: rgba(0, 0, 0, 0.404);
+}
+
+hr {
+  padding: 5px;
+  outline: 0;
+  border: 0;
+  background: #000000d5;
+}
+
+/* ---------------------- Features ------------------------- */
+
+.feature {
+  background-color: rgba(0, 0, 0, 0.945);
+  padding: 50px 5%;
+  font-size: 22px;
+}
+.row {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 50px 0;
+  width: 100%;
+}
+
+.text-col , .img-col {
+  flex-basis: 50%;
+  margin-bottom: 20px;
+}
+.img-col img{
+  display: block;
+  width: 90%;
+  margin: auto;
+}
+
+.feature h2 {
+  font-size: var(--FONT);
+  font-weight: 900;
+}
+.feature p {
+  font-size: 1.5rem;
+  font-weight: 400;
+  margin: 1rem 0 0;
+}
+
+
+/* ------------------- Frequently Asked Questions ------------------------ */
+
+.faq {
+  background-color: rgba(0, 0, 0, 0.945);
+  padding: 50px 8%;
+}
+.faq h2 {
+  font-size: var(--FONT);
+  font-weight: 900;
+  text-align: center;
+}
+.faq p {
+  font-size: 1.5rem;
+  font-weight: 400;
+  text-align: center; 
+  margin: 20px 0px;
+}
+.according{
+  margin: 30px auto;
+  width: 100%;
+  max-width: 950px;
+}
+.according li{
+  list-style: none;
+  width: 100%;
+  margin: 5px;    /* update */
+  padding: 5px;
+}
+.according li label {
+  display: flex;
+  align-items: center;
+  padding: 20px;
+  font-size: 1.5rem;
+  font-weight: 500;
+  background: #303030;
+  margin-bottom: 2px;
+  cursor: pointer;
+  position: relative;
+}
+
+label::after{
+  content: '+';
+  font-size: var(--FONT);
+  position: absolute;
+  right: 20px;
+  transition: transform 0.5s;
+}
+
+input[type="checkbox"]{
+  display: none;
+}
+.according .content {
+  background-color: #303030;
+  text-align: left;
+  padding: 0 20px;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.5s, padding 0.5s;
+}
+.according input[type="checkbox"]:checked + label + .content {
+  max-height: 600px;
+  padding: 30px 20px;
+}
+
+.according input[type="checkbox"]:checked + label::after {
+  transform: rotate(180deg);
+}
+
+/* Hover .according .content */
+ul li:hover{
+  transition: 0.5s ease-out;
+  outline: 1px solid #818181;
+}
+
+/* --------------------- footer ----------------------- */
+.footer{
+  background-color: rgba(0, 0, 0, 0.945);
+  padding: 50px 15% 10px;
+  color: #e4e4e4;
+}
+.footer h2 {
+  margin: 30px 0;
+  font-size: 1.2rem;
+  font-weight: 100;
+}
+.footer h2 a {
+  color:#233eda;
+  font-weight: 500;
+  padding: 0 5px;
+  text-decoration: none;
+  align-content: center;
+}
+.footer h2 a:hover{
+  color:#db0001;
+}
+.footer-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  /* flex-wrap: wrap; */
+  gap: 15px;
+  margin-bottom: 50px;
+}
+.footer-col {
+  display: inline-flex;
+  flex-direction: column;
+}
+.footer-col a {
+  margin-bottom: 5px;
+  font-family: sans-serif;
+  color: #FFF;
+  font-size: 14px;
+  text-decoration: none;
+}
+
+.footer-col a:hover {
+  color: #db0001;
+  text-decoration: underline;
+} 
+
+/* ---------------- responsive media -------------- */
+@media (max-width: 1024px) {
+  .header-container h1,
+  .feature h2,
+  .faq h2,
+  label::after {
+    font-size: 2.5rem;
+  }
+}
+@media (max-width: 900px) {
+  .header-container h1,
+  .feature h2,
+  .faq h2,
+  label::after {
+    font-size: 2.2rem;
+  }
+  .header-container h3,
+  .feature p,
+  .according li label,
+  .faq p {
+    font-size: 1.3rem;
+  }
+}
+@media (max-width: 750px){
+  .footer h2{
+    font-size: 14px;
+  }
+  .email-signup{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; 
+  }
+  .email-signup input{
+    padding: 10px 15px;
+    width: 80%;
+  }
+  .email-signup button {
+    padding: 10px;
+  }
+  .row {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 15px;
+    /* flex-wrap: wrap;
+    padding: 50px 0;
+    width: 100%; */
+  }
+  .footer-row {
+    margin: auto;
+    display: grid;
+    grid-template-columns: 50% 50%;
+  }
+  nav img {
+    display: none;
+  }
+  nav {
+    position: absolute;
+    right: 20px;
+  }
+} 
