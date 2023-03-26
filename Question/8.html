@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        p ~ img {
+            font-size: 2rem;
+            background-color: blueviolet;
+        }
+        
+        #terms:checked ~ p {
+        font-style: italic;
+        color: #797979;
+        }
+
+        a span[aria-hidden]::after {
+            content: "✔";
+            color: rgb(38, 247, 142);
+        }
+        a:visited span[aria-hidden]::after {
+            color: rgb(190, 28, 96);
+        }
+
+    </style>
+</head>
+<body>
+    CSS Specificity and the Cascade
+        Universal selector          -   *
+        Attribute selector          -   [attribute]
+        Child combinator            -   >
+        General sibling combinator  -   ~
+        Adjacent sibling combinator -   +
+
+    <article>                                           
+        <p>Paragraph</p>
+        <h2>Headline 2</h2>
+        <img src="img.png" alt="Image" />
+        <h3>Headline 3</h3>
+        <img src="img.png" alt="Image" />
+    </article>
+
+    <input id="terms" type="checkbox" />
+    <label for="terms">I accept the terms</label>
+    series of <p> with the terms content</p>
+
+    <a href="#">Article Title <span aria-hidden="true"></span></a>
+</body>
+</html>

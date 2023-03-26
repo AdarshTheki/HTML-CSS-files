@@ -1,0 +1,32 @@
+1. Git base
+2. FigmaSetup
+3. Node.js
+4. ResponsivelyApp
+5. AutoClose Tag
+6. Auto Rename Tag
+7. Ayu
+8. Better comment
+10. code Runner
+16. live sever
+11. code spell check
+14. indent rainbow
+19. Quokka.js
+18. prettier
+26. ESLint
+12. CodeGPT
+13. HTML CSS support
+21. Thunder Clint
+22. C/C++
+23. cMake
+24. Community material Theme
+29. Material Theme
+28. One Dark Pro
+27. Gitlens
+30. RESET Clint
+20. tailwind CSS IntelliSense
+15. js ES6 code snippets
+25. ES6 React snippets
+17. nodejs snippets
+31. Simple React snippets
+
+font : " 'cascadia Code lightblue', Consolas, 'Courier New',  monospace "

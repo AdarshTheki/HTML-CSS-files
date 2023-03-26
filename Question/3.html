@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>child Container screen resigning</title>
+    <style>
+        * {margin: 0; padding: 0; box-sizing: border-box;}
+        
+        /* Parent should be fixed for its child to adopt inside */
+        .parent {
+            /* min-height: 100vh; */
+            /* place-content: center; */
+            display: flex;
+            flex-wrap: wrap;
+        }
+        /* for the child we will provide width and height for each boxes*/
+        .child {
+            width: calc(33% - 10px);
+            height: 100px;
+            background-color: blue;
+            margin: 5px;
+            /* margin-left: 10px;
+            margin-top: 10px; */
+        }
+        /* BreakPoint */
+        @media (min-width: 640px) {
+            .child {
+                width: calc(25% - 10px);
+            }
+        }
+        @media (min-width: 940px) {
+            .child {
+                width: calc(20% - 10px);
+            }
+        }
+        @media (min-width: 1240px) {
+            .child {
+                width: calc(15% - 10px);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="parent">
+        <div class="child"></div>
+        <div class="child"></div>
+        <div class="child"></div>
+        <div class="child"></div>
+        <div class="child"></div>
+        <div class="child"></div>
+        <div class="child"></div>
+        <div class="child"></div>
+        <div class="child"></div>
+        <div class="child"></div>
+    </div>
+</body>
+</html>
