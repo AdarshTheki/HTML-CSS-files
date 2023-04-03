@@ -81,7 +81,7 @@ function Employee(i, n, s) {
   this.salary = s;
 }
 const e = new Employee(101, "Ayush", 20000);
-console.log(e);
+console.log("class Employee:",e);
 
 // =================================================================================
 //* Manipulating Object;
@@ -100,40 +100,40 @@ console.log(emp2);
 
 //* Delete key:-
 delete emp2.id;
-console.log(emp2);
+console.log("delete:",emp2);
 delete emp2.salary;
-console.log(emp2);
+console.log("delete:",emp2);
 
 //* object Method:-
 let emp3 = { id: 100, name: "adarsh", age: 24, salary: 24000 };
 
 //* Object.keys
 const keys1 = Object.keys(emp3);
-console.log(keys1);
+console.log("Keys:", keys1);
 
 //* Object.values
 const keys2 = Object.values(emp3);
-console.log(keys2);
+console.log("values:",keys2);
 
 //* Object.entries
 const keys3 = Object.entries(emp3);
-console.log(keys3);
+console.log("entries:",keys3);
 
 //* Object.freeze
 Object.freeze(emp3); //* Not allow both update/delete
 emp3.id = 40;
 delete emp3.name;
-console.log(emp3);
+console.log("freeze:",emp3);
 
 //* Object.seal
 Object.seal(emp);   //* allow update / but not allow delete
 emp.id = 40;
 delete emp.salary;
-console.log(emp);
+console.log("seal:",emp);
 
 //* Object.assign
 const p = Object.assign({}, emp);
-console.log(p);
+console.log("assign:",p);
 
 // =================================================================================
 //! Loop: forEach, map, filter, reduce
@@ -143,11 +143,11 @@ let array = [34, 24, 36, 22];
 //* loops: normal loop
 for (let i = 0; i < array.length; i++) {
   let p = array[i];
-  console.log(p);
+  console.log("loop:",p);
 }
 //* forEach: calls a function once for each array element.
 array.forEach((value, index) => {
-  console.log(value, index);
+  console.log("forEach:",value, index);
 });
 
 //* Map :- Create a new array by performing some operation on each array element.
