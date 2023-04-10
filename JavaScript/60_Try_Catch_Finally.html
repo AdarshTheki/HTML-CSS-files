@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      // When an error occurs, JavaScript will stop and generate an error message.
+
+      // The "try...catch...finally" statements combo handles errors without stopping JavaScript.
+      // The "try" statement defines the code block to run (to try).
+      // The "catch" statement defines a code block to handle any error.
+      // The "finally" statement defines a code block to run regardless of the result.
+      // The "throw" statement defines a custom error.
+      // Both "catch" and "finally" are optional, but you must use one of them.
+
+      //  Error Handling with Try and Catch Method:-
+      setTimeout(() => {
+        console.log("Hacking WIFI---- Please wait...");
+      }, 1000);
+      setTimeout(() => {
+        console.log("Hacking FaceBook---- Please wait...");
+      }, 2000);
+
+// Example: 1
+      try {
+        // console.log(Adarsh)   // error handle...
+        setTimeout(() => {
+          console.log(Adarsh);
+        },1000); // not handle error...
+      } catch (error) {
+        console.log("Error is here=>", error);
+      }
+
+      //EX:2  error handle..
+      // setTimeout(()=>{
+      //   try{
+      //     console.log(Adarsh)
+      //   }catch(error){
+      //     console.log(error)
+      //   }
+      // },1000)
+
+      setTimeout(() => {
+        console.log("Hacking Phone:9370xxxxxx.---- Please wait...");
+      }, 3000);
+      setTimeout(() => {
+        console.log(
+          "Hacking Phone:9370xxxxxx.both the hack whatsapp facebook Please wait..."
+        );
+      }, 4000);
+    </script>
+  </body>
+</html>

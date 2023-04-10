@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Local Storage</title>
+</head>
+<body>
+<Script>
+// Local Storage Related To Method:
+
+// The localStorage object allows you to save key/value pairs in the browser.
+// Note: 
+// 1. The localStorage object stores data with no expiration date. 
+// 2. The data is not deleted when the browser is closed, and are available for future sessions.
+
+let key = prompt("Enter your LocalStorage key:")
+let value = prompt("Enter your LocalStorage Value:")
+
+localStorage.setItem(key, value);
+
+console.log(`The ${key} and its value is ${localStorage.getItem(key)}`);
+
+// localStorage.clear()
+// localStorage.getItem()
+// localStorage.removeItem()
+// localStorage.length          // length
+// localStorage.key(1)  // index value of key
+
+</Script>
+</body>
+</html>

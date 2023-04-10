@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cookies</title>
+</head>
+<body>
+<script>
+// Cookies in Js.
+// The cookie property sets or returns a semicolon-separated list of key=value pairs (document cookies).
+
+// console.log(document.cookie);
+document.cookie = "name=Harry122134234543"
+document.cookie = "name1=adarsh34543"
+document.cookie = "name=adarsh"
+console.log(document.cookie);
+
+let key = prompt("enter your Key")
+let value = prompt("Enter your value")
+// document.cookie = `${key}=harry`
+document.cookie = `${encodeURIComponent(key)} = ${encodeURIComponent(value)}`
+console.log(document.cookie);
+
+</script>
+</body>
+</html>
