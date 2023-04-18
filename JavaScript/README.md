@@ -277,45 +277,47 @@ console.timeEnd("a")
 console.clear()                     // console clear all
 ```
 
-## Window: DOM , BOM & Object (JavaScript core)
-```js
-window.console.log(window)
-console.log(document.body)
-```
-* **DOM (Document Object Model):** DOM represent the page contact HTML
+## Windows: DOM, BOM & Object (JavaScript core)
+
+* **Document Object Model:** `DOM` represent the page contact HTML
 ```js
 document.body  // page body as Js. object   
 document.body.style.background="red" // change page background to red
 ```
-* **BOM (Browser Object Model):** It is represent additional object provided by the browser(host environment) for working with everything except the document. The function `alert`/`confirm`/`prompt` are also a part of `BOM`.
+* **Browser Object Model:** `BOM` is represent additional object provided by the browser(host environment) for working with everything except the document. The function `alert`/`confirm`/`prompt` are also a part of `BOM`.
 ```js
+window.console.log(window)
+console.log(document.body)
+
 location.href = "https://google.com"  // redirect to another URL.
 ```
-# javaScript Importance Notes:
+# Importance Notes:
 
-<<<<<<< HEAD
-## Parents and siblings of an Element:
-```js
-console.log(document.body.firstChild);
-console.log(document.body.lastChild);
-console.log(document.body.childNodes);
-```
-## Element Navigation:
-```js
-let a = document.body
-=======
-**DOM - Document Object Model:**
 ```javascript
-// Query/Get Elements
+// Parents and siblings of an Element:
+document.body.firstChild;
+document.body.lastChild;
+document.body.childNodes;
 
-    // Preferred way:
-    document.querySelector('css-selectors')
-    document.querySelectorAll('css-selectors', ...)
+// Element Navigation:
 
-    // Old ways, and still work:
-    document.getElementsByTagName('element-name')
-    document.getElementsByClassName('class-name')
-    document.getElementById('id')
+// Preferred way:- Query Element
+document.querySelector('css-selectors')
+document.querySelectorAll('css-selectors', ...)
+
+// Old ways:  Get Element
+document.getElementsByTagName('element-name')
+document.getElementsByClassName('class-name')
+document.getElementById('id')
+
+// table navigation:
+node.rows
+node.rows[0]
+node.caption
+node.tFoot
+node.tHead.firstElementChild
+node.tBodies
+node.rows[0],rowIndex
 
 // Create / clone Element
 document.createElement('div')
@@ -323,15 +325,21 @@ document.createTextNode('some text here')
 node.cloneNode()
 node.textContent = 'some text here'
 
-// Modify Element
+// Modify Element style
 node.style.color = 'red'
 node.style.padding = '10px',
 node.style.fontSize = '200%'
-node.setAttribute('attr-name', 'attr-value')
+
+node.hasAttribute('class')  // check class
+node.getAttribute('class')  // get class
+node.setAttribute('name', 'value')  
 node.removeAttribute('attr-name')
 
-//Get and Modify Element Class
-node.classList
+node.matches('') // check element if match the given css selector
+node.closes("") // to look nearest ancestor that matches the given css-selector and also element itself check
+node.contain("") // "element_B is inside element_A OR element_A==element_B" is true return.
+
+// Get and Modify Classes
 node.classList.add('class-name', ...)
 node.classList.remove('class-name', ...)
 node.classList.toggle('class-name')
@@ -342,7 +350,7 @@ node.classList.replace('old', 'new')
 parentNode.appendChild(nodeToAdd)
 parentNode.insertBefore(nodeToAdd, childNode)
 
-//Remove Node
+// Remove Node
 parentNode.removeChild(nodeToRemove)
 // Hack to remove self
 nodeToRemove.parentNode.removeChild(nodeToRemove)
@@ -355,24 +363,44 @@ node.parentNode
 node.childNodes
 node.children
 
-// Events
-node.addEventListener('event-name', callback-function)
-node.removeEventListener('event-name', callback-function)
+// InsertAdjacentHTML / text / Element:-
+
+<body>
+   <div id="first">I am Adarsh Verma</div>
+</body>
+<script>
+first.insertAdjacentHTML('beforebegin','<div class="test">before-begin</div>');
+first.insertAdjacentHTML('beforeend','<div class="test">before-end</div>');
+first.insertAdjacentHTML('afterbegin','<div class="test">after-begin</div>');
+first.insertAdjacentHTML('afterend','<div class="test">after-end</div>');
+</script>
+
 ```
-
-## What is a "Node"? (in the context of DOM)
-
-**Node:** Every item in the DOM tree is called a node. There are two types of node - A text node, and an element node:
+### Node:
+"Every item in the DOM tree is called a node." There are two types of node - 
+`Text Node`, and `Element Node`:
 
 -   **Text Node:** Node that has text.
-
 -   **Element Node:** Node that has an element.
-
 -   **Child Node:** A node which is a child of another node.
-
 -   **Parent Node:** A node which has one or more child.
->>>>>>> f0b72cd3da4c87bdf2260231874c96d6a0b7b233
-
 -   **Descendent Node:** A node which is nested deep in the tree.
-
 -   **Sibling Node:** A node that share the same parent node.
+
+### setTimeout() and setInterval()
+-   The `setTimeout()` method calls a function after a number of milliseconds. and it is executed only once.
+-   The `setInterval()` method calls a function in infinite time of loop.
+
+    myTimeout = setTimeout(function, milliseconds);
+
+Then you can to stop the execution by calling clearTimeout():
+
+### addEventListener:
+```js
+function myFunction(){
+   alert('Add Event Listener')
+}
+const event = document.getElementById('btn');
+event.addEventListener('click', myFunction)
+```
+
