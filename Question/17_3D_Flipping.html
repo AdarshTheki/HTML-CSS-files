@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3D Flipping</title>
+    <style>
+        *, *::after, *::before {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            height: 100vh;
+            display: grid;
+            place-items: center;
+        }
+        .card {
+            width: 400px;
+        }
+        /* .card:hover {
+        } */
+        .card__content {
+            text-align: center;
+            position: relative;
+            padding: 5em;
+            transition: transform 3s;
+            background: pink;
+            transform-style: preserve-3d;
+        }
+        .card:hover .card__content {
+            transform: rotateY(.5turn);
+            
+        }
+        .card__front,
+        .card__back {
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            padding: 2rem;
+            backface-visibility: hidden;
+        }
+        .card__title{
+            font-size: 3rem;
+            transform: translateZ(5rem);
+        }
+        .card__body {
+            transform: translateZ(2rem);
+        }
+        .card__back {
+            transform: rotateY(.5turn);
+            /* background: lightblue; */
+        }
+    </style>
+</head>
+<body>
+    <div class="card">
+        <div class="card__content">
+
+            <div class="card__front">
+                <h3 class="card__title">The Fair</h3>
+                <p class="card__subtitle">Time for some Fun</p>
+            </div>
+
+            <div class="card__back">
+                <p class="card__body">Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci, facere?</p>
+            </div>
+            
+        </div>
+    </div>
+</body>
+</html>

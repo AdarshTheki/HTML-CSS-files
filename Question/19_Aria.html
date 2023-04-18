@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Custom checkbox</h1>
+    <div class="checkbox checked">
+        receive Offer
+    </div>
+    
+    
+    <h1>Aria checkbox</h1>
+    <div role="checkbox" aria-checked="true">
+        receive Offer Promo
+    </div>
+
+
+    <button class="toggle" checked>
+        Enable
+    </button>
+
+    <button role="switch"
+            aria-checked="true"
+            class="toggle">
+        
+        Enable sww
+    </button>
+
+<br>
+    Express More UI Pattern 
+    <ul role="tree">
+        <li role="treeitem" aria-expanded="true">Access course</li>
+        <ul role="group">
+            <li role="treeitem" aria-expanded="false">Introduction</li>
+            <li role="treeitem" aria-expanded="false">Focus</li>
+        </ul>
+    </ul>
+</body>
+</html>
