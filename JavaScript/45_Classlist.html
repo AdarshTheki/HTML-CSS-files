@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<head>
+   <style>
+      *{ margin: 0; padding: 0; font-size: 1.5rem; }
+      .yellow     { background-color: yellow; color: blue;  }
+      .red        { background-color: red; color: white;  }
+      .text-dark  { background-color: black; color: whitesmoke; }
+      </style>
+</head>
+<body>
+   <div id="first" class="yellow red text-dark">first
+      <span>Hey, I am Good</span>
+   </div>
+</body>
+<script>
+// Change HTML classes: ClassName and ClassList :-
+
+// first.className = "text-dark"
+// first.className = "red"
+// first.className = "yellow"
+let a = document.getElementById('first')  // initialize node
+console.log(a.classList.remove('red'))    // remove class  
+console.log(a.classList.add('red'))       // add class
+console.log(a.classList.toggle('red'))    // add and remove
+console.log(a.classList.contains('red'))  // check true or false
+</script>
+</html>
