@@ -24,4 +24,4 @@ class Programming extends Employee {
 // let a = new Employee();
 let a = new Programming();
 a.logIn();
-a.requestLeaves(3);
+a.requestLeaves(3); 
