@@ -1,44 +1,402 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>UsabilityHub</title>
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
-    <!-- top banner -->
-    <div class="top-border"></div>
-      <div class="container">
-        <div class="small-bold-text">📣 Figma prototype testing just got a whole lot better! Read more →</div>
-      </div>
-    <nav class="">
-      <a href="#">UsabilityHub</a>
-      <button></button>
-    </nav>
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>UsabilityHub</title>
+        <link rel="stylesheet" href="style.css" />
+    </head>
+    <body>
+        <!-- top banner -->
+        <div class="top-banner">
+            <div class="container">
+                <p class="small-bold-text banner-text">
+                    📣 Figma prototype testing just got a whole lot better! Read
+                    more →
+                </p>
+            </div>
+        </div>
 
-    <header></header>
+        <!-- navigation -->
+        <nav>
+            <div class="container main-nav flex">
+                <a href="#" class="company-logo">
+                    <img src="./assets/asset 1.png" alt="company-logo" />
+                </a>
+                <i class="fa-solid fa-bars" id="menu"></i>
+                <div class="nav-links">
+                    <ul class="flex">
+                        <li><a href="#" class="hover-link">Products</a></li>
+                        <li><a href="#" class="hover-link">Customer</a></li>
+                        <li><a href="#" class="hover-link">Pricing</a></li>
+                        <li><a href="#" class="hover-link">Resources</a></li>
+                        <li>
+                            <a href="#" class="hover-link secondary-btn"
+                                >Sign In</a
+                            >
+                        </li>
+                        <li>
+                            <a href="#" class="hover-link primary-btn"
+                                >Sign Up</a
+                            >
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
 
-    <section class="companies-section"></section>
+        <!-- Header Section -->
+        <header>
+            <div class="container header-section flex">
+                <div class="header-left">
+                    <h1>Design confidently.</h1>
+                    <p>
+                        UsabilityHub is a remote user research platform that
+                        takes the guesswork out of design decisions by
+                        validating them with real users.
+                    </p>
+                    <a href="#" class="primary-btn">Get Started</a>
+                </div>
+                <div class="header-right">
+                    <img src="./assets/asset 2.png" alt="hero_image" />
+                </div>
+            </div>
+        </header>
 
-    <section class="frature-section"></section>
+        <!-- Companies-Section -->
+        <section class="companies-section">
+            <div class="container">
+                <div class="small-bold-text companies-header">
+                    The world’s best companies rely on UsabilityHub to make
+                    better design decisions.
+                </div>
+                <div class="logos flex">
+                    <img class="logo" src="./assets/asset 3.png" alt="Amazon" />
+                    <img class="logo" src="./assets/asset 4.png" alt="Google" />
+                    <img class="logo" src="./assets/asset 5.png" alt="TaskRabbit"/>
+                    <img class="logo" src="./assets/asset 6.png" alt="AirTable" />
+                    <img class="logo" src="./assets/asset 7.png" alt="Box" />
+                    <img class="logo" src="./assets/asset 8.svg" alt="GoDaddy" style="max-height: 28px"/>
+                    <img class="logo" src="./assets/asset 9.png" alt="Asana" />
+                </div>
+            </div>
+        </section>
 
-    <section class="big-feature-section"></section>
-    <section class="big-feature-section"></section>
-    <section class="big-feature-section"></section>
+        <!-- Feature-Section -->
+        <section class="feature-section">
+            <div class="container">
+                <div class="feature-header">
+                    <h2>Your user research Swiss Army knife</h2>
+                    <a href="#" class="secondary-btn"
+                        >See all Features
+                        <i class="fa-solid fa-arrow-right-long"></i
+                    ></a>
+                </div>
+                <div class="feature-areas">
+                    <div class="feature-card flex">
+                        <img src="./assets/asset 11.svg" alt="boxes" />
+                        <h3>Card sorting</h3>
+                        <p>Discover how people group and label information.</p>
+                        <a href="#" class="secondary-btn"
+                            >Learn More
+                            <i class="fa-solid fa-arrow-right-long"></i
+                        ></a>
+                    </div>
 
-    <div class="example-section"></div>
+                    <div class="feature-card flex">
+                        <img src="./assets/asset 13.svg" alt="boxes" />
+                        <h3>Prototype tests</h3>
+                        <p>
+                            Discover how people navigate your Figma prototypes.
+                        </p>
+                        <a href="#" class="secondary-btn"
+                            >Learn More
+                            <i class="fa-solid fa-arrow-right-long"></i
+                        ></a>
+                    </div>
 
-    <div class="cta-section"></div>
+                    <div class="feature-card flex">
+                        <img src="./assets/asset 14.svg" alt="boxes" />
+                        <h3>First click tests</h3>
+                        <p>
+                            Test interaction with first click and navigation
+                            tests.
+                        </p>
+                        <a href="#" class="secondary-btn"
+                            >Learn More
+                            <i class="fa-solid fa-arrow-right-long"></i
+                        ></a>
+                    </div>
 
-    <footer></footer>
-    <div class="sub-footer"></div>
+                    <div class="feature-card flex">
+                        <img src="./assets/asset 15.svg" alt="boxes" />
+                        <h3>Design surveys</h3>
+                        <p>Get feedback on images, videos or audio files.</p>
+                        <a href="#" class="secondary-btn"
+                            >Learn More
+                            <i class="fa-solid fa-arrow-right-long"></i
+                        ></a>
+                    </div>
 
+                    <div class="feature-card flex">
+                        <img src="./assets/asset 16.svg" alt="boxes" />
+                        <h3>Preference tests</h3>
+                        <p>Find out which designs users prefer and why.</p>
+                        <a href="#" class="secondary-btn"
+                            >Learn More
+                            <i class="fa-solid fa-arrow-right-long"></i
+                        ></a>
+                    </div>
 
-  </body>
-  <script
-    src="https://kit.fontawesome.com/5638bd2fff.js"
-    crossorigin="anonymous"
-  ></script>
+                    <div class="feature-card flex">
+                        <img src="./assets/asset 17.svg" alt="boxes" />
+                        <h3>Five second tests</h3>
+                        <p>
+                            Test comprehensibility by measuring first
+                            impressions.
+                        </p>
+                        <a href="#" class="secondary-btn"
+                            >Learn More
+                            <i class="fa-solid fa-arrow-right-long"></i
+                        ></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Big-Feature-Section -->
+        <section class="big-feature-section">
+            <div class="container big-feature-container">
+                <div class="feature-image">
+                    <img src="./assets/asset 18.png" alt="Design professionals" />
+                </div>
+                <div class="feature-disc">
+                    <h4>Effortless validation for</h4>
+                    <h2>Design professionals</h2>
+                    <h3>
+                        Test interfaces, interaction flows, iconography and
+                        more, to help you create intuitive and delightful
+                        experiences for your users.
+                    </h3>
+                    <img src="./assets/asset 19.png" alt="ChartMogul" width="120px" />
+                    <h4>
+                        &#8220; The navigation test is god's gift to UI
+                        designers, it probably has the best power-to-simplicity
+                        ratio of any software, ever. &#8221;
+                    </h4>
+                    <div class="feature-profile flex">
+                        <div class="feature-profile-pic">
+                            <img src="./assets/asset 20.png" alt="pic_Nick" width="50px"  />
+                        </div>
+                        <div class="feature-profile-text">
+                            <h4>Nick Franklin</h4>
+                            <h5>Chief Executive Officer</h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="container big-feature-container">
+                <div class="feature-disc">
+                    <h4>Optimization for</h4>
+                    <h2>Marketers</h2>
+                    <h3>
+                        Fine-tune landing pages, messaging, and creative,
+                        helping you optimise conversion rates on marketing
+                        campaigns and product launches.
+                    </h3>
+                    <img
+                        src="./assets/asset 22.png"
+                        alt="PHILIPS"
+                        width="120px"
+                    />
+                    <h4>
+                        &#8220; We use UsabilityHub tests to help us make
+                        decisions for various projects. From web and mobile
+                        design to marketing activities. &#8221;
+                    </h4>
+                    <div class="feature-profile flex">
+                        <div class="feature-profile-pic">
+                            <img
+                                src="./assets/asset 23.png"
+                                alt="pic_Nick"
+                                width="50px"
+                            />
+                        </div>
+                        <div class="feature-profile-text">
+                            <h4>Rick van de Ven</h4>
+                            <h5>Digital Marketing Analyst</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="feature-image">
+                    <img
+                        src="./assets/asset 21.png"
+                        alt="Design professionals"
+                    />
+                </div>
+            </div>
+
+            <div class="container big-feature-container">
+                <div class="feature-image">
+                    <img
+                        src="./assets/asset 24.png"
+                        alt="Design professionals"
+                    />
+                </div>
+                <div class="feature-disc">
+                    <h4>Easier decision making for</h4>
+                    <h2>Product managers</h2>
+                    <h3>
+                        Ensure you’re delivering the right features to the right
+                        customers by validating product concepts with your
+                        target audience.
+                    </h3>
+                    <img
+                        src="./assets/asset 25.png"
+                        alt="ChartMogul"
+                        width="120px"
+                    />
+                    <h4>
+                        &#8220; Adopting UsabilityHub got us into the habit of
+                        asking our users questions before locking in decisions.
+                        &#8221;
+                    </h4>
+                    <div class="feature-profile flex">
+                        <div class="feature-profile-pic">
+                            <img
+                                src="./assets/asset 26.png"
+                                alt="pic_Nick"
+                                width="50px"
+                            />
+                        </div>
+                        <div class="feature-profile-text">
+                            <h4>Ron Diorio</h4>
+                            <h5>VP Innovation & New Products</h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- feature content -->
+        <section class="feature-content container flex">
+            <div class="feature-content-header">
+                <h2>One platform, endless possibilities</h2>
+                <a href="#" class="secondary-btn"
+                    >See more examples
+                    <i class="fa-solid fa-arrow-right-long"></i
+                ></a>
+            </div>
+            <div class="feature-content-image">
+                <a href="#" class="img-text content-1"
+                    >Can users complete a task in my software interface?</a
+                >
+                <a href="#" class="img-text content-2"
+                    >Can users find important pages on my website?</a
+                >
+                <a href="#" class="img-text content-3"
+                    >Is my website’s intended audience clear?</a
+                >
+                <a href="#" class="img-text content-4"
+                    >Do visitors understand what a page is about?</a
+                >
+            </div>
+        </section>
+
+        <!-- Participants -->
+        <div class="participants">
+            <section class="participants-container container">
+                <div class="participant-content">
+                    <div class="participant-heading">
+                        <h2>No participants?</h2>
+                        <h2>No problem.</h2>
+                    </div>
+                    <h3>
+                        Our integrated panel allows you to quickly and
+                        affordably recruit research participants that precisely
+                        match your target audience.
+                    </h3>
+                    <h4>Our panel includes:</h4>
+                    <ul class="participants-links">
+                        <li>530k+ panel participants</li>
+                        <li>Coverage in 100+ countries</li>
+                        <li>Average 2hr turn around time</li>
+                        <li>Response quality guarantee</li>
+                        <li>Free demographic targeting</li>
+                        <li>35+ demographic options</li>
+                    </ul>
+                    <a href="#" class="primary-btn">Learn More</a>
+                </div>
+                <div class="participant-image">
+                    <img src="./assets/asset 40.png" alt="participants" />
+                </div>
+            </section>
+        </div>
+
+        <!-- cta Section -->
+        <div class="container flex cta-section">
+            <h1>Start testing today</h1>
+            <p>Take the guesswork out of design decisions</p>
+            <a href="#" class="primary-btn">Get Started</a>
+        </div>
+
+        <footer class="footer-container">
+            <div class="container footer-content flex">
+                <a href="#" class="company-logo">
+                    <img src="./assets/asset 1.png" alt="company-logo" />
+                </a>
+                <div class="content flex hover">
+                    <h3>Product</h3>
+                    <a href="#">Overview</a>
+                    <a href="#">Pricing</a>
+                    <a href="#">UsabilityHub panel</a>
+                    <a href="#">Customers</a>
+                    <a href="#">Status page</a>
+                    <a href="#">Sign up</a>
+                    <a href="#">Book a demo</a>
+                </div>
+                <div class="content flex hover">
+                    <h3>Methodologies</h3>
+                    <a href="#">Card sorting</a>
+                    <a href="#">Prototype testing</a>
+                    <a href="#">First click tests</a>
+                    <a href="#">Preference tests</a>
+                    <a href="#">Five second tests</a>
+                    <a href="#">Design surveys</a>
+                </div>
+                <div class="content flex hover">
+                    <h3>Resources</h3>
+                    <a href="#">Blog</a>
+                    <a href="#">Examples</a>
+                    <a href="#">Testing guides</a>
+                    <a href="#">Help center</a>
+                    <a href="#">Contact</a>
+                    <a href="#">Careers</a>
+                </div>
+            </div>
+        </footer>
+
+        <div class="sub-footer">
+            <div class="container flex sub-footer-container">
+                <div class="footers-legals flex hover">
+                    <a href="#">Privacy police</a>
+                    <a href="#">Terms & conditions</a>
+                    <a href="#">Security information</a>
+                </div>
+                <div class="footers-socials flex hover">
+                    <i class="fa-brands fa-facebook"></i>
+                    <i class="fa-brands fa-twitter"></i>
+                    <i class="fa-brands fa-linkedin"></i>
+                    <i class="fa-brands fa-youtube"></i>
+                </div>
+            </div>
+        </div>
+    </body>
+    <script
+        src="https://kit.fontawesome.com/5638bd2fff.js"
+        crossorigin="anonymous"
+    ></script>
+    <script src="script.js"></script>
 </html>
