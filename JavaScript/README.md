@@ -403,4 +403,38 @@ function myFunction(){
 const event = document.getElementById('btn');
 event.addEventListener('click', myFunction)
 ```
-
+## CallBack Function:
+A callback is a function passed as an argument to another function
+```js
+function add(a, b) {
+    return a + b;
+}
+function divide(a, b) {
+    return a / b;
+}
+function calculate(x, y, operation) {
+    return operation(x, y);
+}
+console.log(calculation(2, 2, add));
+console.log(calculation(2, 2, divide));
+```
+## Promise
+The Promise object represents the eventual completion (or failure) of an asynchronous operation and its resulting value.
+```js
+const Ticket = new Promise(function (resolve, reject){
+    const isBoarded = false;
+    if(isBoarded) {
+        resolve('You are in the Flight');
+    }
+    else{
+        reject('Your flight has been cancelled');
+    }
+})
+Ticket.then((data)=>{
+    console.log('FullField', data);
+}).catch((data)=>{
+    console.log('Rejected', data);
+}).finally((data)=>{
+    console.log('I will always be executed');
+})
+```
