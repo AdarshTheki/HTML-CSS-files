@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM All create Add remove </title>
+    <style>
+    .container {
+        background-color: cadetblue;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        align-items: center;
+        width: 520px;
+        padding: 10px;
+        gap: 10px;
+    }
+    .box {
+        width: 100px;
+        height: 100px;
+        background-color: antiquewhite;
+        display: flex;
+        flex-shrink: 0;
+        justify-content: center;
+        align-items: center;
+    }
+    .round-border {
+        border-radius: 20px;
+        border: 5px solid blue;
+    }
+    #bar{ cursor: pointer; font-size: 2rem; font-weight: 800;}
+</style>
+</head>
+<body>
+<div id="bar">&#9776;</div>
+
+<div class="container">
+    <div class="box" id="box-1">box-1</div>
+    <div class="box" id="box-2">box-2</div>
+    <div class="box random" id="box-3">box-3</div>
+    <div class="box random" id="box-4">box-4</div>
+</div>
+
+<div class="event container">
+    <div class="box" onclick="myFunction()">Box is Here-1</div>
+    <div class="box" onmouseover="mouseOver()">Box is Here-2</div>
+    <div class="box">Box is Here-3</div>
+    <div class="box" id="event">Box is Here-4</div>
+</div>
+<script>
+// Find HTML Element:-
+
+const myBody = document.body;
+// console.log(myBody);
+
+const box2 = document.getElementById('box-2')
+// console.log(box2);
+
+const randomOne = document.querySelector('.container .random');
+// console.log(randomOne);
+const randomAll = document.querySelectorAll('.container .random');
+// console.log(randomAll);
+
+// Modify HTML:
+const box1 = document.getElementById('box-1')
+box1.innerHTML = `<h1>Box-1</h1>`;
+box1.style.backgroundColor = `pink`;
+box1.style.color = `white`;
+
+// Modify Class in HTML:
+
+// box2.classList.add('round-border');
+// box2.classList.toggle('round-border');
+
+const boxes = document.getElementsByClassName('box')
+for(let i=0; i<boxes.length; i++){
+    boxes[i].classList.add('round-border');
+}
+
+// create new Element
+const Paragraph = document.createElement('p');
+Paragraph.innerHTML = "Hey This is me!";
+Paragraph.classList.add('box');
+
+const container = document.getElementById('box-4')
+container.innerHTML = "";
+container.appendChild(Paragraph);
+
+const bar = document.getElementById('bar');
+bar.addEventListener('click', ()=>{
+    bar.classList.toggle('box');
+})
+
+// addEventListener;-
+function myFunction(){
+    console.log(`I was clicked`);
+}
+
+const a = document.getElementById('event');
+a.addEventListener('click', () => {
+    console.log('Click by event - 1');
+})
+a.addEventListener('click', (e) => {
+    console.log('Click by Event - 2', e);
+})
+
+</script>
+</body>
+</html>
