@@ -294,22 +294,6 @@ location.href = "https://google.com"  // redirect to another URL.
 # Importance Notes:
 
 ```javascript
-// Parents and siblings of an Element:
-document.body.firstChild;
-document.body.lastChild;
-document.body.childNodes;
-
-// Element Navigation:
-
-// Preferred way:- Query Element
-document.querySelector('css-selectors')
-document.querySelectorAll('css-selectors', ...)
-
-// Old ways:  Get Element
-document.getElementsByTagName('element-name')
-document.getElementsByClassName('class-name')
-document.getElementById('id')
-
 // table navigation:
 node.rows
 node.rows[0]
@@ -324,27 +308,6 @@ document.createElement('div')
 document.createTextNode('some text here')
 node.cloneNode()
 node.textContent = 'some text here'
-
-// Modify Element style
-node.style.color = 'red'
-node.style.padding = '10px',
-node.style.fontSize = '200%'
-
-node.hasAttribute('class')  // check class
-node.getAttribute('class')  // get class
-node.setAttribute('name', 'value')  
-node.removeAttribute('attr-name')
-
-node.matches('') // check element if match the given css selector
-node.closes("") // to look nearest ancestor that matches the given css-selector and also element itself check
-node.contain("") // "element_B is inside element_A OR element_A==element_B" is true return.
-
-// Get and Modify Classes
-node.classList.add('class-name', ...)
-node.classList.remove('class-name', ...)
-node.classList.toggle('class-name')
-node.classList.contains('class-name')
-node.classList.replace('old', 'new')
 
 // Add node to document
 parentNode.appendChild(nodeToAdd)
@@ -364,17 +327,10 @@ node.childNodes
 node.children
 
 // InsertAdjacentHTML / text / Element:-
-
-<body>
-   <div id="first">I am Adarsh Verma</div>
-</body>
-<script>
-first.insertAdjacentHTML('beforebegin','<div class="test">before-begin</div>');
-first.insertAdjacentHTML('beforeend','<div class="test">before-end</div>');
-first.insertAdjacentHTML('afterbegin','<div class="test">after-begin</div>');
-first.insertAdjacentHTML('afterend','<div class="test">after-end</div>');
-</script>
-
+element.insertAdjacentHTML('beforebegin','<div class="test">before-begin</div>');
+element.insertAdjacentHTML('beforeend','<div class="test">before-end</div>');
+element.insertAdjacentHTML('afterbegin','<div class="test">after-begin</div>');
+element.insertAdjacentHTML('afterend','<div class="test">after-end</div>');
 ```
 ### Node:
 "Every item in the DOM tree is called a node." There are two types of node - 
@@ -404,6 +360,14 @@ element.textContent = 'Hello, world!';
 ```
 3.  **Modifying attributes:** You can use the getAttribute and setAttribute methods to get and set attributes of an element. For example:
 ```js
+node.hasAttribute('class')  // check class
+node.getAttribute('class')  // get class
+node.setAttribute('name', 'value')  
+node.removeAttribute('attr-name')
+node.matches('')
+node.closes("") // to look nearest ancestor
+node.contain("") // "element_B is inside element_A OR element_A==element_B" is true return.
+
 const src = element.getAttribute('src');
 element.setAttribute('src', 'new-image.png');
 ```
@@ -412,6 +376,8 @@ element.setAttribute('src', 'new-image.png');
 myElement.classList.add('myClass');
 myElement.classList.remove('myClass');
 myElement.classList.toggle('myClass');
+myElement.classList.contain('myClass'); // true/false Return
+myElement.classList.replace('OldClass', 'NewClass');
 ```
 
 5.  **Responding to events:** You can use the `addEventListener` method to add an event listener to an element, and respond to user actions such as clicks and key presses. For example:
