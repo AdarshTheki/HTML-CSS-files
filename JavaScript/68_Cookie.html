@@ -23,6 +23,14 @@ let value = prompt("Enter your value")
 document.cookie = `${encodeURIComponent(key)} = ${encodeURIComponent(value)}`
 console.log(document.cookie);
 
+let cookies = document.cookie.split("; ");
+for (let i = 0; i < cookies.length; i++) {
+  let parts = cookies[i].split("=");
+  if (parts[0] === "name") {
+    let name = parts[1];
+    console.log(name);
+  }
+}
 </script>
 </body>
 </html>
