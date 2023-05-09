@@ -508,6 +508,36 @@ In this code, the `fetchUserData` function is defined as an async function that 
 Try/catch/finally is a way to handle errors and exceptions in JavaScript. The `try` block contains the code that may throw an error or exception, the `catch` block contains the code that handles the error or exception, and the `finally` block contains code that is executed regardless of whether an error or exception is thrown.
 
 Here is an example of using try/catch/finally in JavaScript
+```js
+try {
+  // Code that might throw an error
+} catch (error) {
+  // Code to handle the error
+} finally{
+  // Code to handle the both casease.
+}
+```
+
+## Error Objects
+JavaScript provides several built-in error objects that can be used to represent different types of errors, such as `Error`, `TypeError`, and `RangeError`. Here's an example:
+```js
+function validateInput(input) {
+  if (typeof input !== 'string') {
+    throw new TypeError('Input must be a string');
+  }
+  if (input.length < 5) {
+    throw new RangeError('Input must be at least 5 characters long');
+  }
+}
+
+try {
+  validateInput(123);
+} catch (error) {
+  console.log(error.message);
+}
+```
+In this example, the `validateInput` function checks if the input is a string and if it has at least 5 characters, and throws a `TypeError` or `RangeError` if the input is invalid. The `try` block calls the `validateInput` function with the argument 123, which throws a `TypeError`. The `catch` block catches the error and logs its message to the console.
+
 
 ## Fetch API:
 The Fetch API is a JavaScript interface that provides a way to make HTTP requests from within a web browser. With the Fetch API, you can fetch resources such as JSON data, images, and other files from servers using the HTTP protocol. The Fetch API provides a simple and intuitive way to make asynchronous requests and handle responses.
@@ -546,3 +576,66 @@ Both local storage and session storage support the same methods for setting, get
 - `removeItem(key):` Removes the item with the given key from storage.
 - `clear():` Removes all items from storage.
 
+
+## Scope in JavaScript
+Scope refers to the visibility and accessibility of variables and functions in different parts of a JavaScript program. In JavaScript, there are two types of scope: global scope and local scope.
+
+Global scope refers to variables and functions that are defined outside of any function, and can be accessed from anywhere in the program. Local scope refers to variables and functions that are defined within a function, and can only be accessed from within that function.
+```js
+var globalVariable = 'I am a global variable';
+
+function myFunction() {
+  var localVariable = 'I am a local variable';
+  console.log(globalVariable);
+  console.log(localVariable);
+}
+
+myFunction(); // logs 'I am a global variable' and 'I am a local variable'
+console.log(globalVariable); // logs 'I am a global variable'
+console.log(localVariable); // ReferenceError: localVariable is not defined
+```
+In this example, `globalVariable` is defined outside of any function, and can be accessed from anywhere in the program. `localVariable` is defined within the `myFunction` function, and can only be accessed from within that function. When we call `myFunction`, we can access both `globalVariable` and `localVariable`. However, when we try to access `localVariable` outside of the function, we get a `ReferenceError` because it is not defined in the global scope.
+
+## Closures in JavaScript
+A closure is a function that has access to variables in its outer (enclosing) function's scope chain, even after the outer function has returned. Closures allow you to create functions that can access and modify variables that are not directly accessible from outside the function.
+```js
+function outerFunction() {
+  var outerVariable = 'I am in the outer function';
+  function innerFunction() {
+    console.log(outerVariable);
+  }
+  return innerFunction;
+}
+var innerFunc = outerFunction();
+innerFunc(); // logs 'I am in the outer function'
+```
+In this example, `outerFunction` returns `innerFunction`, which has access to the `outerVariable` variable, even after `outerFunction` has returned. When we call `innerFunc`, it logs the value of `outerVariable`.
+
+Closures are often used to create private variables and functions in JavaScript. By using closures, you can create functions that have access to private variables and functions that are not accessible from outside the function.
+
+## Object-Oriented Programming 
+`Object-Oriented Programming` is a programming paradigm that emphasizes the use of objects to represent and manipulate data. JavaScript is a flexible language that supports multiple programming paradigms, including OOP.
+```js
+function Person(name, age) {
+  this.name = name;
+  this.age = age;
+  this.sayHello = function() {
+    console.log("Hello, my name is " + this.name);
+  }
+}
+let person = new Person("John", 30);
+```
+JavaScript also supports class-based OOP using the `class` keyword.
+```js
+class Person {
+  constructor(name, age) {
+    this.name = name;
+    this.age = age;
+  }
+  
+  sayHello() {
+    console.log("Hello, my name is " + this.name);
+  }
+}
+let person = new Person("John", 30);
+```
