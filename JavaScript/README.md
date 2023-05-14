@@ -1,90 +1,131 @@
-<h1 align="center"> Advance JavaScript </h1> 
+## What is JavaScript and it's Features  
+- **What is JavaScript ?**
+  - Is an interpreted, client-side, event-base, object-oriented scripting language.
+  - It is invented in 1995 at Netscape Corporation (liveScript)
+  - JavaScript programs run by an interpreter build into the user web browser
+  - It is a case-sensitive language.
+  - JavaScript in not JAVA.
 
-### What is JavaScript ?
--   Is an interpreted, client-side, event-base, object-oriented scripting language.
--   It is invented in 1995 at Netscape Corporation (liveScript)
--   JavaScript programs run by an interpreter build into the user web browser
--   It is a case-sensitive language.
--   JavaScript in not JAVA.
+- **What can JavaScript do ?**
+  - It can dynamically modify an HTML page.
+  - It can validate user input.
+  - It can be used to create cookies. 
+  - It is a full-featured programming language.
+  - JavaScript user interaction does not require any communication at the user.
 
-### What can JavaScript do ?
--   It can dynamically modify an HTML page.
--   It can validate user input.
--   It can be used to create cookies. 
--   It is a full-featured programming language.
--   JavaScript user interaction does not require any communication at the user.
+- **What make JavaScript Unique ?**
+  - Support by all major browsers and enable by default.
+  - Complex things are done simply.
+  - Full integration with HTML/CSS.
+  - **Frameworks and Libraries:** Angular, React, jQuery, Vue.js, Node.js etc.
 
-### What make JavaScript Unique ?
--   Support by all major browsers and enable by default.
--   Complex things are done simply.
--   Full integration with HTML/CSS.
-
-### JavaScript Frameworks and Libraries ?
--   Angular
--   React
--   jQuery
--   Vue.js
--   Node.js  etc....
-
-## Variables:-
-**Variable define:** A named reference to a value is a variable.
+ ## Data types and Variables
+- `Variables`: A named reference to a value is a variable.
 ```js
 var a = "some value"; // functional or global scoped
 let b = "some value"; // block scoped
 const c = "some value"; // block scoped + cannot get new value
 ```
 
-## Seven (7) types of Primitive Datatype:- 
-**[nn bb ss u]**: 
-```js
-let id = 123.45                       // number
-let id = null                         // null
-let id = true                         // boolean
-let id = BigInt("549") + BigInt("4")  // bigint,  // 553n
-let id = Symbol("Adarsh verma")       // symbol,  // Symbol(Adarsh verma)
-let id = "two"                        // string,
-let id = undefined                    // undefined(any)
-```
-## Object in JavaScript. 
-An object is a data type in JavaScript that is used to store
-a combination of data in a simple key-value pair. Thats it.
--   `Key`: These are the keys in user object.
--   `Value`: These are the values of the respective keys in user object.
--   `Method`: If a key has a function as a value, its called
+- `Datatype`: JavaScript also allows developers to create their own custom data types using classes and prototypes.
+  - **Primitive DataType**: 
+
+    ``` String, Number, Boolean, Null, Undefine, Symbol ```
+
+  - **Object DataType:**
+
+    ``` Array, Map, Set, Date, Regular Expression ```
+
+  **Object in JavaScript**: An object is a `Data Type` in JavaScript that is used to store
+a combination of data in a simple `key-value` pair. Thats it.
+  - `Key`: These are the keys in user object.
+  - `Value`: These are the values of the respective keys in user object.
+  - `Method`: If a key has a function as a value, its called
 a method.
--   **Example:** 'name' is `key`, 'Adarsh' is `value` and 'function' is `method`.
-
-```js
-var array = ['html', 34, 'css', 'js'];  // object
-const item = {
-    'name':'Adarsh',
-    'adarsh':false,
-    'lovish':67,
-    calculateAge: function(){
-        // some code here..
-    }
-};
-```
-
-### Outputting the Data:  *(Use console)*
--   alert()             = a small pop up window (alert box)
--   prompt()            = Prompt for user input
--   confirm()           = yes/no and return true/false based on user click   
--   console.log()       = Mainly used for debugging, used in console massage
--   document.write()    = Write output on HTML page.
+  -  **Example:** name: is `key` 'Adarsh' is `value` and 'function' is `method`.
 
 ## Function in JavaScript:
-*A group of tasks can be performed in a single function.*
+  - **Function:** *A group of tasks can be performed in a single function.*
+    ```js
+      function add(a, b){ 
+        // normal function to create             
+      }
+      const add = (a, b) => { 
+        // good practices to Arrow function create
+      }
+    ```
+  - **IIFE (Immediately Invoked Function Expression)** 
+  
+    The purpose of an IIFE is to create a new scope for the function, preventing variables declared inside it from polluting the global scope.
+    ```js 
+      (function() {
+        // This code is executed immediately
+        var x = 10;
+        console.log(x);
+      })();
+    ```
+  - **Higher-Order Function:** 
+
+    higher-order function is a function that either takes one or more functions as arguments or returns a function as its result. This means that the function operates on functions, either by taking them as arguments or by returning them.
+    ```js
+    function createCounter() {
+      let count = 0;
+      return function() {
+        count++;
+        console.log(count);
+      };
+    }
+    const counter = createCounter();
+    counter(); // logs 1
+    counter(); // logs 2
+    counter(); // logs 3
+    ```
+
+  - **Callback functions**:
+  
+    Callback functions are often used in JavaScript for handling `asynchronous` events such as `HTTP requests`, `user input`, and `timers`. They allow us to write asynchronous code that executes in response to events, without blocking the execution of other code.
+    `Define`: *A function that is passed as an argument to another function and is executed inside that function.*
+    ```js
+      function processUserInput(callback) {
+        var name = prompt('Please enter your name:');
+        callback(name);
+      }
+      function greetUser(name) {
+        console.log('Hello, ' + name);
+      }
+      processUserInput(greetUser);
+    ```
+
+## Prototype
+objects can inherit properties and methods from other objects through a mechanism called the `prototype chain`. Each object has an internal property called `[[Prototype]]` (also referred to as `__proto__`) which points to another object, known as its `prototype`.
 ```js
-// normal function to create
-function add(a, b){
-    // code             
-}
-// good practices to function create
-const add = (a, b) => {
-    // code             
-}
+let animal = { eats: true };
+let rabbit = { jumps: true };
+rabbit.__proto__ = animal;
+console.log(rabbit.eats); // true
+console.log(rabbit.jumps); // true
 ```
+
+##  Comparison Operators '==' and '==='
+- `==` is called the "loose equality" or "abstract equality" operator. It compares values by converting them to a common type
+  ```js
+  console.log(5 == "5"); // true
+  console.log(null == undefined); // true
+  ```
+- `===` is called the "strict equality" or "identity" operator. It compares values by checking if they have the same type and value.
+  ```js
+  console.log(5 === "5"); // false
+  console.log(null === undefined); // false
+  ```
+## Difference between null and undefined
+- `undefined` is a value that is automatically assigned to a variable that has been declared but not initialized with a value.
+- `null`, on the other hand, is a value that represents the intentional absence of any object value.
+  ```js
+  let x;
+  console.log(x); // undefined
+  let y = null;
+  console.log(y); // null
+  ```
 
 ## Condition Statement in JavaScript:
 Condition Statement are used to perform different action based on different condition.
@@ -106,20 +147,17 @@ switch (new Date().getDay()) {   // input is current date
     case 6:     // if(day==6)
         text = "Saturday";
         break;  // condition true to exit loop. 
-    
     case 0:     // if(day==0)
         text = "Sunday";
         continue;  // condition true then check next iteration
-    
     case 2:     // if(day==2)
         text = "Tuesday";
         break;
-    
     default:    // else... all false condition 
         text = "whate'er";
 }
 ```
-3. **Tenary Operator:**
+3. **Ternary Operator:**
 ```js
 // Syntax: (condition) ? exp1-True : exp2-False;
 let a = 15;
@@ -135,43 +173,41 @@ console.log('You can', a<18? "not drive": "Drive")  // You can not drive
 |4.   | while loop | loop a block based on a special condition.|
 |5.   | do..while loop | similar while loop variant which run at least once.|
 
-### for loop:
-```js
-// normal loop:
-for( int i=0; i<num.length; i++){
-    // code
-}
-// forEach loop:    
-let a = num.forEach((element) => {
-    // code
-});
 
-// for-in loop:  
-for(let key in object) {   // This loops also work with arrays.
-    // code to be execute
-}
-// for-of loop: 
-for(let key of inerrable) {      // inerrable data structure like array, string etc..  
-    // code to be execute
-}
-```
-### while loop: 
-***Note: If the condition never become false, the loop will never end and its might crash the runtime.***
-```js
-while(condition){
-    // code to be executed
-    update;
-}
-```
-### do..while loop: 
-***Note: Execute at least once.***
-```js
-do {
-    // code to be executed
-    update;
-} while (condition);
-```
-## String n JavaScript:
+- For Loop:
+    ```js
+    // normal loop:
+      for( int i=0; i<num.length; i++){
+          // code
+      }
+    // forEach loop:    
+      let a = num.forEach((element) => {
+          // code
+      });
+    // for-in loop:  
+      for(let key in object) {      
+          // This loops also work with arrays.
+      }
+    // for-of loop: 
+      for(let key of inerrable) {     
+          // inerrable data structure like array, string etc..
+      }
+    ```
+- **While loop:** *If the condition never become false, the loop will never end and its might crash the runtime.*
+    ```js
+    while(condition){
+        // code to be executed
+        update;
+    }
+    ```
+- **Do..while loop:** *Note: Execute at least once.*
+    ```js
+    do {
+        // code to be executed
+        update;
+    } while (condition);
+    ```
+## String method in JavaScript:
 ```js
 var abc = "abcdefghijklmnopqrstuvwxyz";
 var esc = 'I don\'t \n know';   // \n new line
@@ -193,13 +229,13 @@ abc.charAt(2);                  // character at index: "c"
 abc[2];                         // unsafe, abc[2] = "C" doesn't work
 abc.charCodeAt(2);              // character code at index: "c" -> 99
 
-String Interpolation:
+// String Interpolation:
 let firstName = "John";
 let lastName = "Doe";
 let name = $"My full name is: {firstName} {lastName}";  // My full name is: John Doe
 ```
-## Array:
-***Array are variables which can hold more than one value with different DataType.***
+## Array method is javascript:
+*Array are variables which can hold more than one value with different DataType.*
 ```js
 dogs.toString();                        // convert to string: results "Bulldog,Beagle,Labrador"
 dogs.join(" * ");                       // join: "Bulldog * Beagle * Labrador"
@@ -220,118 +256,99 @@ highest = x[0];                         // first item in sorted array is the low
 x.sort(function(a, b){return 0.5 - Math.random()});     // random order sort
 ```
 
-### Map method:- 
-***Create a new array by performing some operation on each array element.***
-```js
-let a = arr.map( (value, index, arr) =>{
-    console.log("first :", value, index, arr)
-    return value + 1 
-});
-console.log("second:", a)   // second: [ 46, 37, 81 ]
-```
-### filter method:-  
-***Create a new array by operation true then filter the value, & original array not change.***  
-```js
-let arr2 = [45,36,80,0,3,5]
-let b = arr2.filter( (a) => {
-    return a < 10
-});
-console.log(b)  // [ 0, 3, 5 ]
-```
-### Reduce method:- 
-***Reduce an array to a single value return.***
-```js
-let arr3 = [1,2,3,4,5]   // a=1 b=2 return 3, a=3 b=3 return 6, a=6 b=4 return 10.... 15
-let c = arr3.reduce( (a, b) => {
-    return a+b 
-})
-console.log(c)  // 15
-```
+## map, filter and reduce method:- 
+- **map method:-** *Create a new array by performing some operation on each array element.*
+    ```js
+    const array = [1, 2, 3, 4];
+    const mappedArray = array.map((element) => {
+      return element * 2;
+    });
+    console.log(mappedArray); // Output: [2, 4, 6, 8]
+    ```
+- **filter method:-** *Create a new array by operation true then filter the value, & original array not change.*  
+    ```js
+    const array = [1, 2, 3, 4];
+    const filteredArray = array.filter((element) => {
+      return element % 2 === 0;
+    });
+    console.log(filteredArray); // Output: [2, 4]
+    ```
+- **reduce method:-** *Reduce an array to a single value return.*
+    ```js
+    const array = [1, 2, 3, 4];
+    const sum = array.reduce((accumulator, currentValue) => {
+      return accumulator + currentValue;
+    });
+    console.log(sum); // Output: 10
+    ```
 
-### Practices Question:
-1. Add number in given array ?
-2. Add number n to zero in given array ?
-3. Filter for number divisible by 10 from a given array ?
-4. Create an array of square of given number ? 
-5. Use reduce to calculate factorial of a given number from from an array of first n natural number.[n bring number whose factorial needs to be calculated]
-6. Write a program Enter your guess number 1 to 100 ?
-
-#### Advantages of Separate Script file
-1. Separation of concerns
-2. Browser cashing.
-3. Developer tools: Element, Console, Network
-
-## Console Object Methods:
-```js
-console.log(console)                // list of all function
-console.assert("assert"!=false)     // used of condition true then run function
-console.assert("assert" ==false)    // otherwise error display of assert function 
-console.log("console log")          // Output message to the console
-console.info("info")                // used for special massage
-console.warn("don't drink ")        // warning massage                 
-console.error("error")              // used for error
-console.time("a")
-obj = {a:1,B:2,C:3}
-console.table(obj)                  // create table in index and value
-console.timeEnd("a")
-console.clear()                     // console clear all
-```
+## Use Console
+- **Console Object Methods:**
+   ```js
+   console.log(console)                // list of all function
+   console.assert("assert"!=false)     // used of condition true then run function
+   console.assert("assert" ==false)    // otherwise error display of assert function 
+   console.log("console log")          // Output message to the console
+   console.info("info")                // used for special massage
+   console.warn("don't drink ")        // warning massage                 
+   console.error("error")              // used for error
+   console.time("a")
+   obj = {a:1,B:2,C:3}
+   console.table(obj)                  // create table in index and value
+   console.timeEnd("a")
+   console.clear()                     // console clear all
+   ```
+- **Outputting the Data:**  
+    - alert()             = a small pop up window (alert box)
+    - prompt()            = Prompt for user input
+    - confirm()           = yes/no and return true/false based on user click   
+    - console.log()       = Mainly used for debugging, used in console massage
+    - document.write()    = Write output on HTML page.
 
 ## Windows: DOM, BOM & Object (JavaScript core)
 
 * **Document Object Model:** `DOM` represent the page contact HTML
-```js
-document.body  // page body as Js. object   
-document.body.style.background="red" // change page background to red
-```
+    ```js
+    document.body  // page body as Js. object   
+    document.body.style.background="red" // change page background to red
+    ```
 * **Browser Object Model:** `BOM` is represent additional object provided by the browser(host environment) for working with everything except the document. The function `alert`/`confirm`/`prompt` are also a part of `BOM`.
-```js
-window.console.log(window)
-console.log(document.body)
-
-location.href = "https://google.com"  // redirect to another URL.
-```
-# Importance Notes:
-
-```javascript
-// table navigation:
-node.rows
-node.rows[0]
-node.caption
-node.tFoot
-node.tHead.firstElementChild
-node.tBodies
-node.rows[0],rowIndex
-
-// Create / clone Element
-document.createElement('div')
-document.createTextNode('some text here')
-node.cloneNode()
-node.textContent = 'some text here'
-
-// Add node to document
-parentNode.appendChild(nodeToAdd)
-parentNode.insertBefore(nodeToAdd, childNode)
-
-// Remove Node
-parentNode.removeChild(nodeToRemove)
-// Hack to remove self
-nodeToRemove.parentNode.removeChild(nodeToRemove)
-
-// Get Element Details
-node.nextSibling
-node.firstChild
-node.lastChild
-node.parentNode
-node.childNodes
-node.children
-
-// InsertAdjacentHTML / text / Element:-
-element.insertAdjacentHTML('beforebegin','<div class="test">before-begin</div>');
-element.insertAdjacentHTML('beforeend','<div class="test">before-end</div>');
-element.insertAdjacentHTML('afterbegin','<div class="test">after-begin</div>');
-element.insertAdjacentHTML('afterend','<div class="test">after-end</div>');
-```
+    ```js
+    window.console.log(window)
+    console.log(document.body)
+    location.href = "https://google.com"  // redirect to another URL.
+    ```
+* **Importance Notes:**
+    ```javascript
+    // Create / clone Element
+    document.createElement('div')
+    document.createTextNode('some text here')
+    node.cloneNode()
+    node.textContent = 'some text here'
+    
+    // Add node to document
+    parentNode.appendChild(nodeToAdd)
+    parentNode.insertBefore(nodeToAdd, childNode)
+    
+    // Remove Node
+    parentNode.removeChild(nodeToRemove)
+    // Hack to remove self
+    nodeToRemove.parentNode.removeChild(nodeToRemove)
+    
+    // Get Element Details
+    node.nextSibling
+    node.firstChild
+    node.lastChild
+    node.parentNode
+    node.childNodes
+    node.children
+    
+    // InsertAdjacentHTML / text / Element:-
+    element.insertAdjacentHTML('beforebegin','<div class="test">before-begin</div>');
+    element.insertAdjacentHTML('beforeend','<div class="test">before-end</div>');
+    element.insertAdjacentHTML('afterbegin','<div class="test">after-begin</div>');
+    element.insertAdjacentHTML('afterend','<div class="test">after-end</div>');
+    ```
 ### Node:
 "Every item in the DOM tree is called a node." There are two types of node - 
 `Text Node`, and `Element Node`:
@@ -639,3 +656,20 @@ class Person {
 }
 let person = new Person("John", 30);
 ```
+
+
+# Modules and Bundlers
+In ES6, the most common way to create a module is by using the `export` and `import` statements. For example, you can export a function from a module like this:
+```js
+// greet.js
+export function greet(name) {
+  console.log(`Hello, ${name}!`);
+}
+// app.js 
+import { greet } from './greet.js';
+greet('John');
+
+```
+Bundlers are tools that help you package your JavaScript code and its dependencies into a single file or a set of files that can be served to the browser. Bundlers typically work by analyzing your code and its dependencies and creating a dependency graph, which allows them to determine the order in which the code should be executed.
+
+The most popular bundlers in the JavaScript ecosystem are Webpack, Rollup, and Parcel. They all have different features and capabilities, but they all essentially do the same thing: take your code, bundle it, and output it in a format that can be understood by the browser.
