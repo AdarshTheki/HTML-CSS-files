@@ -557,7 +557,7 @@ In this example, the `validateInput` function checks if the input is a string an
 
 
 ## Fetch API:
-The Fetch API is a JavaScript interface that provides a way to make HTTP requests from within a web browser. With the Fetch API, you can fetch resources such as JSON data, images, and other files from servers using the HTTP protocol. The Fetch API provides a simple and intuitive way to make asynchronous requests and handle responses.
+The Fetch API is a JavaScript interface that provides a way to make HTTP requests from within a web browser. With the Fetch API, you can fetch resources such as JSON data, images, and other files from servers using the HTTP protocol. The Fetch API provides a simple and intuitive way to make asynchronous requests and handle responses.REST API by making requests using standard HTTP methods like `GET`, `POST`, `PUT`, and `DELETE`.
 
 Here's an example of making a `POST` request with a JSON payload:
 ```js
