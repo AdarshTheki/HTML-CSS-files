@@ -163,7 +163,7 @@ switch (new Date().getDay()) {   // input is current date
 let a = 15;
 console.log('You can', a<18? "not drive": "Drive")  // You can not drive 
 ```
-## Loops In JavaScript:
+## Loops In JS
 **Type of loops in JavaScript:**
 |Sr.  | Type | How Runs |
 |:----|:-----|:---------|
@@ -173,41 +173,7 @@ console.log('You can', a<18? "not drive": "Drive")  // You can not drive
 |4.   | while loop | loop a block based on a special condition.|
 |5.   | do..while loop | similar while loop variant which run at least once.|
 
-
-- For Loop:
-    ```js
-    // normal loop:
-      for( int i=0; i<num.length; i++){
-          // code
-      }
-    // forEach loop:    
-      let a = num.forEach((element) => {
-          // code
-      });
-    // for-in loop:  
-      for(let key in object) {      
-          // This loops also work with arrays.
-      }
-    // for-of loop: 
-      for(let key of inerrable) {     
-          // inerrable data structure like array, string etc..
-      }
-    ```
-- **While loop:** *If the condition never become false, the loop will never end and its might crash the runtime.*
-    ```js
-    while(condition){
-        // code to be executed
-        update;
-    }
-    ```
-- **Do..while loop:** *Note: Execute at least once.*
-    ```js
-    do {
-        // code to be executed
-        update;
-    } while (condition);
-    ```
-## String method in JavaScript:
+## String Method in JS
 ```js
 var abc = "abcdefghijklmnopqrstuvwxyz";
 var esc = 'I don\'t \n know';   // \n new line
@@ -234,7 +200,7 @@ let firstName = "John";
 let lastName = "Doe";
 let name = $"My full name is: {firstName} {lastName}";  // My full name is: John Doe
 ```
-## Array method is javascript:
+## Array Method is JS:
 *Array are variables which can hold more than one value with different DataType.*
 ```js
 dogs.toString();                        // convert to string: results "Bulldog,Beagle,Labrador"
