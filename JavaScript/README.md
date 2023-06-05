@@ -1,23 +1,11 @@
 ## What is JavaScript and it's Features  
 - **What is JavaScript ?**
-  - Is an interpreted, client-side, event-base, object-oriented scripting language.
-  - It is invented in 1995 at Netscape Corporation (liveScript)
-  - JavaScript programs run by an interpreter build into the user web browser
-  - It is a case-sensitive language.
-  - JavaScript in not JAVA.
-
-- **What can JavaScript do ?**
-  - It can dynamically modify an HTML page.
-  - It can validate user input.
-  - It can be used to create cookies. 
-  - It is a full-featured programming language.
-  - JavaScript user interaction does not require any communication at the user.
+  - Is an interpreted, client-side, event-base, object-oriented scripting language. It is invented in 1995 at Netscape Corporation (liveScript)
+  - JavaScript programs run by an interpreter build into the user web browser. It is a case-sensitive language. JavaScript in not JAVA.
 
 - **What make JavaScript Unique ?**
-  - Support by all major browsers and enable by default.
-  - Complex things are done simply.
-  - Full integration with HTML/CSS.
-  - **Frameworks and Libraries:** Angular, React, jQuery, Vue.js, Node.js etc.
+  - Support by all major browsers and enable by default. And Complex things are done simply.
+  - Full integration with HTML/CSS. And also **Frameworks and Libraries:** Angular, React, jQuery, Vue.js, Node.js etc.
 
  ## Data types and Variables
 - `Variables`: A named reference to a value is a variable.
@@ -42,7 +30,7 @@ a combination of data in a simple `key-value` pair. Thats it.
   - `Value`: These are the values of the respective keys in user object.
   - `Method`: If a key has a function as a value, its called
 a method.
-  -  **Example:** name: is `key` 'Adarsh' is `value` and 'function' is `method`.
+  -  **Example:** Name is `key`, 'Adarsh' is `value` and function is `method`.
 
 ## Function in JavaScript:
   - **Function:** *A group of tasks can be performed in a single function.*
@@ -64,9 +52,12 @@ a method.
         console.log(x);
       })();
     ```
+  - **Pure Functional Programming:**
+    It paradigm that emphasizes immutability and avoids side effects. In pure functional programming, functions are treated as mathematical expressions that `map input` values to output values `without modifying` the `state` of the program or relying on external data. 
+
   - **Higher-Order Function:** 
 
-    higher-order function is a function that either takes one or more functions as arguments or returns a function as its result. This means that the function operates on functions, either by taking them as arguments or by returning them.
+    Higher-order functions enable you to manipulate functions just like any other data type, enabling you to write more concise and reusable code.
     ```js
     function createCounter() {
       let count = 0;
