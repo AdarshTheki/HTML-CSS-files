@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+Extensions:
 1. Git base
 2. FigmaSetup
 3. Node.js
@@ -30,37 +30,16 @@
 17. nodejs snippets
 31. Simple React snippets
 
-font : " 'cascadia Code lightblue', Consolas, 'Courier New',  monospace "
-=======
 Application:
 -  Git base
 -  FigmaSetup
 -  Node.js
 -  ResponsivelyApp
 
-Extensions : 
--  Auto Close Tag
--  Auto Rename Tag
--  Ayu (Theme)
--  Better Comments
--  Code Runner
--  Code Spell Checker
--  CodeGPT: Tim Kmecl
--  Community Material Theme
--  HTML CSS Support
--  indent-rainbow
--  JavaScript (ES6) code snippets
--  Live Server
--  Prettier - Code formatter
--  Quokka.js
--  Tailwind CSS IntelliSense
--  Thunder Client
--  ESLint
--  GitLens 
--  Simple React Snippets
 ==========================================================
 
-! explain media query?
+Explain media query?
+
 - @media (min-width:320px)   smartphones, portrait iPhone, portrait 480x320 phones (Android) 
 - @media (min-width:480px)   smartphones, Android phones, landscape iPhone 
 - @media (min-width:600px)   portrait tablets, portrait iPad, e-readers (Nook/Kindle), landscape 800x480 phones (Android) 
@@ -76,129 +55,135 @@ Extensions :
 - @media (min-width:1281px)  hi-res laptops and desktops 
 ===========================================================
 
-ChatGPT:'Key':" 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 "
+postcss tailwindcss:
 
+npx tailwindcss-cli build tailwind.css -o build/tailwind.css
+npx tailwindcss-cli build CSS/input.css -o build/output.css
+npm i -D tailwindcss postcss autoprefixer vite
+Changes to packages.json in "script": "dev": "vite",
+npx tailwindcss init -p
+npx tailwindcss init tailwind-full.config.js --full
+=============================================================
 
 ### initialize a git repository
-``` git init  ```
+ git init  
 
 ### check the status of the current repository
-``` git status  ```
+ git status  
 
 ### add all changes in the working directory to the staging area
-``` git add .  ```
+ git add .  
 
 ### add specific files to the staging area
-``` git add <file1> <file2> ...  ```
+ git add <file1> <file2> ...  
 
 ### commit the changes in the staging area with a message
-``` git commit -m "Commit message"  ```
+ git commit -m "Commit message"  
 
 ### view the commit history
-``` git log  ```
+ git log  
 
 ### view the commit history in a more readable format
-``` git log --pretty=oneline  ```
+ git log --pretty=oneline  
 
 ### view the commit history of a specific branch
-``` git log <branch_name>  ```
+ git log <branch_name>  
 
 ### view the difference between the working directory and the last commit
-``` git diff  ```
+ git diff  
 
 ### view the difference between the staging area and the last commit
-``` git diff --staged  ```
+ git diff --staged  
 
 ### undo changes in a file
-``` git checkout <file>  ```
+ git checkout <file>  
 
 ### undo changes in the working directory
-``` git reset  ```
+ git reset  
 
 ### undo the last commit
-``` git reset HEAD~1  ```
+ git reset HEAD~1  
 
 ### push the changes to a remote repository
-``` git push <remote> <branch>  ```
+ git push <remote> <branch>  
 
 ### pull the changes from a remote repository
-``` git pull <remote> <branch>  ```
+ git pull <remote> <branch>  
 
 ### create a new branch and switch to it
-``` git branch <branch_name>  git checkout <branch_name>  ```
+ git branch <branch_name>  git checkout <branch_name>  
 
 ### switch to an existing branch
-``` git checkout <branch_name>  ```
+ git checkout <branch_name>  
 
 ### merge changes from another branch into the current branch
-``` git merge <branch_name>  ```
+ git merge <branch_name>  
 
 ### delete a branch
-``` git branch -d <branch_name>  ```
+ git branch -d <branch_name>  
 
 ### clone a remote repository
-``` git clone <repository_url>  ```
+ git clone <repository_url>  
 
 ### show remote repository
-``` git remote -v  ```
+ git remote -v  
 
 ### rename branch
-``` git branch -m <newName>  ```
+ git branch -m <newName>  
 
 ### show all branches
-``` git branch  ```
+ git branch  
 
 ### show current branch
-``` git branch -vv  ```
+ git branch -vv  
 
 ### create alias for command
-``` git config --global alias.<alias-name> <git command>  ```
+ git config --global alias.<alias-name> <git command>  
 
 ### show commit history graph
-``` git log --graph --oneLine --decorate --all  ```
+ git log --graph --oneLine --decorate --all  
 
 ### show the last commit on each branch
-``` git branch -v --merged  ```
+ git branch -v --merged  
 
 ### show the last commit on each branch, including unmerged branches
-``` git branch -vv  ```
+ git branch -vv  
 
 ### check the difference between the working directory and the last commit
-``` git diff  ```
+ git diff  
 
 ### check the difference between the staging area and the last commit
-``` git diff --staged  ```
+ git diff --staged  
 
 ### check the difference between two branches
-``` git diff <branch1> <branch2>  ```
+ git diff <branch1> <branch2>  
 
 ### check the difference between the working directory and a branch
-``` git diff <branch>  ```
+ git diff <branch>  
 
 ### show the changes in a commit
-``` git show <commit>  ```
+ git show <commit>  
 
 ### show the changes in the last commit
-``` git show  ```
+ git show  
 
 ### show the changes in a specific file in a commit
-``` git show <commit>:<file>  ```
+ git show <commit>:<file>  
 
 ### show the changes in a specific file in the last commit
-``` git show :<file>  ```
+ git show :<file>  
 
 ### show the list of tags
-``` git tag  ```
+ git tag  
 
 ### create a new tag
-``` git tag <tag_name>  ```
+ git tag <tag_name>  
 
 ### create a new tag with a message
-``` git tag -a <tag_name> -m "Tag message"  ```
+ git tag -a <tag_name> -m "Tag message"  
 
 ### show the changes between two tags
-``` git diff <tag1> <tag2>  ```
+ git diff <tag1> <tag2>  
 
 ### show the changes between a tag and the current branch
-``` git diff < ```
->>>>>>> main
+ git diff < 
