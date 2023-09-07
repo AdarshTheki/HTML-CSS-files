@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Text More</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      .container {
+        margin-inline: auto;
+        margin-block: 20px;
+        width: 120px;
+        height: 100px;
+        display: flex;
+        overflow-x: scroll;
+        scroll-snap-type: x mandatory;  /* x - axis*/
+      }
+      .container .card {
+        min-width: 100px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        scroll-snap-align: center;  /* when scroll align center */
+      }
+      .container .card:nth-child(1) {
+        background-color: lightcoral;
+      }
+      .container .card:nth-child(2) {
+        background-color: lightgreen;
+      }
+      .container .card:nth-child(3) {
+        background-color: lightskyblue;
+      }
+      .container .card:nth-child(4) {
+        background-color: lightslategray;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="card">1</div>
+      <div class="card">2</div>
+      <div class="card">3</div>
+      <div class="card">4</div>
+    </div>
+  </body>
+</html>
