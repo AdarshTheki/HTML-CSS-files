@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Simple NavBar</title>
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+      body {
+        margin: 0;
+        padding: 0;
+      }
+      .navbar {
+        font-family: sans-serif;
+        margin-inline: auto;
+        width: 80%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        list-style: none;
+        background: #333;
+        color: #fff;
+        border-radius: 1vmax;
+        padding: 0 1rem;
+        position: relative;
+      }
+      ul {
+        width: 60%;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        /* align-items: center; */
+        justify-content: space-between;
+        list-style: none;
+      }
+      li a {
+        height: 100%;
+        color: #fff;
+        font-size: 1.2rem;
+        text-transform: uppercase;
+        text-decoration: none;
+      }
+      li a:hover {
+        background: #555;
+      }
+      /* bar */
+      .toggle-button {
+        position: absolute;
+        top: 30%;
+        right: 1rem;
+        display: none;
+        flex-direction: column;
+        justify-content: space-between;
+        width: 30px;
+        height: 21px;
+      }
+      .bar {
+        height: 3px;
+        width: 100%;
+        background: #fff;
+        border-radius: 10px;
+      }
+      @media (max-width: 600px) {
+        .toggle-button {
+          display: flex;
+        }
+        .navbar {
+          flex-direction: column;
+          align-items: flex-start;
+        }
+        ul {
+          display: none;
+          flex-direction: column;
+          width: 100%;
+        }
+        ul.active {
+          display: flex;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="navbar">
+      <div>
+        <h1>Band Name</h1>
+        <a href="#" class="toggle-button">
+          <div class="bar"></div>
+          <div class="bar"></div>
+          <div class="bar"></div>
+        </a>
+      </div>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">contact</a></li>
+      </ul>
+    </div>
+
+    <script>
+      const toggleButton = document.getElementsByClassName("toggle-button")[0]
+      const navLists = document.querySelector('ul')
+      
+      toggleButton.addEventListener('click', ()=>{
+        navLists.classList.toggle('active')
+      })
+    </script>
+  </body>
+</html>

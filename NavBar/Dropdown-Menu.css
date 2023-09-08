@@ -1,0 +1,90 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.header {
+  font-family: sans-serif;
+  display: flex;
+  justify-content: space-evenly;
+  gap: 15px;
+  background-color: #222;
+  font-size: 1.5rem;
+}
+.link {
+  background: none;
+  border: none;
+  text-decoration: none;
+  color: #fff;
+  font-weight: 600;
+  font-family: inherit;
+  font-size: inherit;
+  cursor: pointer;
+  padding: 0.5rem 0;
+}
+
+/* 
+This changes to without js script 
+.dropdown > .link.active
+*/
+
+.dropdown.active > .link,
+.link:hover {
+  color: #888;
+}
+.dropdown {
+  position: relative;
+}
+.dropdown-menu {
+  position: absolute;
+  left: 0;
+  top: calc(100% + 0.25rem);
+  background-color: #fff;
+  padding: 0.75rem;
+  border-radius: 0.25rem;
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.2);
+  /* Do Not used display: none */
+  opacity: 0;
+  pointer-events: none;
+  transform: translateY(-10px);
+  transition: opacity 150ms ease-in-out, transform 150ms ease-in-out;
+}
+
+/* 
+This changes to without js script 
+.dropdown > .link.active + .dropdown-menu
+*/
+
+.dropdown.active > .link + .dropdown-menu {
+  opacity: 1;
+  transform: translateY(0);
+  pointer-events: auto;
+}
+
+
+
+/* information-grid */
+
+.information-grid {
+  display: grid;
+  grid-template-columns: repeat(2, max-content);
+  gap: 2rem;
+  text-transform: capitalize;
+}
+.dropdown-links {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+.dropdown-links .link{
+  font-size: 1.2rem;
+  color: #555;
+  font-weight: 500;
+  padding: 0;
+}
+.dropdown-links .link:hover{
+  color: rgb(240, 128, 128);
+}
+
+/* contact-form */
+/* ............. */
