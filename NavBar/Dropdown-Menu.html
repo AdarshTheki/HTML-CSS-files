@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dropdown Menus</title>
+    <link rel="stylesheet" href="./Dropdown-Menu.css" />
+  </head>
+  <body>
+    <div class="header">
+      <div class="dropdown" data-dropdown>
+        <button class="link" data-dropdown-button>Information</button>
+        <div class="dropdown-menu information-grid">
+          <div>
+            <p class="dropdown-heading">Free tutorial</p>
+            <div class="dropdown-links">
+              <a href="#" class="link">All</a>
+              <a href="#" class="link">latest</a>
+              <a href="#" class="link">Popular</a>
+            </div>
+          </div>
+          <div>
+            <p class="dropdown-heading">course</p>
+            <div class="dropdown-links">
+              <a href="#" class="link">Java</a>
+              <a href="#" class="link">python</a>
+              <a href="#" class="link">javascript</a>
+            </div>
+          </div>
+          <div>
+            <p class="dropdown-heading">Blog</p>
+            <div class="dropdown-links">
+              <a href="#" class="link">home</a>
+              <a href="#" class="link">about</a>
+              <a href="#" class="link">contact</a>
+            </div>
+          </div>
+          <div>
+            <p class="dropdown-heading">other</p>
+            <div class="dropdown-links">
+              <a href="#" class="link">linkedIn</a>
+              <a href="#" class="link">twitter</a>
+              <a href="#" class="link">GitHub</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <a href="#" class="link">Pricing</a>
+
+      <div class="dropdown" data-dropdown>
+        <button class="link" data-dropdown-button>Login</button>
+        <div class="dropdown-menu">
+          <form class="login-form">
+            <label for="email">Email</label>
+            <input type="email" name="email" id="email" />
+            <label for="password">Password</label>
+            <input type="password" name="password" id="password" />
+            <button type="submit">login</button>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <!-- script when the click open menu -->
+    <script> 
+      document.addEventListener("click", (e) => {
+        const isDropdownButton = e.target.matches("[data-dropdown-button]");
+        if (!isDropdownButton && e.target.closest("[data-dropdown]") != null)
+          return;
+
+        let currentDropdown;
+        if (isDropdownButton) {
+          currentDropdown = e.target.closest("[data-dropdown]");
+          currentDropdown.classList.toggle("active");
+        }
+
+        document
+          .querySelectorAll("[data-dropdown].active")
+          .forEach((dropdown) => {
+            if (dropdown === currentDropdown) return;
+            dropdown.classList.remove("active");
+          });
+      });
+    </script>
+  </body>
+</html>
