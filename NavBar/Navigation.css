@@ -1,0 +1,131 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --light-color: rgb(255, 255, 255);
+  --bg-color: rgb(200, 200, 255, 0.5);
+  --primary-color: rgb(103, 92, 255);
+  --secondary-color: rgb(220, 212, 255);
+  --dark-color: rgb(33, 37, 38);
+}
+
+body {
+  background-color: var(--bg-color);
+  font-family: sans-serif;
+}
+
+img {
+  width: 100%;
+}
+
+header {
+  background: var(--light-color);
+  width: 80%;
+  height: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 40px;
+  border-radius: 0 0 10px 10px;
+  margin-inline: auto;
+}
+
+.logo {
+  width: 120px;
+  margin-top: 8px;
+}
+
+nav ul {
+  display: flex;
+  list-style-type: none;
+}
+
+nav ul li a {
+  color: var(--dark-color);
+  display: block;
+  margin: 0 2px;
+  font-weight: 600;
+  text-transform: capitalize;
+  padding: 8px 18px;
+  transition: 0.2s;
+  border-radius: 100vmax;
+  text-decoration: none;
+}
+nav ul li a:hover {
+  background: var(--secondary-color);
+}
+nav ul li a.active {
+  background: var(--primary-color);
+  color: var(--light-color);
+}
+
+/* hamburger */
+.hamburger {
+  display: none;
+  height: fit-content;
+  cursor: pointer;
+  padding: 5px 8px;
+  border-radius: 1vmax;
+  transition: 0.2s;
+  background: var(--primary-color);
+}
+.hamburger:hover {
+  opacity: 0.8;
+}
+.hamburger div {
+  width: 30px;
+  height: 3px;
+  border-radius: 20px;
+  margin: 5px 0;
+  background-color: var(--light-color);
+}
+
+nav .logo {
+  display: none;
+}
+
+@media only screen and (max-width: 1100px) {
+  header {
+    width: 90%;
+    padding: 0 20px;
+  }
+  nav {
+    position: absolute;
+    left: -300px;
+    top: 0;
+    z-index: 999;
+    width: 280px;
+    height: 100vh;
+    background: var(--light-color);
+    transition: 0.2s;
+    box-shadow: 2px 0 20px 0 rgba(0, 0, 0, 0.05);
+  }
+
+  /* nav_check */
+  #nav_check:checked ~ nav {
+    left: 0;
+  }
+
+  nav .logo {
+    display: block;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    margin-left: 30px;
+  }
+  nav ul {
+    display: block;
+    padding: 0 20px;
+  }
+  nav ul li a {
+    margin-bottom: 5px;
+    padding: 10px 15px;
+  }
+
+  .hamburger {
+    display: block;
+  }
+}
