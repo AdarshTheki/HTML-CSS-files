@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Leveraging the power of css</title>
+    <style>
+        .article-title + p {
+            font-size: 1.5rem;
+            color: lightcoral;
+        }
+        .article > header {
+            display: grid;
+            background: lightgreen;
+        }
+        .article > header > img ~ * {
+            grid-column: 2;
+        }
+        .article > h1 ~ :has(~h2){
+            font-size: 1rem;
+            color: dodgerblue;
+        }
+    </style>
+</head>
+<body>
+    <div class="article">
+        <h1>Lorem ipsum lor dolor sit amet. h1</h1>
+        <header>
+            <h1>1 Lorem ipsum lor dolor sit amet. h1-2</h1>
+            <p>2 Lorem ipsum dolor sit amet.p-1</p>
+        </header>
+        <h2>Lorem ipsum lor dolor sit amet.h-2</h2>
+        <img src="../image/2.jpg" alt="" width="100">
+    </div>
+
+    <hr>
+
+    <article>
+        <h2 class="article-title"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim, doloribus!</h2>
+        <p>Lorem 1 ipsum dolor sit amet consectetur adipisicing elit. Enim, doloribus!</p>
+        <p>Lorem 2 ipsum dolor sit amet consectetur adipisicing elit. Enim, doloribus!</p>
+        <a>Lorem 3 ipsum dolor sit amet consectetur adipisicing elit. Enim, doloribus!</a>
+        <p>Lorem 4 ipsum dolor sit amet consectetur adipisicing elit. Enim, doloribus!</p>
+    </article>
+</body>
+</html>
